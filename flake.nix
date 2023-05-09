@@ -1,5 +1,6 @@
 {
-  description: "moonshine, sunshine, and the shine of my suffering"
+  
+  description = "moonshine, sunshine, and the shine of my suffering";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
@@ -12,6 +13,7 @@
       	./configuration.nix
 	./hardware-configuration.nix
 	./users.nix
+	./timer-service-git-all-repeat.nix
       ];
     };
   };
