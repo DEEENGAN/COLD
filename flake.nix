@@ -13,7 +13,7 @@
       	./configuration.nix
 	./hardware-configuration.nix
 	./users.nix
-	./timer-service-git-all-repeat.nix
+	./service-timer-git-all-repeat.nix
       ];
     };
   };

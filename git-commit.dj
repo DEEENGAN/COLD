@@ -1,4 +1,4 @@
 ## main...origin/main
-M  flake.nix
- M git-commit.dj
-A  timer-service-git-all-repeat.nix
+M  configuration.nix
+MM git-commit.dj
+M  timer-service-git-all-repeat.nix
