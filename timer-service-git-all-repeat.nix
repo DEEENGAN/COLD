@@ -10,10 +10,10 @@ systemd.services.git-all-repeat= {
 
 systemd.timers.git-all-repeat = {
   wantedBy = [ "timers.target" ];
-  partOf = [ "git-all-repeat" ];
+  partOf = [ "git-all-repeat.service" ];
   timerConfig = {
     OnCalendar = "*-*-* 4:30:00";
-    Unit = "git-all-repeat";
+    Unit = "git-all-repeat.service";
   };
 };
 

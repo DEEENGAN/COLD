@@ -84,6 +84,7 @@
   environment.systemPackages = with pkgs; [
   	pkgs.borgbackup
 	pkgs.xclip
+	pkgs.gnome.gnome-font-viewer
 	pkgs.libratbag
 	pkgs.piper
   	pkgs.gnome.gnome-system-monitor

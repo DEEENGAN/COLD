@@ -1,6 +1,4 @@
 ## main...origin/main
-M  configuration.nix
-M  flake.lock
 M  flake.nix
-MM git-commit.dj
-A  users.nix
+ M git-commit.dj
+A  timer-service-git-all-repeat.nix
