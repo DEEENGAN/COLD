@@ -84,9 +84,9 @@
   environment.systemPackages = with pkgs; [
   	pkgs.borgbackup
 	pkgs.xclip
+	pkgs.unzip
 	pkgs.pavucontrol
-	pkgs.libratbag
-	pkgs.piper
+	pkgs.gnome.gnome-font-viewer
   	pkgs.gnome.gnome-system-monitor
 	pkgs.gnome.nautilus
 	pkgs.tilix
@@ -105,7 +105,7 @@ programs.gnupg.agent = {
 };
 
 fonts.fonts = with pkgs; [
-	noto-fonts 
+	noto-fonts
 	noto-fonts-extra
 	noto-fonts-cjk-sans
 	noto-fonts-cjk-serif
