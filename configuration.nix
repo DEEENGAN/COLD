@@ -95,7 +95,8 @@
 	pkgs.vim
   ];
 
-programs.bash.vteIntegration = true;  
+# tilix
+programs.bash.vteIntegration = true;
 
 programs.gnupg.agent = {                                                      
   enable = true;
