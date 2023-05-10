@@ -1,6 +1,6 @@
 { pkgs, ... }: {
 
-systemd.services.git-all-repeat= {
+systemd.services.git-all-repeat = {
   serviceConfig.Type = "oneshot";
   path = with pkgs; [ bash ];
   script = ''
