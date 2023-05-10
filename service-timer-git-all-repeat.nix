@@ -4,7 +4,7 @@ systemd.services.git-all-repeat = {
   serviceConfig.Type = "oneshot";
   path = with pkgs; [ bash git ];
   script = ''
-    sh /home/deeengan/git-all
+    bash /home/deeengan/DATA/git-all
   '';
 };
 
