@@ -1,4 +1,4 @@
 ## main...origin/main
 M  configuration.nix
- M git-commit.dj
+MM git-commit.dj
 M  service-timer-git-all-repeat.nix
