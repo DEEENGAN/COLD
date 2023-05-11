@@ -1,11 +1,2 @@
 ## main...origin/main
-A  cache.nix
-MM configuration.nix
-MM flake.lock
-M  flake.nix
-A  fonts.nix
  M git-commit.dj
-AM gnome.nix
-M  service-timer-borg-de7d193c-88eb-4aa4-92d8-34f0d8054d00.nix
-A  sound.nix
-A  trash.nix
