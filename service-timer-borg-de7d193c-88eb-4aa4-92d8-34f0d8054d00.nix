@@ -1,34 +1,24 @@
-{ pkgs, ... }: {
-
-systemd.services.service-timer-borg-de7d193c-88eb-4aa4-92d8-34f0d8054d00 = {
-  serviceConfig.Type = "oneshot";
-  path = with pkgs; [ bash borgbackup ];
-  script = ''
-    bash /home/deeengan/DATA/borg-backup-nixos-may-9-2023
-  '';
-};
-
-systemd.timers.service-timer-borg-de7d193c-88eb-4aa4-92d8-34f0d8054d00 = {
-  wantedBy = [ "timers.target" ];
-  partOf = [ "service-timer-borg-de7d193c-88eb-4aa4-92d8-34f0d8054d00.service" ];
-  timerConfig = {
-    OnCalendar = "*-*-* 00,10:00:00";
-    Persistent = "true";
-    RandomizedDelaySec = "300";
-    Unit = "service-timer-borg-de7d193c-88eb-4aa4-92d8-34f0d8054d00.service";
-  };
-};
-
-}
+{ pkgs }: {
 
 
-  services.borgbackup.jobs.home-danbst = {
-    # what we're backing up
-    paths = "/home/danbst";
-    encryption.mode = "none";
-    environment.BORG_RSH = "ssh -i /home/danbst/.ssh/id_ed25519";
-    repo = "ssh://user@example.com:23/path/to/backups-dir/home-danbst";
+  services.borgbackup.jobs.nixos = {
+
+    environment.BORG_REPO = /run/media/deeengan/de7d193c-88eb-4aa4-92d8-34f0d8054d00/Archive-May-2023;
+    environment.BORG_PASSPHRASE = pass -c = /archive/de7d193c-88eb-4aa4-92d8-34f0d8054d00;
+    paths = ["/home" "/etc" "/root" "/var"];
+    exclude = ["home/*/.cache/*" "var/tmp/*"];
+    encryption.mode = "repokey";
     compression = "auto,zstd";
     startAt = "daily";
+    prune.keep.within = "1d";
+    prune.keep.daily = 7;
+    prune.keep.weekly = 4;
+    prune.keep.monthly = -1;
+
+
+
+
   };
+}
+
 

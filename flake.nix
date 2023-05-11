@@ -4,15 +4,17 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
-    flake-utils.url = "github:numtide/flake-utils";
   };
   outputs = { nixpkgs, ... }: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-      	./configuration.nix
-	./hardware-configuration.nix
-	./users.nix
+        ./configuration.nix
+	    ./hardware-configuration.nix
+	    ./users.nix
+        ./gnome.nix
+        ./fonts.nix
+        ./sound.nix
       ];
     };
   };
