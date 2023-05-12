@@ -15,6 +15,7 @@
         ./gnome.nix
         ./fonts.nix
         ./sound.nix
+        ./service-timer-borg.nix
       ];
     };
   };

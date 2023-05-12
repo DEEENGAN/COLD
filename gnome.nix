@@ -4,12 +4,6 @@
     boot.loader.grub.device = "/dev/nvme0n1";
     boot.loader.grub.useOSProber = true;
 
-    services.xserver.displayManager.gdm.enable = true;
-    services.xserver.desktopManager.gnome.enable = true;
-
-    # X11 windowing
-    services.xserver.enable = true;
-
     # X11 keymapping
     services.xserver = {
         layout = "us";
@@ -22,7 +16,7 @@
     nix.settings.substituters = [ "https://cache.nixos.org/" ];
 
     environment.systemPackages = with pkgs; [
-  	    pkgs.borgbackup
+        pkgs.borgbackup
 	    pkgs.wl-clipboard
 	    pkgs.unzip
 	    pkgs.gnome.nautilus
@@ -44,6 +38,11 @@
 
     # enable
     services.flatpak.enable = true;
+    services.xserver.displayManager.gdm.enable = true;
+    services.xserver.desktopManager.gnome.enable = true;
+
+    # X11 windowing
+    services.xserver.enable = true;
 
     # disable
     services.gnome.core-utilities.enable = false;
