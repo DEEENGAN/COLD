@@ -1,0 +1,4 @@
+Remember the flake order of operations:
+import ./
+file name
+git add --all
