@@ -1,7 +1,5 @@
 ## main...origin/main
+D  configuration.nix
 M  flake.nix
  M git-commit.dj
-A  gnome-theme.nix
-M  gnome.nix
-D  service-timer-borg-de7d193c-88eb-4aa4-92d8-34f0d8054d00.nix
-AM service-timer-borg.nix
+A  time.nix
