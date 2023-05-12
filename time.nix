@@ -1,5 +1,7 @@
 { config, pkgs, ... }: {
 
+    system.stateVersion = "22.11";
+
     networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -19,12 +21,6 @@
         LC_PAPER = "en_US.UTF-8";
         LC_TELEPHONE = "en_US.UTF-8";
         LC_TIME = "en_US.UTF-8";
-};
-
-# Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-
-    system.stateVersion = "22.11";
+    };
 
 }
