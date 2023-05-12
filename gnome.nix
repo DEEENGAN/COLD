@@ -16,14 +16,15 @@
     nix.settings.substituters = [ "https://cache.nixos.org/" ];
 
     environment.systemPackages = with pkgs; [
-      pkgs.borgbackup
-	    pkgs.wl-clipboard
-	    pkgs.unzip
 	    pkgs.gnome.nautilus
-	    pkgs.tilix
-	    pkgs.pinentry
 	    pkgs.gnupg
 	    pkgs.neovim
+	    pkgs.pinentry
+	    pkgs.tilix
+	    pkgs.unzip
+	    pkgs.wl-clipboard
+      pkgs.borgbackup
+      pkgs.git
   ];
 
     # tilix
