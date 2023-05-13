@@ -1,4 +1,5 @@
- M gnome.nix
+ M service-timer-borg.nix
  M git-commit.dj
- M fonts.nix
+ M flake.nix
+ M flake.lock
 ## main...origin/main

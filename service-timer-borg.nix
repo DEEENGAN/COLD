@@ -8,6 +8,7 @@
     
     repo = "/run/media/deeengan/de7d193c-88eb-4aa4-92d8-34f0d8054d00/Archive-May-2023";
     environment.BORG_REPO = "/run/media/deeengan/de7d193c-88eb-4aa4-92d8-34f0d8054d00/Archive-May-2023";
+    environment.BORG_CACHE_DIR = "/home/deeengan/.cache/borg";
 
     encryption.mode = "repokey";
     encryption.passCommand = "cat /home/deeengan/DATA/borg-pass.dj";
