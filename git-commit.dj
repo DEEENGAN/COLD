@@ -1,5 +1,2 @@
- M service-timer-borg.nix
  M git-commit.dj
- M flake.nix
- M flake.lock
 ## main...origin/main
