@@ -6,22 +6,22 @@
 
   services.borgbackup.jobs.nixos = {
     
-    repo = "/run/media/deeengan/de7d193c-88eb-4aa4-92d8-34f0d8054d00/Archive-May-2023";
-    environment.BORG_REPO = "/run/media/deeengan/de7d193c-88eb-4aa4-92d8-34f0d8054d00/Archive-May-2023";
+    repo = "/run/media/deeengan/50de347c-e577-467c-93a4-e3e843a8e8f8/nixos-2023";
+    environment.BORG_REPO = "/run/media/deeengan/50de347c-e577-467c-93a4-e3e843a8e8f8/nixos-2023";
     environment.BORG_CACHE_DIR = "/home/deeengan/.cache/borg";
 
-    encryption.mode = "repokey";
-    encryption.passCommand = "cat /home/deeengan/DATA/borg-pass.dj";
+    encryption.mode = "repokey-blake2";
+    encryption.passCommand = "cat /home/deeengan/DATA/borg-pass";
 
     prune.keep.within = "1d";
     prune.keep.daily = 7;
     prune.keep.weekly = 7;
     prune.keep.monthly = 7;
     
-    environment.compact = "/run/media/deeengan/de7d193c-88eb-4aa4-92d8-34f0d8054d00/Archive-May-2023";
+    environment.compact = "/run/media/deeengan/50de347c-e577-467c-93a4-e3e843a8e8f8/nixos-2023";
 
     paths = ["/home" "/etc" "/root" "/var"];
-    exclude = ["home/*/.cache/*" "var/tmp/*"];
+    exclude = ["home/*/.cache/*" "home/*/.var/app/*" "var/tmp/*"];
     compression = "auto,zstd";
     startAt = "00,08,16:00";
 
