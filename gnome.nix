@@ -17,6 +17,7 @@
 
     environment.systemPackages = with pkgs; [
 	    pkgs.gnome.nautilus
+      pkgs.sioyek
 	    pkgs.gnupg
 	    pkgs.neovim
 	    pkgs.pinentry
