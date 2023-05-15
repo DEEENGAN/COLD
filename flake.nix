@@ -17,6 +17,7 @@
             ./fonts.nix
             ./sound.nix
             ./service-timer-borg.nix
+            ./nix-garbage-collect.nix
            ];
         };
     };

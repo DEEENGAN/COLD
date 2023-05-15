@@ -22,7 +22,7 @@
     environment.compact = "/run/media/deeengan/50de347c-e577-467c-93a4-e3e843a8e8f8/nixos-2023";
 
     paths = ["/home" "/etc" "/root" "/var"];
-    exclude = ["home/*/.cache/*" "home/*/.var/app/*" "var/tmp/*" "var/cache/*"];
+    exclude = ["home/*/.cache/*" "home/*/.var/*" "var/tmp/*" "var/cache/*" "/nix"];
     compression = "auto,zstd";
     startAt = "00,08,16:00";
     environment.randomizeddelaysec = "300";
