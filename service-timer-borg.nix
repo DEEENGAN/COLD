@@ -1,6 +1,7 @@
 # Name of the timer is borgbackup-job-nixos.timer
 # jobs is an option
 # services.SERVICE.jobs.hostname
+# ssh://r4z77b5m@r4z77b5m.repo.borgbase.com/./repo
 
 {
 
@@ -24,6 +25,8 @@
     exclude = ["home/*/.cache/*" "home/*/.var/app/*" "var/tmp/*" "var/cache/*"];
     compression = "auto,zstd";
     startAt = "00,08,16:00";
+    environment.randomizeddelaysec = "300";
+    environment.persistent = "true";
 
   };
 
