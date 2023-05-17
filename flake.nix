@@ -16,7 +16,7 @@
             #./gnome-theme.nix
             ./fonts.nix
             ./sound.nix
-            ./service-timer-borg.nix
+            #./service-timer-borg.nix
             ./nix-garbage-collect.nix
            ];
         };
