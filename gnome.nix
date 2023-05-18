@@ -41,6 +41,8 @@
     services.xserver.displayManager.gdm.enable = true;
     services.xserver.desktopManager.gnome.enable = true;
 
+    i18n.inputMethod.enabled = "hime";
+
     # X11 windowing
     services.xserver.enable = true;
 
