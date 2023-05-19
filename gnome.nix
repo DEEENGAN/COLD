@@ -17,7 +17,7 @@
 
     environment.systemPackages = with pkgs; [
 	    pkgs.gnupg
-	    pkgs.neovim
+	    pkgs.vim
 	    pkgs.pinentry
 	    pkgs.tilix
 	    pkgs.unzip
@@ -40,8 +40,6 @@
     services.flatpak.enable = true;
     services.xserver.displayManager.gdm.enable = true;
     services.xserver.desktopManager.gnome.enable = true;
-
-    i18n.inputMethod.enabled = "hime";
 
     # X11 windowing
     services.xserver.enable = true;
