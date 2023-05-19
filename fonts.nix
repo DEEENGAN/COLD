@@ -5,6 +5,8 @@
 	  noto-fonts-extra
 	  noto-fonts-cjk-sans
 	  noto-fonts-cjk-serif
+    source-han-sans
+    source-han-serif
     (nerdfonts.override { fonts = [ "Hack" "FantasqueSansMono" "Hasklig" ]; })
 	];
 
