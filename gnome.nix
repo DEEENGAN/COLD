@@ -17,6 +17,7 @@
 
     environment.systemPackages = with pkgs; [
 	    pkgs.anki-bin
+      pkgs.mplayer
 	    pkgs.pinentry
 	    pkgs.tilix
 	    pkgs.unzip
