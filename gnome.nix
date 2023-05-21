@@ -43,9 +43,6 @@
     services.xserver.displayManager.gdm.enable = true;
     services.xserver.desktopManager.gnome.enable = true;
     
-    # i18n.inputMethod.enabled = "ibus";
-    # i18n.inputMethod.ibus.engines = with pkgs.ibus-engines; [ rime ];
-    
     # X11 windowing
     services.xserver.enable = true;
 
