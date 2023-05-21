@@ -1,2 +1,4 @@
+ M nix-garbage-collect.nix
+ M gnome.nix
  M git-commit.dea
 ## main...origin/main
