@@ -6,7 +6,7 @@
 nix.gc.automatic = true;
 nix.gc.randomizedDelaySec = "400";
 nix.gc.persistent = true;
-nix.gc.options = "--delete-older-than 30d";
+nix.gc.options = "--delete-older-than 90d";
 nix.gc.dates = "Mon 04:30:00";
 
 }
