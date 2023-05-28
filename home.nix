@@ -7,9 +7,37 @@
 
     #programs.git = {
     #enable = true;
-    #userName = "deeengan";
+    #userName = "Dee Engan";
     #userEmail = "writing@deeengan.com";
   #};
 
 
+#[user]
+#	name = Dee Engan
+#	email = writing@deeengan.com
+#	signingkey = 8C0C6887!
+#
+#[commit]
+#	gpgsign = true
+#
+#[gpg]
+#	program = gpg2
+#
+#[filter "lfs"]
+#	clean = git-lfs clean -- %f
+#	smudge = git-lfs smudge -- %f
+#	process = git-lfs filter-process
+#	required = true
+#
+#[init]
+#	defaultBranch = main
+#
+#[color]
+#  ui = auto
+#[pull]
+#	rebase = true
+#[rebase]
+#	autoStash = true
+#[core]
+#	excludesfile = /home/deeengan/.gitignore
 }
