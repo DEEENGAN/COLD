@@ -23,7 +23,8 @@
     programs.alacritty.settings.window.opacity = 0.6;
     programs.alacritty.settings.window.decorations = "none";
     programs.alacritty.settings.font.normal.family = "FantasqueSansMono Nerd Font"; # grab names from gnome font title top
-    programs.alacritty.settings.key_bindings = [ { key = "N"; mods = "Control"; action = "SpawnNewInstance"; } ];
+    programs.alacritty.settings.key_bindings = [  { key = "N"; mods = "Control"; action = "SpawnNewInstance"; }
+                                                  { key = "W"; mods = "Control"; action = "Quit"; } ];
 
     #programs.alacritty.settings.colors.primary = "";
     #programs.alacritty.settings.colors.primary.background = "";
