@@ -38,7 +38,7 @@
     programs.gpg.enable = true;
     programs.gpg.settings = { pinentry-mode = "loopback"; };
 
-    #programs.git.gpg.program = "gpg2";
+    #programs.git.extraConfig.gpg.program = "gpg2";
     programs.git.enable = true;
     programs.git.extraConfig.color.ui = true;
     programs.git.extraConfig.commit.gpgsign = true;
@@ -53,4 +53,20 @@
     programs.git.ignores = [ ".DS_Store" ];
     programs.git.userEmail = "writing@deeengan.com";
     programs.git.userName = "Dee Engan";
+
+
+    gtk.enable = true;
+    gtk.iconTheme.name = "Papirus-Dark";
+    gtk.iconTheme.package = pkgs.papirus-icon-theme;
+    gtk.theme.name = "palenight";
+    gtk.theme.package = pkgs.palenight-theme;
+    gtk.cursorTheme.name = "Numix-Cursor";
+    gtk.cursorTheme.package = pkgs.numix-cursor-theme;
+    home.sessionVariables.GTK_THEME = "palenight";
+    gtk.gtk3.extraConfig.Settings = ''
+      '';
+    gtk.gtk4.extraConfig.Settings = ''
+      '';
+
+
 }
