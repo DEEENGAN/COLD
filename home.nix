@@ -8,7 +8,6 @@
     home.packages = with pkgs; [
 	    anki-bin
 	    pinentry
-	    tilix
 	    unzip
 	    vim
 	    wl-clipboard
@@ -79,7 +78,7 @@
       "org/gnome/shell" = {
         favorite-apps = [
           "firefox.desktop"
-          "com.gexperts.Tilix.desktop"
+          "Alacritty.desktop"
       ];
     };
       
