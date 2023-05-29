@@ -7,6 +7,7 @@
 	  noto-fonts-cjk-serif
     source-han-sans
     source-han-serif
+    noto-fonts-emoji
     (nerdfonts.override { fonts = [ "Hack" "FantasqueSansMono" "Hasklig" ]; })
 	];
 

@@ -13,10 +13,18 @@
 	    vim
 	    wl-clipboard
       borgbackup
-      git
-      gnupg
       mplayer
+      gnupg
   ];
+
+    programs.alacritty.enable = true;
+    programs.alacritty.settings = {
+      window = {
+        opacity = 0.6;
+        decorations = "none";
+
+    };
+  };
 
     # tilix
         programs.bash.enableVteIntegration = true;
@@ -30,23 +38,12 @@
         allow-loopback-pinentry
   '';
 
-      programs.gpg = {
-        enable = true;
-        settings = { pinentry-mode = "loopback"; };
-    };
+      programs.gpg.enable = true;
+      programs.gpg.settings = { pinentry-mode = "loopback"; };
 
-
-
-
-
-    #programs.git.enable = true;
-
-    #programs.git = {
-    #enable = true;
-    #userName = "Dee Engan";
-    #userEmail = "writing@deeengan.com";
-  #};
-
+      #programs.git.enable = true;
+      #programs.git.userName = "Dee Engan";
+      #programs.git.userEmail = "writing@deeengan.com";
 
 #[user]
 #	name = Dee Engan
