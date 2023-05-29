@@ -15,29 +15,6 @@
     nix.settings.experimental-features = [ "flakes" "nix-command" ];
     nix.settings.substituters = [ "https://cache.nixos.org/" ];
 
-    environment.systemPackages = with pkgs; [
-	    pkgs.anki-bin
-      pkgs.mplayer
-	    pkgs.pinentry
-	    pkgs.tilix
-	    pkgs.unzip
-	    pkgs.vim
-	    pkgs.wl-clipboard
-      pkgs.borgbackup
-      pkgs.git
-      pkgs.gnupg
-  ];
-
-    # tilix
-    programs.bash.vteIntegration = true;
-
-    # needed curses
-    programs.gnupg.agent = {
-        enable = true;
-        enableSSHSupport = true;
-        pinentryFlavor = "curses";
-    };
-
     # enable
     services.flatpak.enable = true;
     services.xserver.displayManager.gdm.enable = true;
