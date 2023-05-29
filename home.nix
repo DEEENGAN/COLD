@@ -16,12 +16,21 @@
       mplayer
       gnupg
       firefox
+      pass
   ];
 
+#maybe can turn a colorscheme into a .nix, and then import it through the main flake?
     programs.alacritty.enable = true;
     programs.alacritty.settings.window.opacity = 0.6;
     programs.alacritty.settings.window.decorations = "none";
-    programs.alacritty.settings.font.normal.family = "FantasqueSansMono";
+    programs.alacritty.settings.font.normal.family = "FantasqueSansMono Nerd Font"; # grab names from gnome font title top
+    #programs.alacritty.settings.colors.primary = "";
+    #programs.alacritty.settings.colors.primary.background = "";
+    #programs.alacritty.settings.colors.primary.foreground = "";
+    #programs.alacritty.settings.colors.cursor = "";
+    #programs.alacritty.settings.colors.normal = "";
+    #programs.alacritty.settings.colors.bright = "";
+
     
 
     # tilix
