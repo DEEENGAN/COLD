@@ -16,7 +16,6 @@
       mplayer
       gnupg
       firefox
-      pass
   ];
 
 #maybe can turn a colorscheme into a .nix, and then import it through the main flake?
@@ -36,6 +35,7 @@
     # tilix
         programs.bash.enableVteIntegration = true;
 
+# gpg 2 -- find to make way for it always
     services.gpg-agent.enable = true;
     services.gpg-agent.pinentryFlavor = "curses";
     services.gpg-agent.enableSshSupport = true;
