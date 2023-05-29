@@ -44,6 +44,22 @@
       #programs.git.enable = true;
       #programs.git.userName = "Dee Engan";
       #programs.git.userEmail = "writing@deeengan.com";
+      #programs.git.gpg.program = "gpg2";
+      #programs.git.extraConfig.commit.gpgsign = true;
+      #programs.git.extraConfig.user.signingkey = "8C0C6887!";
+      #programs.git.extraConfig.init.defaultBranch = "main";
+      #programs.git.extraConfig.pull.rebase = true;
+      #programs.git.extraConfig.rebase.autoStash = true;
+      #programs.git.extraConfig.ui = true;
+      #programs.git.ignores = [
+      #  DS_Store;
+    #];
+      #programs.git.extraConfig.filter.lfs.required = true;
+      #programs.git.extraConfig.filter.lfs.smudge = "git-lfs smudge -- %f";
+      #programs.git.extraConfig.filter.lfs.process = "git-lfs filter-process";
+      #programs.git.extraConfig.filter.lfs.clean = "git-lfs clean -- %f";
+
+
 
 #[user]
 #	name = Dee Engan
