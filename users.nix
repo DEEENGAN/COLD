@@ -5,10 +5,9 @@ users.users.deeengan = {
     isNormalUser = true;
     description = "Dee Engan";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-    #  thunderbird
-    ];
+    #packages = with pkgs; [
+      #firefox
+    #];
   };
 
 }

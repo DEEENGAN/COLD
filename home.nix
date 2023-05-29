@@ -15,6 +15,7 @@
       borgbackup
       mplayer
       gnupg
+      firefox
   ];
 
     programs.alacritty.enable = true;
@@ -55,13 +56,13 @@
     programs.git.userName = "Dee Engan";
 
     gtk.enable = true;
-    gtk.iconTheme.name = "Papirus-Dark";
-    gtk.iconTheme.package = pkgs.palenight-theme;
-    gtk.theme.name = "palenight";
-    gtk.theme.package = pkgs.palenight-theme;
+    gtk.iconTheme.name = "WhiteSur";
+    gtk.iconTheme.package = pkgs.whitesur-icon-theme;
+    gtk.theme.name = "WhiteSur-Light";
+    gtk.theme.package = pkgs.whitesur-gtk-theme;
     gtk.cursorTheme.name = "Numix-Cursor";
     gtk.cursorTheme.package = pkgs.numix-cursor-theme;
-    home.sessionVariables.GTK_THEME = "palenight";
+    home.sessionVariables.GTK_THEME = "whitesur";
     gtk.gtk3.extraConfig.Settings = ''
       '';
     gtk.gtk4.extraConfig.Settings = ''
@@ -71,12 +72,13 @@
       "org/gnome/shell" = {
         favorite-apps = [
           "firefox.desktop"
-          "tilix.desktop"
+          "Tilix.desktop"
+          "Anki.desktop"
       ];
     };
       
       "org/gnome/desktop/interface" = {
-        color-scheme = "prefer-dark";
+        color-scheme = "prefer-light";
         enable-hot-corners = true;
     };
       
