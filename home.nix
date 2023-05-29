@@ -23,17 +23,14 @@
     programs.alacritty.settings.window.opacity = 0.6;
     programs.alacritty.settings.window.decorations = "none";
     programs.alacritty.settings.font.normal.family = "FantasqueSansMono Nerd Font"; # grab names from gnome font title top
+    programs.alacritty.settings.key_bindings = [ { key = "N"; mods = "Control"; action = "SpawnNewInstance"; } ];
+
     #programs.alacritty.settings.colors.primary = "";
     #programs.alacritty.settings.colors.primary.background = "";
     #programs.alacritty.settings.colors.primary.foreground = "";
     #programs.alacritty.settings.colors.cursor = "";
     #programs.alacritty.settings.colors.normal = "";
     #programs.alacritty.settings.colors.bright = "";
-
-    
-
-    # tilix
-        programs.bash.enableVteIntegration = true;
 
 # gpg 2 -- find to make way for it always
     services.gpg-agent.enable = true;
