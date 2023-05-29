@@ -54,10 +54,9 @@
     programs.git.userEmail = "writing@deeengan.com";
     programs.git.userName = "Dee Engan";
 
-
     gtk.enable = true;
     gtk.iconTheme.name = "Papirus-Dark";
-    gtk.iconTheme.package = pkgs.papirus-icon-theme;
+    gtk.iconTheme.package = pkgs.palenight-theme;
     gtk.theme.name = "palenight";
     gtk.theme.package = pkgs.palenight-theme;
     gtk.cursorTheme.name = "Numix-Cursor";
@@ -67,6 +66,34 @@
       '';
     gtk.gtk4.extraConfig.Settings = ''
       '';
+    
+    dconf.settings = {
+      "org/gnome/shell" = {
+        favorite-apps = [
+          "firefox.desktop"
+          "tilix.desktop"
+      ];
+    };
+      
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
+        enable-hot-corners = true;
+    };
+      
+      "org/gnome/desktop/wm/preferences" = {
+        workspace-names = [ "Dynasty" ];
+    };
+    
+      "org/gnome/desktop/background" = {
+        picture-uri = "file:///home/deeengan/Downloads/astronaut-nasa-space-suit-neon-pink-2425x3056-1125.jpg";
+        picture-uri-dark = "file:///home/deeengan/Downloads/astronaut-nasa-space-suit-neon-pink-2425x3056-1125.jpg";
+    };
+      
+      "org/gnome/desktop/screensaver" = {
+        picture-uri = "file:///home/deeengan/Downloads/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5184x3456-3150.jpg";
+        #primary-color = "#3465a4";
+        #secondary-color = "#000000";
+    };
 
-
+  };
 }
