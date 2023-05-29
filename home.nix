@@ -72,8 +72,7 @@
       "org/gnome/shell" = {
         favorite-apps = [
           "firefox.desktop"
-          "Tilix.desktop"
-          "Anki.desktop"
+          "com.gexperts.Tilix.desktop"
       ];
     };
       
@@ -87,8 +86,8 @@
     };
     
       "org/gnome/desktop/background" = {
-        picture-uri = "file:///home/deeengan/Downloads/astronaut-nasa-space-suit-neon-pink-2425x3056-1125.jpg";
-        picture-uri-dark = "file:///home/deeengan/Downloads/astronaut-nasa-space-suit-neon-pink-2425x3056-1125.jpg";
+        picture-uri = "file:///home/deeengan/Downloads/chinese-temple-4k-lh.jpg";
+        picture-uri-dark = "file:///home/deeengan/Downloads/chinese-temple-4k-lh.jpg";
     };
       
       "org/gnome/desktop/screensaver" = {
