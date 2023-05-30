@@ -19,5 +19,4 @@
     bright.magenta = "#FF9269";
     bright.cyan = "#84F088";
     bright.white = "#F6F7EC";
-
 }
