@@ -8,6 +8,7 @@
   outputs = { nixpkgs, home-manager, ... }: {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+
           modules = [
             ./time.nix
 	          ./hardware-configuration.nix

@@ -1,5 +1,0 @@
-MM service-timer-borg.nix
-AM nix-garbage-collect.nix
-M  gnome.nix
-M  flake.nix
-## main...origin/main
