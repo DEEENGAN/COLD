@@ -1,6 +1,5 @@
 {
 # gpg 2 -- find to make way for it always
-  home-manager.users.deeengan = {
     services.gpg-agent.enable = true;
     services.gpg-agent.pinentryFlavor = "curses";
     services.gpg-agent.enableSshSupport = true;
@@ -12,5 +11,4 @@
       allow-loopback-pinentry
     '';
 
-  };
 }

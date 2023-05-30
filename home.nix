@@ -5,6 +5,11 @@
   home.stateVersion = "22.11";
   programs.home-manager.enable = true;
 
+    imports = [ ./git.nix
+                ./alacritty.nix
+                ./gpg.nix
+            ];
+
     home.packages = with pkgs; [
 	    anki-bin
 	    pinentry
