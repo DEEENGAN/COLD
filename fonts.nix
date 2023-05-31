@@ -1,13 +1,13 @@
 { config, pkgs, ... }: {
-
+  #fonts.fontconfig.enable = true;
+  #fonts.fontconfig.defaultFonts.emoji = [ "Twitter Color Emoji" ];
+  #fonts.fontconfig.useEmbeddedBitmaps = true;
   fonts.fonts = with pkgs; [
-	  noto-fonts
-	  noto-fonts-extra
+	  twitter-color-emoji
 	  noto-fonts-cjk-sans
 	  noto-fonts-cjk-serif
     source-han-sans
     source-han-serif
-    noto-fonts-emoji
     (nerdfonts.override { fonts = [ "Hack" "FantasqueSansMono" "Hasklig" ]; })
 	];
 

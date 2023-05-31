@@ -124,8 +124,7 @@
 
                 options.maps.insert = {
 
-                  # git
-                    "<bc" = "BREAKING CHANGE:";
+                  # git "<bc" = "BREAKING CHANGE:";
                     "<rf" ="refactor():";
                     "<fx" = "fix():";
                     "<f" = "feat():";

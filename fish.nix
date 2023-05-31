@@ -3,7 +3,9 @@
   programs.fish.enable = true;
   programs.fish.shellInit = ''
        echo "TO DO"
+       echo -e '\033[1;33m'"Entering the\033[0m \033[1;35mHill Country . . . "'\033[0m' &&
        grep --color=always -E "ATTN|MINUTES|READ|TRANSFER|WORK" ~/PITH/to-do.dea
+       readme
     '';
   programs.fish.interactiveShellInit = ''
        set fish_greeting ""
