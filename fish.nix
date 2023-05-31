@@ -18,13 +18,13 @@
   programs.fish.loginShellInit = ''
     '';
   programs.fish.functions = {
-     readme = ''
-     chpwd
+     readme = '' function chpwd --on-variable PWD
          if test -e .readme
              echo
              bat .readme
              echo
          end
+     end
   '';
 };
   programs.fish.shellAliases = {
