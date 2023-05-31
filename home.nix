@@ -1,16 +1,22 @@
-{ pkgs, nixvim, ... }: {
+{ pkgs, inputs, ... }: {
 
   home.homeDirectory = "/home/deeengan";
   home.stateVersion = "22.11";
   home.username = "deeengan";
   programs.home-manager.enable = true;
+  nixpkgs.config.allowUnfree = true;
 
-    imports = [ ./git.nix
+    imports = [
+                #./.nix
+                #./neovim.nix
                 ./alacritty.nix
+                ./bat.nix
+                ./dconf.nix
+                ./fish.nix
+                ./git.nix
                 ./gpg.nix
                 ./gtk.nix
-                ./neovim.nix
-                ./dconf.nix
+                ./starship.nix
             ];
 
     home.packages = with pkgs; [
@@ -24,6 +30,4 @@
       gnupg
       firefox
   ];
-
-
 }

@@ -1,12 +1,12 @@
 { pkgs, ... }: {
 
-                  programs.nixvim = {
-                    enable = true;
-                  options.plugins.neorg.enable = true;
-                  options.plugins.neorg.modules = {
-                     "core.defaults" = { };
-                     "core.norg.concealer" = { };
-                     "core.dirman".config.workspaces.notes = "~/notes";
+                programs.nixvim = {
+                  enable = true;
+                options.plugins.neorg.enable = true;
+                options.plugins.neorg.modules = {
+                   "core.defaults" = { };
+                   "core.norg.concealer" = { };
+                   "core.dirman".config.workspaces.notes = "~/notes";
            };
 
                 options.plugins.undotree.enable = true;
@@ -183,6 +183,6 @@
 
                 # non-breaking spaces, tab spaces, the nbsp between typed characters etc. also, the indent lines
                     options.highlight.SpecialKey = { ctermfg = "blue"; };
-                    options.highlight.NonText = { ctermfg = "blue"; };
-};
+                    options.highlight.NonText = { ctermfg = "blue"; };  
+  };
 }
