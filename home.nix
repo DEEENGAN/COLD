@@ -12,7 +12,7 @@
                 #./.nix
                 #./.nix
                 #./firefox.nix
-                #./neovim.nix
+                ./neovim.nix
                 ./alacritty.nix
                 ./bat.nix
                 ./dconf.nix

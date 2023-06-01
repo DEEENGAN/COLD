@@ -8,7 +8,7 @@
     inputs.nixvim.url = "github:pta2002/nixvim";
     inputs.nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
-      outputs = { nixpkgs, home-manager, ... }: {
+      outputs = { nixpkgs, home-manager, nixvim, ... }: {
           nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
               system = "x86_64-linux";
               modules = [ ./time.nix
@@ -24,7 +24,7 @@
                                 {
                                   home-manager.useGlobalPkgs = true;
                                   home-manager.useUserPackages = true;
-                                  home-manager.users.deeengan = { imports = [ ./home.nix ]; };
+                                  home-manager.users.deeengan = { imports = [ nixvim.homeManagerModules.nixvim ./home.nix ]; };
 
         }
       ];

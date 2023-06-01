@@ -1,29 +1,28 @@
 { pkgs, ... }: {
-
-                programs.nixvim = {
-                  enable = true;
-                options.plugins.neorg.enable = true;
-                options.plugins.neorg.modules = {
-                   "core.defaults" = { };
-                   "core.norg.concealer" = { };
-                   "core.dirman".config.workspaces.notes = "~/notes";
+                  
+                  plugins.neorg.enable = true;
+                  plugins.neorg.modules = {
+                     "core.defaults" = { };
+                     "core.norg.concealer" = { };
+                     "core.dirman".config.workspaces.notes = "~/notes";
            };
 
-                options.plugins.undotree.enable = true;
-                options.plugins.fugitive.enable = true;
-                options.plugins.telescope.enable = true;
-                options.plugins.treesitter.enable = true;
-                options.plugins.treesitter.nixGrammars = true;
-                options.plugins.treesitter.ensureInstalled = "all";
-                    options.extraPlugins = with pkgs.vimPlugins; [
+                plugins.undotree.enable = true;
+                plugins.fugitive.enable = true;
+                plugins.telescope.enable = true;
+                plugins.treesitter.enable = true;
+                plugins.treesitter.nixGrammars = true;
+                plugins.treesitter.ensureInstalled = "all";
+                    extraPlugins = with pkgs.vimPlugins; [
                       nvim-lspconfig
                       indent-blankline-nvim
                       auto-save-nvim
+
           ];
 
             # anything else
-                options.extraConfigLua = ''
-                  --require'lspconfig'.nil_ls.setup{}
+                extraConfigLua = ''
+                  require'lspconfig'.nil_ls.setup{}
 
                   require('telescope').setup{
                     defaults = {
@@ -62,7 +61,7 @@
                 options.autoread = true;
                   
                   # ftplugin, custom files
-                      options.files."ftdetect/deeengan.lua".autoCmd = [
+                      files."ftdetect/deeengan.lua".autoCmd = [
                   {
                         event = [ "BufRead" "BufNewFile" ];
                         pattern = [ "*.dea" ];
@@ -83,10 +82,10 @@
                   options.writebackup = true;
 
             # keys, spacebar for " "
-                options.globals.mapleader = " ";
-                options.globals.maplocalleader = " ";
+                globals.mapleader = " ";
+                globals.maplocalleader = " ";
 
-                  options.maps.normal = {
+                  maps.normal = {
                       
                     # basic
                         "<leader><leader>" = "<CMD>:bn<CR>";
@@ -118,13 +117,14 @@
                         # "<leader>ph" = ":G pull | G add --all | G commit -am | G push";
           };
 
-                options.maps.visual = {
+                maps.visual = {
                   "<leader>tb" = ":'<,'>!pandoc -t commonmark_x<CR>";
           };
 
-                options.maps.insert = {
+                maps.insert = {
 
-                  # git "<bc" = "BREAKING CHANGE:";
+                  # git
+                    "<bc" = "BREAKING CHANGE:";
                     "<rf" ="refactor():";
                     "<fx" = "fix():";
                     "<f" = "feat():";
@@ -162,7 +162,7 @@
               # visual
                 
                 # colors
-                    options.colorscheme = "default";
+                    colorscheme = "default";
                     options.display = "lastline";
                     options.hlsearch = true;
                     options.linebreak = true;
@@ -172,16 +172,15 @@
                     options.laststatus = 3;
                     options.statusline = "%{FugitiveStatusline()} %<%F %l/%L %p%%%r%h%m";
                     options.fillchars = "stl:─,stlnc:─";
-                    options.highlight.statusline = { ctermfg = "blue"; };
+                    highlight.statusline = { ctermfg = "blue"; };
 
                 # number line
-                    options.highlight.LineNr = { ctermfg = "blue"; };
-                    options.highlight.LineNrAbove = { ctermfg = "yellow"; };
-                    options.highlight.LineNrBelow = { ctermfg = "yellow"; };
+                    highlight.LineNr = { ctermfg = "blue"; };
+                    highlight.LineNrAbove = { ctermfg = "yellow"; };
+                    highlight.LineNrBelow = { ctermfg = "yellow"; };
                     options.relativenumber = true;
 
                 # non-breaking spaces, tab spaces, the nbsp between typed characters etc. also, the indent lines
-                    options.highlight.SpecialKey = { ctermfg = "blue"; };
-                    options.highlight.NonText = { ctermfg = "blue"; };  
-  };
+                    highlight.SpecialKey = { ctermfg = "blue"; };
+                    highlight.NonText = { ctermfg = "blue"; };
 }
