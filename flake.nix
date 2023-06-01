@@ -11,11 +11,10 @@
       outputs = { nixpkgs, home-manager, ... }: {
           nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
               system = "x86_64-linux";
-              modules = [ #./time.nix
+              modules = [ ./time.nix
 	      		              ./config.nix
                           ./hardware-configuration.nix
                           ./users.nix
-                          #./gnome.nix
                           ./fonts.nix
                           ./sound.nix
                           ./nix-garbage-collect.nix
