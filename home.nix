@@ -30,6 +30,5 @@
 	    wl-clipboard
       borgbackup
       mplayer
-      gnupg
   ];
 }
