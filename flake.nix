@@ -17,7 +17,7 @@
                           ./users.nix
                           ./fonts.nix
                           ./sound.nix
-                          ./nix-garbage-collect.nix
+                          ./service-timer-nix-garbage-collect.nix
                           #./service-timer-borg.nix
 
                               home-manager.nixosModules.home-manager

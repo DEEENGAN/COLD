@@ -1,16 +1,13 @@
 { config, pkgs, ... }:
  
 {
-  imports = [
-      ./hardware-configuration.nix
-    ];
 
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+    boot.loader.systemd-boot.enable = true;
+    boot.loader.efi.canTouchEfiVariables = true;
 
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    services.xserver = {
+      layout = "us";
+      xkbVariant = "";
   };
 
     nixpkgs.config.allowUnfree = true;
@@ -19,22 +16,23 @@
     nix.settings.substituters = [ "https://cache.nixos.org/" ];
 
     # enable
-    services.flatpak.enable = true;
-    services.xserver.displayManager.gdm.enable = true;
-    services.xserver.desktopManager.gnome.enable = true;
+      services.flatpak.enable = true;
+      services.xserver.displayManager.gdm.enable = true;
+      services.xserver.desktopManager.gnome.enable = true;
     
     # X11 windowing
-    services.xserver.enable = true;
+      services.xserver.enable = true;
 
     # disable
-    services.gnome.core-utilities.enable = false;
-    services.xserver.excludePackages = [ pkgs.xterm ];
-    environment.gnome.excludePackages = [ pkgs.gnome-tour ];
-    documentation.nixos.enable = false;
-    services.printing.enable = false;
+      services.gnome.core-utilities.enable = false;
+      services.xserver.excludePackages = [ pkgs.xterm ];
+      environment.gnome.excludePackages = [ pkgs.gnome-tour ];
+      documentation.nixos.enable = false;
+      services.printing.enable = false;
 
-  environment.systemPackages = with pkgs; [
+    environment.systemPackages = with pkgs; [
   ];
 
-  system.stateVersion = "23.05";
+    # do not ever touch unless required to by release notes
+      system.stateVersion = "23.05";
 }

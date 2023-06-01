@@ -4,9 +4,7 @@
     isNormalUser = true;
     description = "Dee Engan";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      #firefox
-    ];
+    shell = pkgs.fish;
   };
 
 }
