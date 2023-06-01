@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ ... }: {
 
   programs.fish.enable = true;
   programs.fish.shellInit = ''
@@ -17,8 +17,10 @@
        bind \ck history-search-backward
        bind \cj history-search-forward
     '';
+
   programs.fish.loginShellInit = ''
     '';
+
   programs.fish.functions = {
      readme = '' function chpwd --on-variable PWD
          if test -e .readme
@@ -29,6 +31,7 @@
      end
   '';
 };
+
   programs.fish.shellAliases = {
      ls = "ls --color=always";
      grep = "grep --color=always";

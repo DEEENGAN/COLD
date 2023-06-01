@@ -1,10 +1,9 @@
-{ pkgs, nixvim, ... }: {
+{ pkgs, ... }: {
 
   home.homeDirectory = "/home/deeengan";
   home.stateVersion = "23.05";
   home.username = "deeengan";
   programs.home-manager.enable = true;
-  nixpkgs.config.allowUnfree = true;
 
     imports = [ #./.nix
                 #./.nix
@@ -26,17 +25,37 @@
                   ./alacritty.nix
                   ./starship.nix
                 
-                # utilities 
+                # utilities
                   ./firefox.nix
                   ./gpg.nix
+                  ./pandoc.nix
+                  ./pass.nix
               ];
 
     home.packages = with pkgs; [
-	    anki-bin
-	    pinentry
-	    unzip
-	    wl-clipboard
-      borgbackup
-      mplayer
+
+                # Telescope
+                    ripgrep
+                    fd
+
+                # language
+                    ibus
+                    ibus-engines.rime
+                    rime-data
+                    nil
+
+                # site
+                    lessc
+                    nodejs
+
+                # utilities
+                    anki-bin
+                    borgbackup
+                    git-lfs
+                    mplayer
+                    pinentry
+                    unzip
+                    wl-clipboard
+                    feh
   ];
 }
