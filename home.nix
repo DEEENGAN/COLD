@@ -8,6 +8,10 @@
 
     imports = [
                 #./.nix
+                #./.nix
+                #./.nix
+                #./.nix
+                #./firefox.nix
                 #./neovim.nix
                 ./alacritty.nix
                 ./bat.nix
