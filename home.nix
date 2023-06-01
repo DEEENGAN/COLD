@@ -39,8 +39,6 @@
                     fd
 
                 # language
-                    ibus
-                    ibus-engines.rime
                     rime-data
                     nil
 
