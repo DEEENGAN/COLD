@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }: {
+{ pkgs, nixvim, ... }: {
 
   home.homeDirectory = "/home/deeengan";
   home.stateVersion = "22.11";
@@ -11,7 +11,7 @@
                 #./.nix
                 #./.nix
                 #./.nix
-                #./firefox.nix
+                ./firefox.nix
                 ./neovim.nix
                 ./alacritty.nix
                 ./bat.nix
@@ -27,11 +27,9 @@
 	    anki-bin
 	    pinentry
 	    unzip
-	    vim
 	    wl-clipboard
       borgbackup
       mplayer
       gnupg
-      firefox
   ];
 }

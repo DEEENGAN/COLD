@@ -1,5 +1,6 @@
 { pkgs, ... }: {
-                  
+                  programs.nixvim = {
+                    enable = true;
                   plugins.neorg.enable = true;
                   plugins.neorg.modules = {
                      "core.defaults" = { };
@@ -183,4 +184,5 @@
                 # non-breaking spaces, tab spaces, the nbsp between typed characters etc. also, the indent lines
                     highlight.SpecialKey = { ctermfg = "blue"; };
                     highlight.NonText = { ctermfg = "blue"; };
+  };
 }
