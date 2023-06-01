@@ -1,13 +1,12 @@
 { pkgs, config, ... } : {
 
-
-users.users.deeengan = {
+  users.users.deeengan = {
     isNormalUser = true;
     description = "Dee Engan";
     extraGroups = [ "networkmanager" "wheel" ];
-    #packages = with pkgs; [
+    packages = with pkgs; [
       #firefox
-    #];
+    ];
   };
 
 }
