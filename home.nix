@@ -1,27 +1,34 @@
 { pkgs, nixvim, ... }: {
 
   home.homeDirectory = "/home/deeengan";
-  home.stateVersion = "22.11";
+  home.stateVersion = "23.05";
   home.username = "deeengan";
   programs.home-manager.enable = true;
   nixpkgs.config.allowUnfree = true;
 
-    imports = [
+    imports = [ #./.nix
                 #./.nix
                 #./.nix
                 #./.nix
-                #./.nix
-                ./firefox.nix
-                ./neovim.nix
-                ./alacritty.nix
-                ./bat.nix
-                ./dconf.nix
-                ./fish.nix
-                ./git.nix
-                ./gpg.nix
-                ./gtk.nix
-                ./starship.nix
-            ];
+
+                # aesthetics && switches
+                  ./dconf.nix
+                  ./gtk.nix
+
+                # reading && writing && publishing
+                  ./neovim.nix
+                  ./git.nix
+                  ./bat.nix
+
+                # terminal
+                  ./fish.nix
+                  ./alacritty.nix
+                  ./starship.nix
+                
+                # utilities 
+                  ./firefox.nix
+                  ./gpg.nix
+              ];
 
     home.packages = with pkgs; [
 	    anki-bin
