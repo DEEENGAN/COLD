@@ -1,4 +1,8 @@
 { pkgs, ... }: {
+                  programs.neovim.defaultEditor = true;
+                  programs.neovim.viAlias = true;
+                  programs.neovim.vimAlias = true;
+
                   programs.nixvim = {
                     enable = true;
                   plugins.neorg.enable = true;
