@@ -20,6 +20,8 @@
           # sleep, etc.
             "org/gnome/settings-daemon/plugins/power" = { sleep-inactive-ac-type = "suspend"; };
             "org/gnome/settings-daemon/plugins/power" = { sleep-inactive-ac-timeout = "1200"; };
+#/org/gnome/desktop/input-sources/mru-sources DO PLEASE
+#  [('xkb', 'us'), ('ibus', 'rime')]
 
         # utilities
           "org/gnome/desktop/interface" = { enable-hot-corners = true; };

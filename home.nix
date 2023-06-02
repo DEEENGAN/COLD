@@ -55,5 +55,6 @@
                     unzip
                     wl-clipboard
                     feh
+
   ];
 }
