@@ -2,6 +2,7 @@
 # jobs is an option
 # services.SERVICE.jobs.hostname
 # ssh://r4z77b5m@r4z77b5m.repo.borgbase.com/./repo
+# services.borgbackup.jobs.<name>.inhibitsSleep
 
 {
 
@@ -18,6 +19,8 @@
     prune.keep.daily = 7;
     prune.keep.weekly = 7;
     prune.keep.monthly = 7;
+
+    inhibitsSleep = true;
     
     environment.compact = "/run/media/deeengan/50de347c-e577-467c-93a4-e3e843a8e8f8/nixos-2023";
 

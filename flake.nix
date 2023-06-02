@@ -17,7 +17,7 @@
                           ./users.nix
                           ./fonts.nix
                           ./sound.nix
-                          #./ibus.nix
+                          ./ibus.nix
                           ./service-timer-nix-garbage-collect.nix
                           #./service-timer-borg.nix
 
