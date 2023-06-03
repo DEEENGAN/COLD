@@ -55,6 +55,7 @@
                     unzip
                     wl-clipboard
                     feh
+                    alejandra
 
   ];
 }

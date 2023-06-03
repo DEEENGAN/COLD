@@ -12,7 +12,8 @@
       source-han-sans
       source-han-serif
       wqy_zenhei
-    (nerdfonts.override { fonts = [ "Hack" "FantasqueSansMono" "Hasklig" ]; })
-	];
+      
+    #(nerdfonts.override { fonts = [ "Hack" "FantasqueSansMono" "Hasklig" ]; })
 
+  ];
 }

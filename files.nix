@@ -3,7 +3,7 @@
                 # files
                     programs.nixvim.options.filetype = "on";
                     programs.nixvim.options.spelllang = "en_us,de_de,cjk";
-                    programs.nixvim.options.spell = true;
+                    programs.nixvim.options.spell = false;
                     programs.nixvim.options.autoread = true;
                       
                       # ftplugin, custom files
