@@ -56,6 +56,7 @@
                     wl-clipboard
                     feh
                     alejandra
+                    kitty
 
   ];
 }
