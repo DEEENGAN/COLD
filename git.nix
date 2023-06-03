@@ -11,7 +11,7 @@
       programs.git.extraConfig.pull.rebase = true;
       programs.git.extraConfig.rebase.autoStash = true;
       programs.git.extraConfig.user.signingkey = "8C0C6887!";
-      programs.git.ignores = [ ".DS_Store" ];
+      programs.git.ignores = [ ".DS_Store" "hardware-configuration.nix" ];
       programs.git.userEmail = "writing@deeengan.com";
       programs.git.userName = "Dee Engan";
 }

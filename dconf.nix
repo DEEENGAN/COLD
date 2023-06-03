@@ -14,12 +14,12 @@
 
         # clocks
           # screen off
-            "org/gnome/desktop/session" = { idle-delay = "uint32 600"; };
+            "org/gnome/desktop/session" = { idle-delay = "uint32 1200"; };
             "org/gnome/desktop/interface" = { clock-format = "12h"; };
         
           # sleep, etc.
             "org/gnome/settings-daemon/plugins/power" = { sleep-inactive-ac-type = "suspend"; };
-            "org/gnome/settings-daemon/plugins/power" = { sleep-inactive-ac-timeout = "1200"; };
+            "org/gnome/settings-daemon/plugins/power" = { sleep-inactive-ac-timeout = "1800"; };
 #/org/gnome/desktop/input-sources/mru-sources DO PLEASE
 #  [('xkb', 'us'), ('ibus', 'rime')]
 
