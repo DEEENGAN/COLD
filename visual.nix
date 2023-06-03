@@ -37,5 +37,5 @@
                       programs.nixvim.options.ignorecase = true;
                       programs.nixvim.options.wildmenu = true;
                       programs.nixvim.options.wildmode = "longest:full,full";
-                      programs.nixvim.options.scrolloff = 9;
+                      programs.nixvim.options.scrolloff = 15;
 }

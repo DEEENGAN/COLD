@@ -22,7 +22,13 @@
     '';
 
   programs.fish.functions = {
-     readme = '' function chpwd --on-variable PWD
+      #repos = ''
+      #    function for R in "${REPOS[@]}"; do
+      #      echo -e ${BRed}"Checking repo $R."${NC}
+      #      pushd "$R" >/dev/null && {
+    #'';
+
+      readme = '' function chpwd --on-variable PWD
          if test -e .readme
              echo
              bat .readme

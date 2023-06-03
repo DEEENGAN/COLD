@@ -17,6 +17,7 @@
                     programs.nixvim.plugins.lsp.servers = { nil_ls.enable = true; };
                         programs.nixvim.extraPlugins = with pkgs.vimPlugins; [
                             auto-save-nvim
+                            vim_current_word
               ];
 
 }

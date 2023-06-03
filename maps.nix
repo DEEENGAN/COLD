@@ -40,6 +40,9 @@
                     programs.nixvim.maps.insert."<rf" ="refactor():";
                     programs.nixvim.maps.insert."<fx" = "fix():";
                     programs.nixvim.maps.insert."<f" = "feat():";
+                    
+                # fiction
+                    programs.nixvim.maps.insert."!!" = "ATTN:";
 
                 # language
                     programs.nixvim.maps.insert."s|" = "ß";

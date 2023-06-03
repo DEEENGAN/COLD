@@ -16,7 +16,10 @@
                 ];
 
                   # undo
-                      programs.nixvim.options.undofile = false;
+                      programs.nixvim.options.undofile = true;
+                      programs.nixvim.options.undodir = "/home/deeengan/.cache/undodir/";
+                      programs.nixvim.options.undolevels = 1000;
+                      programs.nixvim.options.undoreload = 10000;
 
                   # swap
                       programs.nixvim.options.swapfile = false;
