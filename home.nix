@@ -34,21 +34,21 @@
 
     home.packages = with pkgs; [
 
+                # language
+                    rime-data
+
+                    # nix
+                        nil
+                        alejandra
+                        dconf2nix
+
+                    # html && css
+                        lessc
+                        nodejs
+
                 # Telescope
                     ripgrep
                     fd
-
-                # language
-                    rime-data
-                    nil
-
-                # site
-                    lessc
-                    nodejs
-
-                # nix
-                    alejandra
-                    dconf2nix
 
                 # utilities
                     anki-bin

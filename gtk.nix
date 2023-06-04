@@ -2,7 +2,9 @@
 
     gtk.enable = true;
     gtk.iconTheme.name = "WhiteSur";
-    gtk.iconTheme.package = pkgs.whitesur-icon-theme;
+    gtk.iconTheme.package = pkgs.whitesur-icon-theme.override {
+          boldPanelIcons = true;
+        };
     gtk.theme.name = "WhiteSur-Light";
     gtk.theme.package = pkgs.whitesur-gtk-theme;
     gtk.cursorTheme.name = "Numix-Cursor";

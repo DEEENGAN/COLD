@@ -51,8 +51,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/background" = {
-      picture-uri = "file:///home/deeengan/Downloads/temple-tree-across.jpg";
-      picture-uri-dark = "file:///home/deeengan/Downloads/temple-tree-across.jpg";
+      picture-uri = "file:///home/deeengan/Downloads/purple-sun.jpg";
+      picture-uri-dark = "file:///home/deeengan/Downloads/purple-sun.jpg";
     };
 
     "org/gnome/desktop/input-sources" = {
@@ -104,7 +104,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/screensaver" = {
-      picture-uri = "file:///home/deeengan/Downloads/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5184x3456-3150.jpg";
+      picture-uri = "file:///home/deeengan/Downloads/minimalist-forest-river-4k-wallpaper-3840x2160.jpg";
     };
 
     "org/gnome/desktop/session" = {
