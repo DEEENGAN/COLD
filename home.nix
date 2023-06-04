@@ -46,6 +46,10 @@
                     lessc
                     nodejs
 
+                # nix
+                    alejandra
+                    dconf2nix
+
                 # utilities
                     anki-bin
                     borgbackup
@@ -55,7 +59,7 @@
                     unzip
                     wl-clipboard
                     feh
-                    alejandra
+
 
   ];
 }
