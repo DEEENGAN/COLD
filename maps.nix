@@ -38,7 +38,7 @@
                 # git
                     programs.nixvim.maps.insert."<bc" = "BREAKING CHANGE:";
                     programs.nixvim.maps.insert."<rf" ="refactor():";
-                    programs.nixvim.maps.insert."<fx" = "fix():";
+                    programs.nixvim.maps.insert."<x" = "fix():";
                     programs.nixvim.maps.insert."<f" = "feat():";
                     
                 # fiction

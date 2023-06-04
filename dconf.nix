@@ -26,11 +26,19 @@
         # utilities
           "org/gnome/desktop/interface" = { enable-hot-corners = true; };
           "org/gnome/settings-daemon/plugins/power" = { power-button-action = "interactive"; }; # interactive = shutdown, then nothing/suspend
-          #"org/freedesktop/ibus/engine/rime" = { switch-keys = "rime,Control+space"; };
+          "org/freedesktop/ibus/engine/rime" = { switch-keys = "rime,Control+space"; };
           "org/gnome/shell" = { favorite-apps = [
                                                   "firefox.desktop"
                                                   "Alacritty.desktop"
       ];
+
+            # mouse
+              #"org/gnome/desktop/peripherals/mouse" = { natural-scroll = true; };
+              #"org/gnome/desktop/peripherals/mouse" = { speed = 0.1; };
+
+
     };
   };
 }
+
+
