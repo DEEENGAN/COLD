@@ -25,13 +25,13 @@
                     programs.nixvim.plugins.telescope.enable = true;
 
                     programs.nixvim.plugins.indent-blankline.enable = true;
+                    programs.nixvim.plugins.auto-save.enable = true;
 
                 # no options
                     programs.nixvim.plugins.fugitive.enable = true;
 
                 # outside
                     programs.nixvim.extraPlugins = with pkgs.vimPlugins; [
-                            auto-save-nvim
                             vim_current_word
               ];
 

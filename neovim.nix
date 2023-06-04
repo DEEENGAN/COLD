@@ -4,9 +4,13 @@
               programs.nixvim.enable = true;
 
               imports = [
+
+                      # general
                           ./maps.nix
                           ./visual.nix
                           ./files.nix
+
+                      # plugins
                           ./plugins.nix
             ];
 
