@@ -1,8 +1,8 @@
-{ config, pkgs, ... }: {
-  fonts.fontconfig.enable = true;
-  fonts.fontDir.enable = true;
-  #fonts.fontconfig.defaultFonts.emoji = [ "Twitter Color Emoji" ];
+{ pkgs, ... }: {
+  #fonts.fontconfig.enable = true;
+  #fonts.fontDir.enable = true;
   #fonts.fontconfig.useEmbeddedBitmaps = true;
+  #fonts.enableDefaultFonts = true;
   fonts.fonts = with pkgs; [
       noto-fonts
       noto-fonts-cjk
@@ -11,7 +11,7 @@
       source-han-mono
       source-han-sans
       source-han-serif
-      wqy_zenhei
+      #wqy_zenhei
       
     (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" "Hack" "FantasqueSansMono" "Hasklig" ]; })
 

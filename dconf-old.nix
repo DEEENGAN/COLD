@@ -2,15 +2,13 @@
     dconf.settings = {
 
         # aesthetics
-          "org/gnome/desktop/background" = { picture-uri = "file:///home/deeengan/Downloads/temple-tree-across.jpg"; };
-          "org/gnome/desktop/background" = { picture-uri-dark = "file:///home/deeengan/Downloads/temple-tree-across.jpg"; };
+          "org/gnome/desktop/background" = { picture-uri = "file:///home/deeengan/Downloads/hills-picket.jpg"; };
+          "org/gnome/desktop/background" = { picture-uri-dark = "file:///home/deeengan/Downloads/hills-picket.jpg"; };
           "org/gnome/desktop/screensaver" = { picture-uri = "file:///home/deeengan/Downloads/silhouette-seashore-pink-sky-man-standing-smoke-can-sunset-5184x3456-3150.jpg"; };
             #primary-color = "#3465a4";
             #secondary-color = "#000000";
           "org/gnome/desktop/wm/preferences" = { workspace-names = [ "Dynasty" ]; };
           "org/gnome/desktop/interface" = { color-scheme = "prefer-light"; };
-          #"desktop/ibus/panel/emoji" = { font = "Twitter Color Emoji"; };
-          #"desktop/ibus/panel/emoji" = { hotkey = ["<Control>space"]; };
 
         # clocks
           # screen off

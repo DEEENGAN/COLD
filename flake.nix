@@ -11,22 +11,22 @@
       outputs = { nixpkgs, home-manager, nixvim, ... }: {
           nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
               system = "x86_64-linux";
-              modules = [ ./time.nix
-	      		              ./config.nix
-                          ./hardware-configuration.nix
-                          ./users.nix
+              modules = [
+                          ./time.nix
                           ./fonts.nix
                           ./sound.nix
                           ./ibus.nix
                           ./service-timer-nix-garbage-collect.nix
+                          ./config.nix
+                          ./hardware-configuration.nix
+                          ./users.nix
                           #./service-timer-borg.nix
 
-                              home-manager.nixosModules.home-manager
-                                {
-                                  home-manager.useGlobalPkgs = true;
-                                  home-manager.useUserPackages = true;
-                                  home-manager.users.deeengan = { imports = [ nixvim.homeManagerModules.nixvim ./home.nix ]; };
-
+                            home-manager.nixosModules.home-manager
+                              {
+                                home-manager.useGlobalPkgs = true;
+                                home-manager.useUserPackages = true;
+                                home-manager.users.deeengan = { imports = [ nixvim.homeManagerModules.nixvim ./home.nix ]; };
         }
       ];
     };
