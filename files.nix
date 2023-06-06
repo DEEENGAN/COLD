@@ -6,12 +6,20 @@
                     programs.nixvim.options.spell = false;
                     programs.nixvim.options.autoread = true;
                       
-                      # ftplugin, custom files
+                      # ftplugin, custom file
                           programs.nixvim.files."ftdetect/deeengan.lua".autoCmd = [
                       {
                             event = [ "BufRead" "BufNewFile" ];
                             pattern = [ "*.dea" ];
                             command = "set ft=deeengan";
+                  }
+                ];
+
+                          programs.nixvim.files."ftdetect/ink.lua".autoCmd = [
+                      {
+                            event = [ "BufRead" "BufNewFile" ];
+                            pattern = [ "*.ink" ];
+                            command = "set ft=ink";
                   }
                 ];
 

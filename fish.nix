@@ -22,11 +22,11 @@
     '';
 
   programs.fish.functions = {
-      #repos = ''
-      #    function for R in "${REPOS[@]}"; do
-      #      echo -e ${BRed}"Checking repo $R."${NC}
-      #      pushd "$R" >/dev/null && {
-    #'';
+      dots = '' function dots
+        cp -r ~/.local/share/sioyek/ ~/DATA/
+        cp -r ~/.config/nvim/syntax/ ~/DATA/nvim
+      end
+  '';
 
       readme = '' function chpwd --on-variable PWD
          if test -e .readme

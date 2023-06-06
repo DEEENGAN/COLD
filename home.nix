@@ -46,6 +46,9 @@
                         lessc
                         nodejs
 
+                    # ink
+                      inklecate
+
                 # Telescope
                     ripgrep
                     fd
