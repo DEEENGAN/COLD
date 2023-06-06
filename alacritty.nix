@@ -1,6 +1,6 @@
 {
     programs.alacritty.enable = true;
-    programs.alacritty.settings.colors = import ./spacedust.nix;
+    programs.alacritty.settings.colors = import ./adventure-time.nix;
     programs.alacritty.settings.window.opacity = 0.6;
     programs.alacritty.settings.window.decorations = "none";
     programs.alacritty.settings.font.normal.family = "FantasqueSansM Nerd Font";
