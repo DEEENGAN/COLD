@@ -11,25 +11,39 @@
                           ./files.nix
 
                       # plugins
-                          ./plugins.nix
+                          ./no-options.nix
+                          ./undotree.nix
+                          ./telescope.nix
+                          ./lsp.nix
+                          ./neorg.nix
+                          ./indent-blankline.nix
+                          ./auto-save.nix
             ];
 
             # anything else
                 programs.nixvim.extraConfigLua = ''
 
                   -- formatting
-                  local function deeengan()
-                    vim.cmd([[
-                      augroup deeengan
-                        autocmd!
-                        autocmd FileType deeengan
-                              \ setlocal formatoptions+=aw |
-                              \ setlocal textwidth=66
-                      augroup END
-                    ]])
-                  end
+                      local function deeengan()
+                        vim.cmd([[
+                          augroup deeengan
+                            autocmd!
+                            autocmd FileType deeengan
+                                  \ setlocal formatoptions+=aw |
+                                  \ setlocal textwidth=66
+                          augroup END
+                        ]])
+                      end
 
-                  deeengan()
+                      deeengan()
+
+                  -- treesitter
+                      require("nvim-treesitter.configs").setup({
+                        highlight = {
+                          additional_vim_regex_highlighting = { "markdown" }
+                        },
+                      })
+
           '';
 
 
