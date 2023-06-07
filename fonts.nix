@@ -12,7 +12,7 @@
       source-han-sans
       source-han-serif
       
-    (nerdfonts.override { fonts = [ "Hack" "FantasqueSansMono" "Hasklig" ]; })
+    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" "Hack" "FantasqueSansMono" "Hasklig" ]; })
 
   ];
 }

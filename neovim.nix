@@ -18,6 +18,7 @@
                           ./neorg.nix
                           ./indent-blankline.nix
                           ./auto-save.nix
+                          ./treesitter.nix
             ];
 
             # anything else
@@ -37,12 +38,11 @@
 
                       deeengan()
 
-                  -- treesitter
-                      require("nvim-treesitter.configs").setup({
-                        highlight = {
-                          additional_vim_regex_highlighting = { "markdown" }
-                        },
-                      })
+                require("nvim-treesitter.configs").setup({
+                  highlight = {
+                    additional_vim_regex_highlighting = { "markdown" }
+                  },
+                })
 
           '';
 
