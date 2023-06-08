@@ -11,9 +11,9 @@
     #programs.nixvim.plugins.todo-comments.keywords.PERF = { icon = "🖄 "; alt = [ "OPTIM" "PERFORMANCE" "OPTIMIZE" ]; };
     #programs.nixvim.plugins.todo-comments.keywords.NOTE = { icon = "🗊 "; color = "hint"; alt = [ "INFO" ]; };
     #programs.nixvim.plugins.todo-comments.keywords.TEST = { icon = "⏲ "; color = "test"; alt = [ "TESTING" "PASSED" "FAILED" ]; };
-  programs.nixvim.plugins.todo-comments.guiStyle.fg = "NONE";
-  programs.nixvim.plugins.todo-comments.guiStyle.bg = "BOLD";
-  programs.nixvim.plugins.todo-comments.mergeKeywords = true;
+    programs.nixvim.plugins.todo-comments.guiStyle.fg = "NONE";
+    programs.nixvim.plugins.todo-comments.guiStyle.bg = "BOLD";
+    programs.nixvim.plugins.todo-comments.mergeKeywords = true;
 
 
     programs.nixvim.plugins.todo-comments.highlight.multiline = true;
@@ -32,5 +32,8 @@
     programs.nixvim.plugins.todo-comments.colors.hint = [ "DiagnosticHint" "#10B981" ];
     programs.nixvim.plugins.todo-comments.colors.default = [ "Identifier" "#7C3AED" ];
     programs.nixvim.plugins.todo-comments.colors.test = [ "Identifier" "#FF00FF" ];
+
+      # Todo
+          programs.nixvim.maps.normal."<leader>td" = "<CMD>TodoTelescope<CR>";
 
 }

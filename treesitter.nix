@@ -2,12 +2,15 @@
 
     programs.nixvim.plugins.treesitter.nixvimInjections = true;
     programs.nixvim.plugins.treesitter.nixGrammars = true;
-    programs.nixvim.plugins.treesitter.ensureInstalled = "nix" "norg";
     programs.nixvim.plugins.treesitter.enable = true;
     programs.nixvim.plugins.treesitter.grammarPackages = with config.programs.nixvim.plugins.treesitter.package.builtGrammars; [
         bash
         css
+        comment
         html
+        lua
+        luadoc
+        luap
         markdown
         markdown_inline
         nix
