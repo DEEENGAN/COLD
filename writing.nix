@@ -29,4 +29,5 @@
                     programs.nixvim.maps.insert."U|" = "Ü";
                     programs.nixvim.maps.insert.",," = "„";
                     programs.nixvim.maps.insert.",|" = "“";
+
 }

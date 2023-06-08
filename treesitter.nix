@@ -5,8 +5,13 @@
     programs.nixvim.plugins.treesitter.enable = true;
     programs.nixvim.plugins.treesitter.grammarPackages = with config.programs.nixvim.plugins.treesitter.package.builtGrammars; [
         bash
-        css
         comment
+        css
+        git_config
+        git_rebase
+        gitattributes
+        gitcommit
+        gitignore
         html
         lua
         luadoc
