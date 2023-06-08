@@ -1,10 +1,11 @@
 { ... }: {
-                # colors
+                # colors && formatting
                     programs.nixvim.colorscheme = "default";
                     programs.nixvim.options.display = "lastline";
                     programs.nixvim.options.hlsearch = true;
                     programs.nixvim.options.linebreak = true;
                     programs.nixvim.options.syntax = "on";
+                    programs.nixvim.options.conceallevel = 2;
 
                 # status line
                     programs.nixvim.options.laststatus = 3;

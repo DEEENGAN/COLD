@@ -22,6 +22,11 @@
                     programs.nixvim.maps.normal."<leader>to" = "<CMD>Telescope oldfiles<CR>";
                     programs.nixvim.maps.normal."<leader>td" = "<CMD>TodoTelescope<CR>";
 
+                # zk
+                    programs.nixvim.maps.normal."<leader>tl" = "<CMD>ZkLinks<CR>";
+                    programs.nixvim.maps.normal."<leader>tt" = "<CMD>ZkTags<CR>";
+                    programs.nixvim.maps.normal."<leader>tn" = "<CMD>ZkNotes<CR>";
+
                 # formatting
                     programs.nixvim.maps.normal."<leader>dx" = ":!pandoc -s commonmark % --output ~/.docx";
                     programs.nixvim.maps.normal."<leader>ra" = ":%s/'/’/gc";
@@ -45,6 +50,7 @@
                     
                 # fiction
                     programs.nixvim.maps.insert."!!" = "ATTN:";
+                    programs.nixvim.maps.insert."!lk" = "[link](https://)";
 
                 # language
                     programs.nixvim.maps.insert."s|" = "ß";

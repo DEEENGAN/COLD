@@ -11,7 +11,6 @@
       source-han-sans
       source-han-serif
       twitter-color-emoji
-      font-awesome
         (nerdfonts.override { fonts = [ "FiraCode" "NerdFontsSymbolsOnly" "Hack" "FantasqueSansMono" "Hasklig" ]; })
 
   ];

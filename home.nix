@@ -36,6 +36,7 @@
 
                 # language
                     rime-data
+                    zk
 
                     # nix
                         nil
