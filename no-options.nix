@@ -6,7 +6,6 @@
                 # outside
                     programs.nixvim.extraPlugins = with pkgs.vimPlugins; [
                             vim_current_word
-                            telescope-vim-bookmarks-nvim
                             vim-bookmarks
               ];
 
