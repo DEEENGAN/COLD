@@ -11,6 +11,7 @@
        set fish_greeting ""
        set fish_save_history yes
        set -x ZK_NOTEBOOK_DIR ~/PITH/
+       set -x EDITOR nvim
        bind \ch backward-char
        bind \cl forward-char
        bind \cb backward-word

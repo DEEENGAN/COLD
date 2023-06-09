@@ -15,7 +15,7 @@
             programs.nixvim.maps.normal."<leader>zn" = "<CMD>ZkNotes<CR>";
 
         # ZkNew -- set the fish path to ~/DIR/, no ~/DIR/.zk as it will be included in dir = below
-            programs.nixvim.maps.normal."<leader><c-n>" = "<CMD>ZkNew { title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
+            programs.nixvim.maps.normal."<leader><c-i>" = "<CMD>ZkNew { dir = 'ideas/', group = 'ideas', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
             programs.nixvim.maps.normal."<leader>zo" = "<CMD>ZkNew { dir = 'journal/daily/', group = 'daily' }<CR>";
 
         # ZkNotes
