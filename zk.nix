@@ -15,9 +15,9 @@
 
         # ZkNew
             programs.nixvim.maps.normal."<leader>zn" = "<CMD>ZkNew { title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
-            programs.nixvim.maps.normal."<leader>zo" = "<CMD>ZkNew { group = 'daily', dir = 'journal/daily' }<CR>";
+            programs.nixvim.maps.normal."<leader>zo" = "<CMD>ZkNew { dir = 'journal/daily', group = 'daily' }<CR>";
             programs.nixvim.maps.normal."<leader>zc" = "<CMD>ZkNew { content = vim.fn.input('Content: ') }<CR>";
-        
+
         # ZkNotes
             programs.nixvim.maps.normal."<leader>zm" = "<CMD>ZkNotes { sort = { 'modified' } }<CR>";
             programs.nixvim.maps.normal."<leader>zs" = "<CMD>ZkNotes { sort = { 'modified' }, match = { vim.fn.input('Search: ') } }<CR>";
