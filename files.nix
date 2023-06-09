@@ -5,6 +5,7 @@
                     programs.nixvim.options.spelllang = "en_us,de_de,cjk";
                     programs.nixvim.options.spell = false;
                     programs.nixvim.options.autoread = true;
+                    programs.nixvim.options.completeopt = "preview";
                       
                       # ftplugin, custom file
                           programs.nixvim.files."ftdetect/deeengan.lua".autoCmd = [

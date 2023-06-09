@@ -9,16 +9,17 @@
 
       # zk maps
         # search
-            programs.nixvim.maps.normal."<leader>tl" = "<CMD>ZkLinks<CR>";
-            programs.nixvim.maps.normal."<leader>tt" = "<CMD>ZkTags<CR>";
-            programs.nixvim.maps.normal."<leader>tn" = "<CMD>ZkNotes<CR>";
+          # TODO: zk list --format '{{word-count}}\t{{title}}' --sort word-count --limit 20
+            programs.nixvim.maps.normal."<leader>zl" = "<CMD>ZkLinks<CR>";
+            programs.nixvim.maps.normal."<leader>zt" = "<CMD>ZkTags<CR>";
+            programs.nixvim.maps.normal."<leader>zn" = "<CMD>ZkNotes<CR>";
 
-        # ZkNew
-            programs.nixvim.maps.normal."<leader>zn" = "<CMD>ZkNew { title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
-            programs.nixvim.maps.normal."<leader>zo" = "<CMD>ZkNew { dir = 'journal/daily', group = 'daily' }<CR>";
-            programs.nixvim.maps.normal."<leader>zc" = "<CMD>ZkNew { content = vim.fn.input('Content: ') }<CR>";
+        # ZkNew -- set the fish path to ~/DIR/, no ~/DIR/.zk as it will be included in dir = below
+            programs.nixvim.maps.normal."<leader><c-n>" = "<CMD>ZkNew { title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
+            programs.nixvim.maps.normal."<leader>zo" = "<CMD>ZkNew { dir = 'journal/daily/', group = 'daily' }<CR>";
 
         # ZkNotes
             programs.nixvim.maps.normal."<leader>zm" = "<CMD>ZkNotes { sort = { 'modified' } }<CR>";
+            programs.nixvim.maps.normal."<leader>zw" = "<CMD>ZkNotes { sort = { 'word-count' } }<CR>";
             programs.nixvim.maps.normal."<leader>zs" = "<CMD>ZkNotes { sort = { 'modified' }, match = { vim.fn.input('Search: ') } }<CR>";
 }

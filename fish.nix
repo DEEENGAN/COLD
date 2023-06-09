@@ -10,7 +10,7 @@
   programs.fish.interactiveShellInit = ''
        set fish_greeting ""
        set fish_save_history yes
-       set -x ZK_NOTEBOOK_DIR ~/PITH/.zk/
+       set -x ZK_NOTEBOOK_DIR ~/PITH/
        bind \ch backward-char
        bind \cl forward-char
        bind \cb backward-word
@@ -41,6 +41,7 @@
 
   programs.fish.shellAliases = {
      ls = "ls --color=always";
+     lsd = "ls -d */";
      grep = "grep --color=always";
      cdn = "cd ~/.config/nvim/";
      gta = "sh ~/DATA/git-all";

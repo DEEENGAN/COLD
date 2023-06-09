@@ -2,6 +2,9 @@
 
               programs.neovim.defaultEditor = true;
               programs.nixvim.enable = true;
+              programs.nixvim.viAlias = true;
+              programs.nixvim.vimAlias = true;
+
                 # keys, spacebar for " "
                     programs.nixvim.globals.mapleader = " ";
                     programs.nixvim.globals.maplocalleader = " ";
@@ -11,7 +14,6 @@
                       programs.nixvim.maps.normal."<leader>bp" = "<CMD>:bp<CR>";
                       programs.nixvim.maps.normal."<leader>bd" = "<CMD>:bd<CR>";
                       programs.nixvim.maps.normal."<leader>c" = "g<C-g>";
-                      programs.nixvim.maps.normal."<leader>dt" = "<CMD>:UndotreeToggle<CR>";
                       programs.nixvim.maps.normal."<leader>wa" = "<CMD>:wa<CR>";
                       programs.nixvim.maps.normal."<leader>wq" = "<CMD>:wq<CR>";
                       programs.nixvim.maps.normal."ww" = "<CMD>:w<CR>";
@@ -52,6 +54,19 @@
 
                       deeengan()
 
-          '';
+                      local function markdown()
+                        vim.cmd([[
+                          augroup markdown
+                            autocmd!
+                            autocmd FileType markdown
+                                  \ setlocal formatoptions+=aw |
+                                  \ setlocal textwidth=66 |
+                          augroup END
+                        ]])
+                      end
+
+                      markdown()
+
+         '';
 
 }
