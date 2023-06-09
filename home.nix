@@ -63,6 +63,7 @@
                     unzip
                     wl-clipboard
                     feh
+                    tree
 
 
   ];

@@ -9,13 +9,14 @@
 
       # zk maps
         # search
-          # TODO: zk list --format '{{word-count}}\t{{title}}' --sort word-count --limit 20
             programs.nixvim.maps.normal."<leader>zl" = "<CMD>ZkLinks<CR>";
             programs.nixvim.maps.normal."<leader>zt" = "<CMD>ZkTags<CR>";
             programs.nixvim.maps.normal."<leader>zn" = "<CMD>ZkNotes<CR>";
 
         # ZkNew -- set the fish path to ~/DIR/, no ~/DIR/.zk as it will be included in dir = below
-            programs.nixvim.maps.normal."<leader><c-i>" = "<CMD>ZkNew { dir = 'ideas/', group = 'ideas', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
+        # this works when you are in fish shell
+            programs.nixvim.maps.normal."<leader>ii" = "<CMD>ZkNew { dir = 'ideas/', group = 'ideas', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
+            programs.nixvim.maps.normal."<leader>br" = "<CMD>ZkNew { dir = 'folk/ber/', group = 'folk', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
             programs.nixvim.maps.normal."<leader>zo" = "<CMD>ZkNew { dir = 'journal/daily/', group = 'daily' }<CR>";
 
         # ZkNotes
