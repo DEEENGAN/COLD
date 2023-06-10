@@ -16,7 +16,7 @@
                       programs.nixvim.maps.normal."<leader>c" = "g<C-g>";
                       programs.nixvim.maps.normal."<leader>wa" = "<CMD>:wa<CR>";
                       programs.nixvim.maps.normal."<leader>wq" = "<CMD>:wq<CR>";
-                      programs.nixvim.maps.normal."ww" = "<CMD>:w<CR>";
+                      programs.nixvim.maps.normal."ww" = "<CMD>:silent w<CR>";
 
               imports = [
 
@@ -35,7 +35,7 @@
                           ./treesitter.nix
                           ./zk.nix
                           ./todo-comments.nix
-                          ./notify.nix
+                          #./notify.nix
                           ./noice.nix
             ];
 

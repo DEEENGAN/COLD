@@ -17,7 +17,7 @@
             programs.nixvim.maps.normal."<leader>ll" = "<CMD>ZkInsertLink { match = { vim.fn.input('Search: ')} }<CR>";
 
         # InsertLinkAtSelection
-            programs.nixvim.maps.visual."<leader>zl" = "<CMD>'<,'>ZkInsertLinkAtSelection { matchSelected = true }<CR>";
+            programs.nixvim.maps.visual."<leader>zl" = ":'<,'>ZkInsertLinkAtSelection { matchSelected = true }";
 
         # Links
             programs.nixvim.maps.normal."<leader>zl" = "<CMD>ZkLinks<CR>";

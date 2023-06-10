@@ -1,7 +1,6 @@
 { ... }: {
 
     programs.nixvim.plugins.notify.enable = true;
-    programs.nixvim.plugins.notify.stages = "fade";
-
+    #programs.nixvim.plugins.notify.stages = "fade";
 
 }

@@ -4,6 +4,7 @@
                     programs.nixvim.maps.normal."<leader>dx" = ":!pandoc -s commonmark % --output ~/.docx";
                     programs.nixvim.maps.normal."<leader>ra" = ":%s/'/’/gc";
                     programs.nixvim.maps.normal."<leader>sm" = ":%!pandoc --to=commonmark-smart";
+                    programs.nixvim.maps.normal."<leader>nt" = "<CMD>Notifications<CR>";
 
                 # formatting && publishing
                     programs.nixvim.maps.visual."<leader>tb" = ":'<,'>!pandoc -t commonmark_x<CR>";

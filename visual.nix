@@ -10,14 +10,41 @@
 
                 # status line
                     programs.nixvim.options.laststatus = 3;
-                    programs.nixvim.options.statusline = "%{FugitiveStatusline()} %<%F %l/%L %p%%%r%h%m";
+                    programs.nixvim.options.statusline = "%{FugitiveStatusline()} %<%F %l/%L %p%%%r%h%m {toupper(v:mode)}";
                     programs.nixvim.options.fillchars = "stl:─,stlnc:─";
-                    programs.nixvim.highlight.statusline = { ctermfg = "blue"; };
+                    programs.nixvim.highlight.statusline = { fg = "#E0D561"; bg = "NONE"; };
 
-                # number line
-                    programs.nixvim.highlight.LineNr = { ctermfg = "blue"; };
-                    programs.nixvim.highlight.LineNrAbove = { ctermfg = "yellow"; };
-                    programs.nixvim.highlight.LineNrBelow = { ctermfg = "yellow"; };
+                # broadest && most general
+                    programs.nixvim.highlight.Title = { fg = "#FF645A"; bg = "NONE"; };
+                    programs.nixvim.highlight.Visual = { fg = "DarkGrey"; bg = "NONE"; };
+                    programs.nixvim.highlight.Identifier = { fg = "#84F088"; bg = "NONE"; };
+                    programs.nixvim.highlight.Statement = { fg = "#FF9269"; bg = "NONE"; };
+                    programs.nixvim.highlight.Scrollbar = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.Search = { fg = "DarkGrey"; bg = "NONE"; };
+
+                # menus
+                    programs.nixvim.highlight.Pmenu = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.PmenuExtraSel = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.PmenuKindSel = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.PmenuSbar = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.PmenuSel = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.PmenuThumb = { fg = "NONE"; bg = "NONE"; };
+
+                # popups
+                    programs.nixvim.highlight.NoicePopupmenuSelected = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.NoicePopupmenu = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.NoiceFormatConfirmDefault = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.NoiceFormatConfirm = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.FloatShadow = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.FloatShadowThrough = { fg = "NONE"; bg = "NONE"; };
+
+                # number line && signs
+                    programs.nixvim.highlight.LineNr = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.LineNrAbove = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.LineNrBelow = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.SignColumn = { fg = "NONE"; bg = "NONE"; };
+                    #programs.nixvim.highlight.keyword = "feminine";
+                    #programs.nixvim.highlight.link.feminine = { fg = "Yellow"; bg = "Black"; };
                     programs.nixvim.options.relativenumber = true;
 
                 # non-breaking spaces, tab spaces, the nbsp between typed characters etc. also, the indent lines
