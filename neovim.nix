@@ -42,20 +42,6 @@
             # anything else
                 programs.nixvim.extraConfigLua = ''
 
-                  -- formatting
-                      local function deeengan()
-                        vim.cmd([[
-                          augroup deeengan
-                            autocmd!
-                            autocmd FileType deeengan
-                                  \ setlocal formatoptions+=aw |
-                                  \ setlocal textwidth=66
-                          augroup END
-                        ]])
-                      end
-
-                      deeengan()
-
                       local function markdown()
                         vim.cmd([[
                           augroup markdown

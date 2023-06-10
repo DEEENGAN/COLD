@@ -6,7 +6,7 @@
                     programs.nixvim.options.linebreak = true;
                     programs.nixvim.options.syntax = "on";
                     programs.nixvim.options.conceallevel = 2;
-                    #programs.nixvim.options.termguicolors = true;
+                    programs.nixvim.options.termguicolors = true;
 
                 # status line
                     programs.nixvim.options.laststatus = 3;
