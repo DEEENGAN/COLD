@@ -25,6 +25,9 @@
                           ./visual.nix
                           ./files.nix
 
+                      # visuals
+                          ./hi
+
                       # plugins
                           ./no-options.nix
                           ./undotree.nix
@@ -35,8 +38,8 @@
                           ./treesitter.nix
                           ./zk.nix
                           ./todo-comments.nix
-                          ./notify.nix
-                          ./noice.nix
+                          #./notify.nix
+                          #./noice.nix
                           ./nvim-colorizer.nix
             ];
 

@@ -5,10 +5,7 @@
   home.username = "deeengan";
   programs.home-manager.enable = true;
 
-    imports = [ #./.nix
-                #./.nix
-                #./.nix
-                #./.nix
+    imports = [
 
                 # aesthetics && switches
                   ./dconf.nix
@@ -24,7 +21,7 @@
                   ./fish.nix
                   ./alacritty.nix
                   ./starship.nix
-                
+
                 # utilities
                   ./firefox.nix
                   ./gpg.nix

@@ -16,7 +16,7 @@
                           ./fonts.nix
                           ./sound.nix
                           ./ibus.nix
-                          ./service-timer-nix-garbage-collect.nix
+                          ./sts
                           ./config.nix
                           ./hardware-configuration.nix
                           ./users.nix
