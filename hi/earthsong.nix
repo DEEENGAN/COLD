@@ -2,7 +2,7 @@
 
     programs.nixvim.highlight = {
 
-      # broadest && most general aa
+      # broadest && most general
           Comment = { fg = "#E0D561"; bg = "NONE"; };
           Constant = { fg = "#FF645A"; bg = "NONE"; };
           Directory = { fg = "#98E036"; bg = "NONE"; };

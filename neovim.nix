@@ -1,22 +1,12 @@
 { ... }: {
 
               programs.neovim.defaultEditor = true;
-              programs.nixvim.enable = true;
-              programs.nixvim.viAlias = true;
-              programs.nixvim.vimAlias = true;
 
-                # keys, spacebar for " "
-                    programs.nixvim.globals.mapleader = " ";
-                    programs.nixvim.globals.maplocalleader = " ";
-
-                  # basic
-                      programs.nixvim.maps.normal."<leader><leader>" = "<CMD>:bn<CR>";
-                      programs.nixvim.maps.normal."<leader>bp" = "<CMD>:bp<CR>";
-                      programs.nixvim.maps.normal."<leader>bd" = "<CMD>:bd<CR>";
-                      programs.nixvim.maps.normal."<leader>c" = "g<C-g>";
-                      programs.nixvim.maps.normal."<leader>wa" = "<CMD>:wa<CR>";
-                      programs.nixvim.maps.normal."<leader>wq" = "<CMD>:wq<CR>";
-                      programs.nixvim.maps.normal."ww" = "<CMD>:silent w<CR>";
+              programs.nixvim = {
+                enable = true;
+                viAlias = true;
+                vimAlias = true;
+            };
 
               imports = [
 
