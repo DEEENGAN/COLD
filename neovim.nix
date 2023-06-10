@@ -35,6 +35,8 @@
                           ./treesitter.nix
                           ./zk.nix
                           ./todo-comments.nix
+                          ./notify.nix
+                          ./noice.nix
             ];
 
             # anything else

@@ -29,6 +29,8 @@
             markdown_inline
             nix
             python
+            vim
+            regex
     ];
 
 
