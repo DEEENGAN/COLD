@@ -21,6 +21,7 @@
                     programs.nixvim.highlight.Statement = { fg = "#FF9269"; bg = "NONE"; };
                     programs.nixvim.highlight.Scrollbar = { fg = "NONE"; bg = "NONE"; };
                     programs.nixvim.highlight.Search = { fg = "DarkGrey"; bg = "NONE"; };
+                    #programs.nixvim.highlight.DiagnosticInfo = { fg = "DarkGrey"; bg = "NONE"; };
 
                 # menus
                     programs.nixvim.highlight.Pmenu = { fg = "NONE"; bg = "NONE"; };
