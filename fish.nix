@@ -26,7 +26,7 @@
   programs.fish.functions = {
       dots = '' function dots
         cp -r ~/.local/share/sioyek/ ~/DATA/
-        cp -r ~/.config/nvim/syntax/ ~/DATA/nvim
+        cp -r ~/.config/nvim/syntax/ ~/DATA/
       end
   '';
 

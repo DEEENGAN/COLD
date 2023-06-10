@@ -6,7 +6,7 @@
     # 'thetics
         conceallevel = 2;
         display = "lastline";
-        guicursor = "n-c-v-sm:iCursor";
+        guicursor = "n-c-v-sm:Cursor,i-ci-ve:ver33-Cursor,r-cr-o:hor33-Cursor,a:blinkwait0-blinkon2000-blinkoff0";
         linebreak = true;
         syntax = "on";
         termguicolors = true;
