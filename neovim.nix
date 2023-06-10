@@ -37,6 +37,7 @@
                           ./todo-comments.nix
                           ./notify.nix
                           ./noice.nix
+                          ./nvim-colorizer.nix
             ];
 
             # anything else

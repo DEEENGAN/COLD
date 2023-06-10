@@ -10,7 +10,7 @@
 
                 # status line
                     programs.nixvim.options.laststatus = 3;
-                    programs.nixvim.options.statusline = "%{FugitiveStatusline()} %<%F %l/%L %p%%%r%h%m {toupper(v:mode)}";
+                    programs.nixvim.options.statusline = "%{FugitiveStatusline()} %<%F %l/%L %p%%%r%h%m";
                     programs.nixvim.options.fillchars = "stl:─,stlnc:─";
                     programs.nixvim.highlight.statusline = { fg = "#E0D561"; bg = "NONE"; };
 
@@ -37,6 +37,7 @@
                     programs.nixvim.highlight.NoiceFormatConfirm = { fg = "NONE"; bg = "NONE"; };
                     programs.nixvim.highlight.FloatShadow = { fg = "NONE"; bg = "NONE"; };
                     programs.nixvim.highlight.FloatShadowThrough = { fg = "NONE"; bg = "NONE"; };
+                    programs.nixvim.highlight.NotifyBackground = { fg = "NONE"; bg = "DarkGrey"; };
 
                 # number line && signs
                     programs.nixvim.highlight.LineNr = { fg = "NONE"; bg = "NONE"; };
