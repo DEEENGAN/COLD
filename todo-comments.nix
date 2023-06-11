@@ -5,13 +5,13 @@
       signs = true;
       signPriority = 8;
 
-      keywords.FIX = { icon = " "; alt = [ "FIXME" "BUG" "FIXIT" "ISSUE" ]; };
-      keywords.TODO = { icon = " "; };
-      keywords.HACK = { icon = " "; };
-      keywords.WARN = { icon = " ";  alt = [ "WARNING" "XXX" ]; };
-      keywords.PERF = { icon = "ℹ️";  alt = [ "OPTIM" "PERFORMANCE" "OPTIMIZE" ]; };
-      keywords.NOTE = { icon = "🗊 "; alt = [ "INFO" ]; };
-      keywords.TEST = { icon = "⏲ "; alt = [ "TESTING" "PASSED" "FAILED" ]; };
+      keywords.FIX = { icon = ""; alt = [ "FIXME" "BUG" "FIXIT" "ISSUE" ]; };
+      keywords.TODO = { icon = ""; };
+      keywords.HACK = { icon = ""; };
+      keywords.WARN = { icon = "";  alt = [ "WARNING" "XXX" ]; };
+      keywords.PERF = { icon = "";  alt = [ "OPTIM" "PERFORMANCE" "OPTIMIZE" ]; };
+      keywords.NOTE = { icon = ""; alt = [ "INFO" ]; };
+      keywords.TEST = { icon = ""; alt = [ "TESTING" "PASSED" "FAILED" ]; };
 
       guiStyle.fg = "NONE";
       guiStyle.bg = "BOLD";

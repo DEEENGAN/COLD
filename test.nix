@@ -1,4 +1,12 @@
-{ ... }: {
+
+BUG:
+TEST:
+HACK:
+PERF:
+TODO:
+NOTE:
+
+
 
     programs.nixvim.highlight = {
 

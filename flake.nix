@@ -27,6 +27,7 @@
                                 home-manager.useGlobalPkgs = true;
                                 home-manager.useUserPackages = true;
                                 home-manager.users.deeengan = { imports = [ nixvim.homeManagerModules.nixvim ./home.nix ]; };
+
         }
       ];
     };

@@ -3,27 +3,27 @@
     programs.nixvim.highlight = {
 
       # broadest && most general
+          ColorColumn = { fg = "#85C54C"; bg = "#F6F7EC"; };
           Comment = { fg = "#E0D561"; bg = "NONE"; };
-          Constant = { fg = "#FF645A"; bg = "NONE"; };
+          Conceal = { fg = "#85C54C"; bg = "NONE"; };
+          Constant = { fg = "#5FDAFF"; bg = "NONE"; };
           Directory = { fg = "#98E036"; bg = "NONE"; };
+          FoldColumn = { fg = "#5FDAFF"; bg = "NONE"; };
+          Folded = { fg = "#85C54C"; bg = "NONE"; };
           Identifier = { fg = "#84F088"; bg = "NONE"; };
-          MatchParen = { fg = "#5FDAFF"; bg = "NONE"; };
+          MatchParen = { fg = "#FF645A"; bg = "NONE"; };
+          MoreMsg = { fg = "#1398B9"; bg = "NONE"; };
           PreProc = { fg = "#98E036"; bg = "NONE"; };
           Search = { fg = "#F5AE2E"; bg = "NONE"; };
           Special = { fg = "#F5AE2E"; bg = "NONE"; };
           Statement = { fg = "#FF9269"; bg = "NONE"; };
-          StatusLine = { fg = "#5FDAFF"; bg = "NONE"; };
+          StatusLine = { fg = "#FF9269"; bg = "NONE"; };
           TermCursor = { fg = "#E0D561"; bg = "NONE"; };
           Title = { fg = "#F5AE2E"; bg = "NONE"; };
           Todo = { fg = "#F5AE2E"; bg = "NONE"; };
           Type = { fg = "#F6F7EC"; bg = "NONE"; };
           Underlined = { fg = "#98E036"; bg = "NONE"; };
           Visual = { fg = "#5FDAFF"; bg = "NONE"; };
-          FoldColumn = { fg = "#5FDAFF"; bg = "NONE"; };
-          ColorColumn = { fg = "#85C54C"; bg = "#F6F7EC"; };
-          Conceal = { fg = "#85C54C"; bg = "NONE"; };
-          MoreMsg = { fg = "#1398B9"; bg = "NONE"; };
-          Folded = { fg = "#85C54C"; bg = "NONE"; };
 
           # cursor, lcursor has fg = bg
               Cursor = { fg = "#509552"; bg = "#E0D561"; };
@@ -36,7 +36,7 @@
               Error = { fg = "#C94234"; bg = "NONE"; };
               ErrorMsg = { fg = "#C94234"; bg = "NONE"; };
               NvimInternalError = { fg = "#C94234"; bg = "NONE"; };
-          
+
           # diagnostics
               DiagnosticError = { fg = "#C94234"; bg = "NONE"; };
               DiagnosticHint = { fg = "#5FDAFF"; bg = "NONE"; };
@@ -58,11 +58,11 @@
           DiffAdd = { fg = "#98E036"; bg = "NONE"; };
 
       # menus
-          Pmenu = { fg = "#1398B9"; bg = "NONE"; };
+          Pmenu = { fg = "#FF645A"; bg = "NONE"; };
           PmenuExtraSel = { fg = "NONE"; bg = "NONE"; };
           PmenuKindSel = { fg = "NONE"; bg = "NONE"; };
           PmenuSbar = { fg = "NONE"; bg = "NONE"; };
-          PmenuSel = { fg = "#5FDAFF"; bg = "NONE"; };
+          PmenuSel = { fg = "#FF9269"; bg = "NONE"; };
           PmenuThumb = { fg = "NONE"; bg = "NONE"; };
           Scrollbar = { fg = "NONE"; bg = "NONE"; };
       
@@ -91,28 +91,28 @@
                   TodoSignFIX = { fg = "#FF645A"; bg = "NONE"; };
                   TodoSignTODO = { fg = "#5FDAFF"; bg = "NONE"; };
                   TodoSignHACK = { fg = "#FF9269"; bg = "NONE"; };
-                  TodoSignWARN = { fg = "#F5AE2E"; bg = "NONE"; };
+                  TodoSignWARN = { fg = "#E0D561"; bg = "NONE"; };
                   TodoSignPERF = { fg = "#84F088"; bg = "NONE"; };
                   TodoSignNOTE = { fg = "#509552"; bg = "NONE"; };
-                  TodoSignTEST = { fg = "#E0D561"; bg = "NONE"; };
+                  TodoSignTEST = { fg = "#F5AE2E"; bg = "NONE"; };
+
+              # Todo Bg
+                  TodoBgFIX = { bold = true; fg = "#121418"; bg = "#FF645A"; };
+                  TodoBgTODO = { bold = true; fg = "#121418"; bg = "#5FDAFF"; };
+                  TodoBgHACK = { bold = true; fg = "#121418"; bg = "#FF9269"; };
+                  TodoBgWARN = { bold = true; fg = "#121418"; bg = "#E0D561"; };
+                  TodoBgPERF = { bold = true; fg = "#121418"; bg = "#84F088"; };
+                  TodoBgNOTE = { bold = true; fg = "#121418"; bg = "#509552"; };
+                  TodoBgTEST = { bold = true; fg = "#121418"; bg = "#F5AE2E"; };
 
               # Todo Fg
                   TodoFgFIX = { fg = "#FF645A"; bg = "NONE"; };
                   TodoFgTODO = { fg = "#5FDAFF"; bg = "NONE"; };
                   TodoFgHACK = { fg = "#FF9269"; bg = "NONE"; };
-                  TodoFgWARN = { fg = "#F5AE2E"; bg = "NONE"; };
+                  TodoFgWARN = { fg = "#E0D561"; bg = "NONE"; };
                   TodoFgPERF = { fg = "#84F088"; bg = "NONE"; };
                   TodoFgNOTE = { fg = "#509552"; bg = "NONE"; };
-                  TodoFgTEST = { fg = "#E0D561"; bg = "NONE"; };
-              
-              # Todo Bg
-                  TodoBgFIX = { bold = true; fg = "#121418"; bg = "#FF645A"; };
-                  TodoBgTODO = { bold = true; fg = "#121418"; bg = "#5FDAFF"; };
-                  TodoBgHACK = { bold = true; fg = "#121418"; bg = "#FF9269"; };
-                  TodoBgWARN = { bold = true; fg = "#121418"; bg = "#F5AE2E"; };
-                  TodoBgPERF = { bold = true; fg = "#121418"; bg = "#84F088"; };
-                  TodoBgNOTE = { bold = true; fg = "#121418"; bg = "#509552"; };
-                  TodoBgTEST = { bold = true; fg = "#121418"; bg = "#E0D561"; };
+                  TodoFgTEST = { fg = "#F5AE2E"; bg = "NONE"; };
 
       # redraw
           RedrawDebugRecompose = { bold = true; fg = "#509552"; bg = "NONE"; };

@@ -6,6 +6,8 @@
                 # outside
                     programs.nixvim.extraPlugins = with pkgs.vimPlugins; [
                             vim_current_word
+                            telescope-file-browser-nvim
+                            vim-obsession
               ];
 
 }

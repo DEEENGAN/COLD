@@ -17,7 +17,6 @@
           normal."ww" = "<CMD>:silent w<CR>";
 
       # expand
-          insert."!!" = "ATTN:";
           insert."!lk" = "[link](https://)";
 
       # formatting
@@ -62,6 +61,8 @@
           normal."<leader>tg" = "<CMD>Telescope live_grep search_dirs=~/PITH/,~/COLD/,~/.config/<CR>";
           normal."<leader>to" = "<CMD>Telescope oldfiles<CR>";
           normal."<leader>sp" = "<CMD>Telescope spell_suggest<CR>";
+          normal."<leader>km" = "<CMD>Telescope keymaps<CR>";
+          normal."<leader>cm" = "<CMD>Telescope commands<CR>";
       
       # Todo
           normal."<leader>td" = "<CMD>TodoTelescope<CR>";
