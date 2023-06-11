@@ -11,26 +11,26 @@
   imports = [
 
     # general
-        ./writing.nix
-        ./visual.nix
         ./files.nix
+        ./visual.nix
+        ./writing.nix
 
     # visuals
         ./hi
 
     # plugins
-        ./no-options.nix
-        ./undotree.nix
-        ./telescope.nix
-        ./lsp.nix
-        ./indent-blankline.nix
-        ./auto-save.nix
-        ./treesitter.nix
-        ./zk.nix
-        ./todo-comments.nix
-        #./notify.nix
         #./noice.nix
-        ./nvim-colorizer.nix
+        #./notify.nix
+          ./auto-save.nix
+          ./indent-blankline.nix
+          ./lsp.nix
+          ./no-options.nix
+          ./nvim-colorizer.nix
+          ./telescope.nix
+          ./todo-comments.nix
+          ./treesitter.nix
+          ./undotree.nix
+          ./zk.nix
 ];
 
     # anything else
