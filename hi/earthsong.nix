@@ -20,14 +20,18 @@
           Underlined = { fg = "#98E036"; bg = "NONE"; };
           Visual = { fg = "#5FDAFF"; bg = "NONE"; };
           FoldColumn = { fg = "#5FDAFF"; bg = "NONE"; };
+          ColorColumn = { fg = "#85C54C"; bg = "#F6F7EC"; };
+          Conceal = { fg = "#85C54C"; bg = "NONE"; };
+          MoreMsg = { fg = "#1398B9"; bg = "NONE"; };
+          Folded = { fg = "#85C54C"; bg = "NONE"; };
 
-          # cursor
-              Cursor = { fg = "NONE"; bg = "#E0D561"; };
+          # cursor, lcursor has fg = bg
+              Cursor = { fg = "#121418"; bg = "#E0D561"; };
               CursorColumn = { fg = "NONE"; bg = "NONE"; };
               CursorLine = { fg = "NONE"; bg = "NONE"; };
               CursorLineNR = { fg = "NONE"; bg = "NONE"; };
               lCursor = { fg = "#E0D561"; bg = "#E0D561"; };
-          
+
           # errors && diagnostics
               Error = { fg = "#C94234"; bg = "NONE"; };
               ErrorMsg = { fg = "#C94234"; bg = "NONE"; };
@@ -36,6 +40,12 @@
               DiagnosticWarn = { fg = "#F5AE2E"; bg = "NONE"; };
               DiagnosticHint = { fg = "#F6F7EC"; bg = "NONE"; };
               DiagnosticInfo = { fg = "#F6F7EC"; bg = "NONE"; };
+
+      # diff
+          DiffDelete = { fg = "#FF645A"; bg = "NONE"; };
+          DiffText = { fg = "#FF9269"; bg = "NONE"; };
+          DiffChange = { fg = "#84F088"; bg = "NONE"; };
+          DiffAdd = { fg = "#98E036"; bg = "NONE"; };
 
       # menus
           Pmenu = { fg = "#1398B9"; bg = "NONE"; };
@@ -67,10 +77,36 @@
               NotifyBackground = { fg = "NONE"; bg = "#F6F7EC"; };
 
           # Todo-Comment
-              # todo
+            # Todo Sign
+                TodoSignFIX = { fg = "#FF645A"; bg = "NONE"; };
+                TodoSignTODO = { fg = "#5FDAFF"; bg = "NONE"; };
+                TodoSignHACK = { fg = "#FF9269"; bg = "NONE"; };
+                TodoSignWARN = { fg = "#F5AE2E"; bg = "NONE"; };
+                TodoSignPERF = { fg = "#84F088"; bg = "NONE"; };
+                TodoSignNOTE = { fg = "#509552"; bg = "NONE"; };
+                TodoSignTEST = { fg = "#E0D561"; bg = "NONE"; };
+
+            # Todo Fg
+                TodoFgFIX = { fg = "#FF645A"; bg = "NONE"; };
+                TodoFgTODO = { fg = "#5FDAFF"; bg = "NONE"; };
+                TodoFgHACK = { fg = "#FF9269"; bg = "NONE"; };
+                TodoFgWARN = { fg = "#F5AE2E"; bg = "NONE"; };
+                TodoFgPERF = { fg = "#84F088"; bg = "NONE"; };
+                TodoFgNOTE = { fg = "#509552"; bg = "NONE"; };
+                TodoFgTEST = { fg = "#E0D561"; bg = "NONE"; };
+            
+            # Todo Bg
+                TodoBgFIX = { bold = true; fg = "#121418"; bg = "#FF645A"; };
+                TodoBgTODO = { bold = true; fg = "#121418"; bg = "#5FDAFF"; };
+                TodoBgHACK = { bold = true; fg = "#121418"; bg = "#FF9269"; };
+                TodoBgWARN = { bold = true; fg = "#121418"; bg = "#F5AE2E"; };
+                TodoBgPERF = { bold = true; fg = "#121418"; bg = "#84F088"; };
+                TodoBgNOTE = { bold = true; fg = "#121418"; bg = "#509552"; };
+                TodoBgTEST = { bold = true; fg = "#121418"; bg = "#E0D561"; };
 
       # unknown
           FloatShadow = { fg = "NONE"; bg = "NONE"; };
           FloatShadowThrough = { fg = "NONE"; bg = "NONE"; };
+
   };
 }
