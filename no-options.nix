@@ -1,12 +1,13 @@
 { pkgs, ... }: {
 
-                # no options
-                    programs.nixvim.plugins.fugitive.enable = true;
+  # no options
+      programs.nixvim.plugins = {
+        fugitive.enable = true;
+    };
 
-                # outside
-                    programs.nixvim.extraPlugins = with pkgs.vimPlugins; [
-                            vim_current_word
-                            vim-obsession
-              ];
-
+  # outside
+      programs.nixvim.extraPlugins = with pkgs.vimPlugins; [
+              vim_current_word
+              vim-obsession
+  ];
 }

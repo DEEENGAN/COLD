@@ -6,30 +6,30 @@
           ColorColumn = { fg = "#85C54C"; bg = "#F6F7EC"; };
           Comment = { fg = "#E0D561"; bg = "NONE"; };
           Conceal = { fg = "#85C54C"; bg = "NONE"; };
-          Constant = { fg = "#5FDAFF"; bg = "NONE"; };
+          Constant = { fg = "#F5AE2E"; bg = "NONE"; };
           Directory = { fg = "#98E036"; bg = "NONE"; };
-          FoldColumn = { fg = "#5FDAFF"; bg = "NONE"; };
+          FoldColumn = { fg = "#1398B9"; bg = "NONE"; };
           Folded = { fg = "#85C54C"; bg = "NONE"; };
           Identifier = { fg = "#84F088"; bg = "NONE"; };
           MatchParen = { fg = "#FF645A"; bg = "NONE"; };
           MoreMsg = { fg = "#1398B9"; bg = "NONE"; };
           PreProc = { fg = "#98E036"; bg = "NONE"; };
-          Search = { fg = "#F5AE2E"; bg = "NONE"; };
-          Special = { fg = "#F5AE2E"; bg = "NONE"; };
+          Search = { fg = "#FF645A"; bg = "NONE"; };
+          Special = { fg = "#5FDAFF"; bg = "NONE"; };
           Statement = { fg = "#FF9269"; bg = "NONE"; };
           StatusLine = { fg = "#FF9269"; bg = "NONE"; };
-          TermCursor = { fg = "#E0D561"; bg = "NONE"; };
           Title = { fg = "#F5AE2E"; bg = "NONE"; };
           Todo = { fg = "#F5AE2E"; bg = "NONE"; };
           Type = { fg = "#F6F7EC"; bg = "NONE"; };
           Underlined = { fg = "#98E036"; bg = "NONE"; };
-          Visual = { fg = "#5FDAFF"; bg = "NONE"; };
+          Visual = { fg = "#FF645A"; bg = "NONE"; };
 
           # cursor, lcursor has fg = bg
-              Cursor = { fg = "#509552"; bg = "#E0D561"; };
+              Cursor = { fg = "NONE"; bg = "#FF645A"; };
               CursorColumn = { fg = "NONE"; bg = "NONE"; };
               CursorLine = { fg = "NONE"; bg = "NONE"; };
               CursorLineNR = { fg = "NONE"; bg = "NONE"; };
+              TermCursor = { fg = "NONE"; bg = "NONE"; };
               lCursor = { fg = "#E0D561"; bg = "#E0D561"; };
 
           # errors

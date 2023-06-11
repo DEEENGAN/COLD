@@ -6,7 +6,7 @@
       signPriority = 8;
 
       keywords.FIX = { icon = ""; alt = [ "FIXME" "BUG" "FIXIT" "ISSUE" ]; };
-      keywords.TODO = { icon = ""; };
+      keywords.TODO = { icon = ""; };
       keywords.HACK = { icon = ""; };
       keywords.WARN = { icon = "";  alt = [ "WARNING" "XXX" ]; };
       keywords.PERF = { icon = "";  alt = [ "OPTIM" "PERFORMANCE" "OPTIMIZE" ]; };
