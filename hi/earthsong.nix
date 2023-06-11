@@ -38,11 +38,11 @@
               NvimInternalError = { fg = "#C94234"; bg = "NONE"; };
           
           # diagnostics
-              DiagnosticError = { fg = "#D0633D"; bg = "NONE"; };
+              DiagnosticError = { fg = "#C94234"; bg = "NONE"; };
               DiagnosticHint = { fg = "#5FDAFF"; bg = "NONE"; };
               DiagnosticInfo = { fg = "#F6F7EC"; bg = "NONE"; };
               DiagnosticOk = { fg = "#98E036"; bg = "NONE"; };
-              DiagnosticWarn = { fg = "#F5AE2E"; bg = "NONE"; };
+              DiagnosticWarn = { fg = "#FF9269"; bg = "NONE"; };
 
                 # underline
                   DiagnosticUnderlineError = { fg = "#C94234"; bg = "NONE"; };
@@ -87,32 +87,32 @@
               NotifyBackground = { fg = "NONE"; bg = "#F6F7EC"; };
 
           # Todo-Comment
-            # Todo Sign
-                TodoSignFIX = { fg = "#FF645A"; bg = "NONE"; };
-                TodoSignTODO = { fg = "#5FDAFF"; bg = "NONE"; };
-                TodoSignHACK = { fg = "#FF9269"; bg = "NONE"; };
-                TodoSignWARN = { fg = "#F5AE2E"; bg = "NONE"; };
-                TodoSignPERF = { fg = "#84F088"; bg = "NONE"; };
-                TodoSignNOTE = { fg = "#509552"; bg = "NONE"; };
-                TodoSignTEST = { fg = "#E0D561"; bg = "NONE"; };
+              # Todo Sign
+                  TodoSignFIX = { fg = "#FF645A"; bg = "NONE"; };
+                  TodoSignTODO = { fg = "#5FDAFF"; bg = "NONE"; };
+                  TodoSignHACK = { fg = "#FF9269"; bg = "NONE"; };
+                  TodoSignWARN = { fg = "#F5AE2E"; bg = "NONE"; };
+                  TodoSignPERF = { fg = "#84F088"; bg = "NONE"; };
+                  TodoSignNOTE = { fg = "#509552"; bg = "NONE"; };
+                  TodoSignTEST = { fg = "#E0D561"; bg = "NONE"; };
 
-            # Todo Fg
-                TodoFgFIX = { fg = "#FF645A"; bg = "NONE"; };
-                TodoFgTODO = { fg = "#5FDAFF"; bg = "NONE"; };
-                TodoFgHACK = { fg = "#FF9269"; bg = "NONE"; };
-                TodoFgWARN = { fg = "#F5AE2E"; bg = "NONE"; };
-                TodoFgPERF = { fg = "#84F088"; bg = "NONE"; };
-                TodoFgNOTE = { fg = "#509552"; bg = "NONE"; };
-                TodoFgTEST = { fg = "#E0D561"; bg = "NONE"; };
-            
-            # Todo Bg
-                TodoBgFIX = { bold = true; fg = "#121418"; bg = "#FF645A"; };
-                TodoBgTODO = { bold = true; fg = "#121418"; bg = "#5FDAFF"; };
-                TodoBgHACK = { bold = true; fg = "#121418"; bg = "#FF9269"; };
-                TodoBgWARN = { bold = true; fg = "#121418"; bg = "#F5AE2E"; };
-                TodoBgPERF = { bold = true; fg = "#121418"; bg = "#84F088"; };
-                TodoBgNOTE = { bold = true; fg = "#121418"; bg = "#509552"; };
-                TodoBgTEST = { bold = true; fg = "#121418"; bg = "#E0D561"; };
+              # Todo Fg
+                  TodoFgFIX = { fg = "#FF645A"; bg = "NONE"; };
+                  TodoFgTODO = { fg = "#5FDAFF"; bg = "NONE"; };
+                  TodoFgHACK = { fg = "#FF9269"; bg = "NONE"; };
+                  TodoFgWARN = { fg = "#F5AE2E"; bg = "NONE"; };
+                  TodoFgPERF = { fg = "#84F088"; bg = "NONE"; };
+                  TodoFgNOTE = { fg = "#509552"; bg = "NONE"; };
+                  TodoFgTEST = { fg = "#E0D561"; bg = "NONE"; };
+              
+              # Todo Bg
+                  TodoBgFIX = { bold = true; fg = "#121418"; bg = "#FF645A"; };
+                  TodoBgTODO = { bold = true; fg = "#121418"; bg = "#5FDAFF"; };
+                  TodoBgHACK = { bold = true; fg = "#121418"; bg = "#FF9269"; };
+                  TodoBgWARN = { bold = true; fg = "#121418"; bg = "#F5AE2E"; };
+                  TodoBgPERF = { bold = true; fg = "#121418"; bg = "#84F088"; };
+                  TodoBgNOTE = { bold = true; fg = "#121418"; bg = "#509552"; };
+                  TodoBgTEST = { bold = true; fg = "#121418"; bg = "#E0D561"; };
 
       # redraw
           RedrawDebugRecompose = { bold = true; fg = "#509552"; bg = "NONE"; };

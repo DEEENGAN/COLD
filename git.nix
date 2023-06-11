@@ -15,10 +15,5 @@
       programs.git.userEmail = "writing@deeengan.com";
       programs.git.userName = "Dee Engan";
 
-          # git
-              programs.nixvim.maps.normal."<leader>gl" = "<CMD>:G pull origin main<CR>";
-              programs.nixvim.maps.normal."<leader>ga" = "<CMD>:G add --all<CR>";
-              programs.nixvim.maps.normal."<leader>gc" = "<CMD>:G commit<CR>";
-              programs.nixvim.maps.normal."<leader>gh" = "<CMD>:G push origin main<CR>";
-              programs.nixvim.maps.normal."<leader>gs" = "<CMD>:G status<CR>";
+
 }
