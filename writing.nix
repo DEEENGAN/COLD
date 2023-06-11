@@ -1,6 +1,6 @@
 { ... }: {
 
-    # keys, spacebar for " "
+    # keys, spacebar " "
       programs.nixvim.globals = {
         mapleader = " ";
         maplocalleader = " ";
@@ -15,14 +15,10 @@
           normal."<leader>wa" = "<CMD>:wa<CR>";
           normal."<leader>wq" = "<CMD>:wq<CR>";
           normal."ww" = "<CMD>:silent w<CR>";
-      
-      # Telescope
-          normal."<leader>tb" = "<CMD>Telescope buffers<CR>";
-          normal."<leader>th" = "<CMD>Telescope highlights<CR>";
-          normal."<leader>tf" = "<CMD>Telescope find_files search_dirs=~/PITH/,~/COLD/,~/.config/<CR>";
-          normal."<leader>tg" = "<CMD>Telescope live_grep search_dirs=~/PITH/,~/COLD/,~/.config/<CR>";
-          normal."<leader>to" = "<CMD>Telescope oldfiles<CR>";
-          normal."<leader>sp" = "<CMD>Telescope spell_suggest<CR>";
+
+      # expand
+          insert."!!" = "ATTN:";
+          insert."!lk" = "[link](https://)";
 
       # formatting
           normal."<leader>dx" = ":!pandoc -s commonmark % --output ~/.docx";
@@ -39,10 +35,6 @@
           insert."<x" = "fix():";
           insert."<f" = "feat():";
 
-      # expand
-          insert."!!" = "ATTN:";
-          insert."!lk" = "[link](https://)";
-
       # language
           insert."s|" = "ß";
           insert."S|" = "ẞ";
@@ -55,8 +47,19 @@
           insert.",," = "„";
           insert.",|" = "“";
 
-        # Todo
-            normal."<leader>td" = "<CMD>TodoTelescope<CR>";
+      # Telescope
+          normal."<leader>tb" = "<CMD>Telescope buffers<CR>";
+          normal."<leader>th" = "<CMD>Telescope highlights<CR>";
+          normal."<leader>tf" = "<CMD>Telescope find_files search_dirs=~/PITH/,~/COLD/,~/.config/<CR>";
+          normal."<leader>tg" = "<CMD>Telescope live_grep search_dirs=~/PITH/,~/COLD/,~/.config/<CR>";
+          normal."<leader>to" = "<CMD>Telescope oldfiles<CR>";
+          normal."<leader>sp" = "<CMD>Telescope spell_suggest<CR>";
+      
+      # Todo
+          normal."<leader>td" = "<CMD>TodoTelescope<CR>";
+
+      # Undotree
+          normal."<leader>dt" = "<CMD>:UndotreeToggle<CR>";
 
       # zk
 

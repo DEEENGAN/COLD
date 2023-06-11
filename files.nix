@@ -1,42 +1,44 @@
 { ... }: {
 
-                # files
-                    programs.nixvim.options.filetype = "on";
-                    programs.nixvim.options.spelllang = "en_us,de_de,cjk";
-                    programs.nixvim.options.spell = false;
-                    programs.nixvim.options.autoread = true;
-                    programs.nixvim.options.completeopt = "preview";
-                      
-                      # ftplugin, custom file
-                          programs.nixvim.files."ftdetect/deeengan.lua".autoCmd = [
-                      {
-                            event = [ "BufRead" "BufNewFile" ];
-                            pattern = [ "*.dea" ];
-                            command = "set ft=deeengan";
-                  }
-                ];
+  # files
+      programs.nixvim.options = {
+      filetype = "on";
+      spelllang = "en_us,de_de,cjk";
+      spell = false;
+      autoread = true;
+      completeopt = "preview";
 
-                          programs.nixvim.files."ftdetect/ink.lua".autoCmd = [
-                      {
-                            event = [ "BufRead" "BufNewFile" ];
-                            pattern = [ "*.ink" ];
-                            command = "set ft=ink";
-                  }
-                ];
+    # undo
+        undofile = true;
+        undodir = "/home/deeengan/.cache/undodir/";
+        undolevels = 1000;
+        undoreload = 10000;
 
-                  # undo
-                      programs.nixvim.options.undofile = true;
-                      programs.nixvim.options.undodir = "/home/deeengan/.cache/undodir/";
-                      programs.nixvim.options.undolevels = 1000;
-                      programs.nixvim.options.undoreload = 10000;
+    # swap
+        swapfile = false;
 
-                  # swap
-                      programs.nixvim.options.swapfile = false;
+    # backup
+        backup = true;
+        backupdir = "/home/deeengan/.cache/nvim-backups/";
+        backupcopy = "yes";
+        writebackup = true;
+  };
+    
+    # ftplugin, custom file
+        programs.nixvim.files."ftdetect/deeengan.lua".autoCmd = [
+    {
+          event = [ "BufRead" "BufNewFile" ];
+          pattern = [ "*.dea" ];
+          command = "set ft=deeengan";
+    }
+  ];
 
-                  # backup
-                      programs.nixvim.options.backup = true;
-                      programs.nixvim.options.backupdir = "/home/deeengan/.cache/nvim-backups/";
-                      programs.nixvim.options.backupcopy = "yes";
-                      programs.nixvim.options.writebackup = true;
+        programs.nixvim.files."ftdetect/ink.lua".autoCmd = [
+    {
+          event = [ "BufRead" "BufNewFile" ];
+          pattern = [ "*.ink" ];
+          command = "set ft=ink";
 
+    }
+  ];
 }
