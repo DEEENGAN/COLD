@@ -1,7 +1,7 @@
 { ... }: {
 
     imports = [
-        ./service-timer-nix-garbage-collect.nix
+        ./nix-garbage-collect.nix
 
   ];
 }

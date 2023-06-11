@@ -9,9 +9,11 @@
         linebreak = true;
         syntax = "on";
 
-      # even if using terminal, gui is needed for colors etc.
+      # despite terminal use, gui opts must be set for colors etc.
           guicursor = "n-c-v-sm:Cursor,i-ci-ve:ver33-Cursor,r-cr-o:hor33-Cursor,a:blinkwait0-blinkon2000-blinkoff0";
           guifont = "FantasqueSansM";
+          guifontwide = "";
+          guioptions = "!";
           termguicolors = true;
 
     # number line
@@ -33,11 +35,11 @@
         hlsearch = true;
         wildmenu = true;
         wildmode = "longest:full,full";
-        scrolloff = 15;
-    
+        scrolloff = 50;
+
     # status line
         laststatus = 3;
-        statusline = "%{FugitiveStatusline()} %<%F %l/%L %p%% %{ObsessionStatus()}%r%h%m";
+        statusline = "%{FugitiveStatusline()} %<%F %l/%L %p%%%{ObsessionStatus()}%r%h%m";
         fillchars = "stl:─,stlnc:─";
 
   };
