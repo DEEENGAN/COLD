@@ -8,7 +8,7 @@
           Directory = { fg = "#98E036"; bg = "NONE"; };
           Identifier = { fg = "#84F088"; bg = "NONE"; };
           MatchParen = { fg = "#5FDAFF"; bg = "NONE"; };
-          PreProc = { fg = "#509552"; bg = "NONE"; };
+          PreProc = { fg = "#98E036"; bg = "NONE"; };
           Search = { fg = "#F5AE2E"; bg = "NONE"; };
           Special = { fg = "#F5AE2E"; bg = "NONE"; };
           Statement = { fg = "#FF9269"; bg = "NONE"; };
@@ -26,20 +26,30 @@
           Folded = { fg = "#85C54C"; bg = "NONE"; };
 
           # cursor, lcursor has fg = bg
-              Cursor = { fg = "#121418"; bg = "#E0D561"; };
+              Cursor = { fg = "#509552"; bg = "#E0D561"; };
               CursorColumn = { fg = "NONE"; bg = "NONE"; };
               CursorLine = { fg = "NONE"; bg = "NONE"; };
               CursorLineNR = { fg = "NONE"; bg = "NONE"; };
               lCursor = { fg = "#E0D561"; bg = "#E0D561"; };
 
-          # errors && diagnostics
+          # errors
               Error = { fg = "#C94234"; bg = "NONE"; };
               ErrorMsg = { fg = "#C94234"; bg = "NONE"; };
-              NvimInternalError = { fg = "#D0633D"; bg = "NONE"; };
+              NvimInternalError = { fg = "#C94234"; bg = "NONE"; };
+          
+          # diagnostics
               DiagnosticError = { fg = "#D0633D"; bg = "NONE"; };
-              DiagnosticWarn = { fg = "#F5AE2E"; bg = "NONE"; };
-              DiagnosticHint = { fg = "#F6F7EC"; bg = "NONE"; };
+              DiagnosticHint = { fg = "#5FDAFF"; bg = "NONE"; };
               DiagnosticInfo = { fg = "#F6F7EC"; bg = "NONE"; };
+              DiagnosticOk = { fg = "#98E036"; bg = "NONE"; };
+              DiagnosticWarn = { fg = "#F5AE2E"; bg = "NONE"; };
+
+                # underline
+                  DiagnosticUnderlineError = { fg = "#C94234"; bg = "NONE"; };
+                  DiagnosticUnderlineHint = { fg = "#5FDAFF"; bg = "NONE"; };
+                  DiagnosticUnderlineInfo = { fg = "#F6F7EC"; bg = "NONE"; };
+                  DiagnosticUnderlineOk = { fg = "#98E036"; bg = "NONE"; };
+                  DiagnosticUnderlineWarn = { fg = "#FF9269"; bg = "NONE"; };
 
       # diff
           DiffDelete = { fg = "#FF645A"; bg = "NONE"; };
@@ -103,6 +113,12 @@
                 TodoBgPERF = { bold = true; fg = "#121418"; bg = "#84F088"; };
                 TodoBgNOTE = { bold = true; fg = "#121418"; bg = "#509552"; };
                 TodoBgTEST = { bold = true; fg = "#121418"; bg = "#E0D561"; };
+
+      # redraw
+          RedrawDebugRecompose = { bold = true; fg = "#509552"; bg = "NONE"; };
+          RedrawDebugComposed = { bold = true; fg = "#98E036"; bg = "NONE"; };
+          RedrawDebugNormal = { bold = true; fg = "#5FDAFF"; bg = "NONE"; };
+          RedrawDebugClear = { bold = true; fg = "#F6F7EC"; bg = "NONE"; };
 
       # unknown
           FloatShadow = { fg = "NONE"; bg = "NONE"; };
