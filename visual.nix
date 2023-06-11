@@ -37,7 +37,7 @@
     
     # status line
         laststatus = 3;
-        statusline = "%{FugitiveStatusline()} %<%F %l/%L %p%%%r%h%m";
+        statusline = "%{FugitiveStatusline()} %<%F %l/%L %p%% %{ObsessionStatus()}%r%h%m";
         fillchars = "stl:─,stlnc:─";
 
   };
