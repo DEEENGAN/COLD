@@ -39,6 +39,7 @@
       "/home/LOVE/"
       "/home/SITE/"
       "/home/DATA/"
+      "/home/SITE/"
       "/home/.password-store/"
   ];
 

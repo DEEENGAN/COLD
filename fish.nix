@@ -55,6 +55,8 @@
     "..." = "cd ../../";
     "p" = "cd ~/PITH/";
     "c" = "cd ~/COLD/";
+    "ff" = "ffmpeg -i input.webm output.mp4";
+    "yt" = "yt-dlp --format mp4 [video URL]";
 
   };
 }

@@ -95,9 +95,8 @@
         # New
             # ZkNew -- set the fish path to ~/DIR/, no ~/DIR/.zk as it will be included in dir = below
             # this works when you are in fish shell
-                normal."<leader>ii" = "<CMD>ZkNew { dir = 'v784', group = 'ideas', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
-                normal."<leader>br" = "<CMD>ZkNew { dir = 'folk/ber/', group = 'folk', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
-                normal."<leader>zo" = "<CMD>ZkNew { dir = 'journal/daily/', group = 'daily' }<CR>";
+                normal."<leader>ia" = "<CMD>ZkNew { dir = '784', group = 'w2i', template = '9au.md', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
+                normal."<leader>dy" = "<CMD>ZkNew { dir = 'journal/daily/', group = 'daily', template = 'daily.md' }<CR>";
 
         # NewFromContentSelection
 
@@ -105,11 +104,11 @@
 
         # Notes
             normal."<leader>zn" = "<CMD>ZkNotes<CR>";
-            normal."<leader>zm" = "<CMD>ZkNotes { sort = { 'modified' } }<CR>";
+            normal."<leader>zm" = "<CMD>ZkNotes { sort = { 'modified' }, orphan = true }<CR>";
             normal."<leader>zw" = "<CMD>ZkNotes { sort = { 'word-count' } }<CR>";
-            normal."<leader>zf" = "<CMD>ZkNotes { matchStrategy = 'fts', match = { vim.fn.input('Search: ') } }<CR>";
-            normal."<leader>ze" = "<CMD>ZkNotes { matchStrategy = 'exact', match = { vim.fn.input('Search: ') } }<CR>";
-            normal."<leader>zr" = "<CMD>ZkNotes { matchStrategy = 're', match = { vim.fn.input('Search: ') } }<CR>";
+            normal."<leader>zf" = "<CMD>ZkNotes { matchStrategy = 'fts', match = { vim.fn.input('fts: ') } }<CR>";
+            normal."<leader>ze" = "<CMD>ZkNotes { matchStrategy = 'exact', match = { vim.fn.input('exact: ') } }<CR>";
+            normal."<leader>zr" = "<CMD>ZkNotes { matchStrategy = 're', match = { vim.fn.input('re: ') } }<CR>";
 
         # Tags
             normal."<leader>zt" = "<CMD>ZkTags<CR>";
