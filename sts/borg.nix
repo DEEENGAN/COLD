@@ -7,32 +7,66 @@
 {
 
   services.borgbackup.jobs.nixos = {
-    
-    repo = "/run/media/deeengan/50de347c-e577-467c-93a4-e3e843a8e8f8/nixos-2023";
-    environment.BORG_REPO = "/run/media/deeengan/50de347c-e577-467c-93a4-e3e843a8e8f8/nixos-2023";
-    environment.BORG_CACHE_DIR = "/home/deeengan/.cache/borg";
-
-    encryption.mode = "repokey-blake2";
-    encryption.passCommand = "cat /home/deeengan/DATA/borg-pass";
-
-    prune.keep.within = "1d";
-    prune.keep.daily = 7;
-    prune.keep.weekly = 7;
-    prune.keep.monthly = 7;
 
     inhibitsSleep = true;
-    
-    environment.compact = "/run/media/deeengan/50de347c-e577-467c-93a4-e3e843a8e8f8/nixos-2023";
 
-    paths = ["/home"];
-    exclude = ["home/*/.cache/*" "home/*/.var/*" "var/tmp/*" "var/cache/*" "/nix"];
-    compression = "auto,zstd";
-    startAt = "00,08,16:00";
-    environment.randomizeddelaysec = "300";
-    environment.persistent = "true";
+    environment = {
+      BORG_CACHE_DIR = "/home/deeengan/.cache/borg";
+      BORG_REPO = "/run/media/deeengan/Samsung\ USB/nixos-2023";
+      compact = "/run/media/deeengan/50de347c-e577-467c-93a4-e3e843a8e8f8/nixos-2023";
+      persistent = "true";
+      randomizeddelaysec = "600";
+};
 
+    repo = "/run/media/deeengan/Samsung\ USB/archive";
+
+    encryption = {
+      mode = "repokey-blake2";
+      passCommand = "cat /home/deeengan/DATA/borg-pass";
   };
 
+    prune.keep = {
+      within = "1d";
+      daily = 7;
+      weekly = 7;
+      monthly = 7;
+  };
+
+    paths = [
+      "/home/PITH/"
+      "/home/COLD/"
+      "/home/LKIT/"
+      "/home/LOVE/"
+      "/home/SITE/"
+      "/home/DATA/"
+      "/home/.password-store/"
+  ];
+
+    exclude = [
+      "/home/*/.cache/*"
+      "/home/Downloads/"
+      "/home/Pictures/"
+      "/home/*/.var/*"
+      "/bin/*"
+      "/boot/*"
+      "/dev/*"
+      "/etc/*"
+      "/lost+found/*"
+      "/nix/*"
+      "/proc/*"
+      "/root/*"
+      "/run/*"
+      "/srv/*"
+      "/sys/*"
+      "/tmp/*"
+      "/usr/*"
+      "/var/*"
+  ];
+
+    compression = "auto,zstd";
+    startAt = "00,16:00";
+
+  };
 }
 
 

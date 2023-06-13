@@ -52,16 +52,22 @@
                     fd
 
                 # utilities
-                    anki-bin
                     borgbackup
                     git-lfs
-                    mplayer
                     pinentry
                     unzip
                     wl-clipboard
-                    feh
-                    tree
 
+                    # audio
+                        mplayer
+                        ffmpeg
+
+                    # learning
+                        anki-bin
+
+                    # visual
+                        tree
+                        feh
 
   ];
 }

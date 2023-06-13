@@ -42,7 +42,7 @@
 
   programs.fish.shellAliases = {
      ls = "ls --color=always";
-     lsd = "ls -d */";
+     lsd = "ls -d -a */";
      grep = "grep --color=always";
      cdn = "cd ~/.config/nvim/";
      gta = "sh ~/DATA/git-all";

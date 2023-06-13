@@ -4,28 +4,27 @@
       enable = true;
       signs = true;
       signPriority = 8;
-
-      keywords.FIX = { icon = ""; alt = [ "FIXME" "BUG" "FIXIT" "ISSUE" ]; };
-      keywords.TODO = { icon = ""; };
-      keywords.HACK = { icon = ""; };
-      keywords.WARN = { icon = "";  alt = [ "WARNING" "XXX" ]; };
-      keywords.PERF = { icon = "";  alt = [ "OPTIM" "PERFORMANCE" "OPTIMIZE" ]; };
-      keywords.NOTE = { icon = ""; alt = [ "INFO" ]; };
-      keywords.TEST = { icon = ""; alt = [ "TESTING" "PASSED" "FAILED" ]; };
-
-      guiStyle.fg = "NONE";
-      guiStyle.bg = "BOLD";
       mergeKeywords = true;
 
-      highlight.multiline = true;
-      highlight.multilinePattern = "^.";
-      highlight.multilineContext = 10;
-      highlight.before = "";
-      highlight.keyword = "wide";
-      highlight.after = "fg";
-      highlight.pattern = ".*<(KEYWORDS)\\s*:";
-      highlight.commentsOnly = false;
-      highlight.maxLineLen = 400;
+      highlight = {
+        multiline = true;
+        multilinePattern = "^.";
+        multilineContext = 10;
+        before = "";
+        keyword = "wide";
+        after = "fg";
+        pattern = ".*<(KEYWORDS)\\s*:";
+        commentsOnly = false;
+        maxLineLen = 400;
+};
+
+      keywords.FIX = { icon = " "; alt = [ "BUG" ]; };
+      keywords.TODO = { icon = " "; alt = [ "MERGE" "CONT" ]; };
+      keywords.HACK = { icon = " "; alt = [ "WORD" ]; };
+      keywords.WARN = { icon = " ";  alt = [ "TRASH" ]; };
+      keywords.PERF = { icon = " ";  alt = [ "END" "OPT" ]; };
+      keywords.NOTE = { icon = " "; alt = [ "INFO" ]; };
+      keywords.TEST = { icon = " "; alt = [ "TRY" ]; };
 
 
   };
