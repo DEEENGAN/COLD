@@ -11,10 +11,11 @@
         FoldColumn = { fg = "#1398B9"; bg = "NONE"; };
         Folded = { fg = "#85C54C"; bg = "NONE"; };
         Identifier = { fg = "#84F088"; bg = "NONE"; };
-        MatchParen = { fg = "#FF645A"; bg = "NONE"; };
+        MatchParen = { fg = "#C94234"; bg = "NONE"; };
         MoreMsg = { fg = "#1398B9"; bg = "NONE"; };
+        Normal = { fg = "NONE"; bg = "NONE"; };
         PreProc = { fg = "#98E036"; bg = "NONE"; };
-        Search = { fg = "#FF645A"; bg = "NONE"; };
+        Search = { fg = "#C94234"; bg = "NONE"; };
         Special = { fg = "#5FDAFF"; bg = "NONE"; };
         Statement = { fg = "#FF9269"; bg = "NONE"; };
         StatusLine = { fg = "#FF9269"; bg = "NONE"; };
@@ -22,13 +23,14 @@
         Todo = { fg = "#F5AE2E"; bg = "NONE"; };
         Type = { fg = "#F6F7EC"; bg = "NONE"; };
         Underlined = { fg = "#98E036"; bg = "NONE"; };
-        Visual = { fg = "#FF645A"; bg = "NONE"; };
+        Visual = { fg = "#C94234"; bg = "NONE"; };
 
         # cursor, lcursor has fg = bg
-            Cursor = { fg = "NONE"; bg = "#FF645A"; };
+            Cursor = { fg = "NONE"; bg = "#C94234"; };
             CursorColumn = { fg = "NONE"; bg = "NONE"; };
             CursorLine = { fg = "NONE"; bg = "NONE"; };
-            CursorLineNR = { fg = "NONE"; bg = "NONE"; };
+            CursorLineNR = { fg = "#121418"; bg = "NONE"; };
+            CurrentWordTwins = { bold = true; italic = true; underline = false; fg = "#C94234"; bg = "NONE"; };
             TermCursor = { fg = "NONE"; bg = "NONE"; };
             lCursor = { fg = "#E0D561"; bg = "#E0D561"; };
 
@@ -36,6 +38,7 @@
             Error = { fg = "#C94234"; bg = "NONE"; };
             ErrorMsg = { fg = "#C94234"; bg = "NONE"; };
             NvimInternalError = { fg = "#C94234"; bg = "NONE"; };
+            WarningMsg = { fg = "#C94234"; bg = "NONE"; };
 
         # diagnostics
             DiagnosticError = { fg = "#C94234"; bg = "NONE"; };
@@ -65,7 +68,7 @@
         PmenuSel = { fg = "#FF9269"; bg = "NONE"; };
         PmenuThumb = { fg = "NONE"; bg = "NONE"; };
         Scrollbar = { fg = "NONE"; bg = "NONE"; };
-    
+
     # number line && signs
         LineNr = { fg = "#121418"; bg = "NONE"; };
         LineNrAbove = { fg = "#675F54"; bg = "NONE"; };
@@ -87,8 +90,8 @@
             NotifyBackground = { fg = "NONE"; bg = "#F6F7EC"; };
 
         # Todo-Comment
-           # Todo Sign
-                TodoSignFIX = { fg = "#C94234"; bg = "NONE"; };
+            # Todo Sign
+                TodoSignFIX = { fg = "#FF645A"; bg = "NONE"; };
                 TodoSignTODO = { fg = "#5FDAFF"; bg = "NONE"; };
                 TodoSignHACK = { fg = "#FF9269"; bg = "NONE"; };
                 TodoSignWARN = { fg = "#E0D561"; bg = "NONE"; };
@@ -97,7 +100,7 @@
                 TodoSignTEST = { fg = "#F5AE2E"; bg = "NONE"; };
 
             # Todo Bg
-                TodoBgFIX = { bold = true; italic = true; fg = "#121418"; bg = "#C94234"; };
+                TodoBgFIX = { bold = true; italic = true; fg = "#121418"; bg = "#FF645A"; };
                 TodoBgTODO = { bold = true; italic = true; fg = "#121418"; bg = "#5FDAFF"; };
                 TodoBgHACK = { bold = true; italic = true; fg = "#121418"; bg = "#FF9269"; };
                 TodoBgWARN = { bold = true; italic = true; fg = "#121418"; bg = "#E0D561"; };
@@ -106,7 +109,7 @@
                 TodoBgTEST = { bold = true; italic = true; fg = "#121418"; bg = "#F5AE2E"; };
 
             # Todo Fg
-                TodoFgFIX = { fg = "#C94234"; bg = "NONE"; };
+                TodoFgFIX = { fg = "#FF645A"; bg = "NONE"; };
                 TodoFgTODO = { fg = "#5FDAFF"; bg = "NONE"; };
                 TodoFgHACK = { fg = "#FF9269"; bg = "NONE"; };
                 TodoFgWARN = { fg = "#E0D561"; bg = "NONE"; };

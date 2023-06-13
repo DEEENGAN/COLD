@@ -57,7 +57,7 @@
       # Obession
           normal."<leader>o1" = "<CMD>Obsession!<CR>";
           normal."<leader>ob" = "<CMD>Obsession ~/PITH/ob<CR>";
-          normal."<leader>so" = "<CMD>:source ~/PITH/ob<CR>";
+          normal."<leader>sc" = "<CMD>:source ~/PITH/ob<CR>";
 
       # Telescope
           normal."<leader>tb" = "<CMD>Telescope buffers<CR>";
