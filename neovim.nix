@@ -14,6 +14,7 @@
         ./files.nix
         ./visual.nix
         ./writing.nix
+        ./autocmds.nix
 
     # visuals
         ./hi
@@ -35,19 +36,6 @@
 
     # anything else
         programs.nixvim.extraConfigLua = ''
-
-          local function markdown()
-            vim.cmd([[
-              augroup markdown
-                autocmd!
-                autocmd FileType markdown
-                      \ setlocal formatoptions+=aw |
-                      \ setlocal textwidth=66 |
-              augroup END
-            ]])
-          end
-
-          markdown()
 
   '';
 }

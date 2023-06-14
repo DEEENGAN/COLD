@@ -37,6 +37,7 @@
               normal."<leader>ga" = "<CMD>:Git add --all<CR>";
               normal."<leader>gc" = "<CMD>:Git commit<CR>";
               normal."<leader>gh" = "<CMD>:Git push origin main<CR>";
+              normal."<leader>g2" = "<CMD>:Git push clone main<CR>";
               normal."<leader>gs" = "<CMD>:Git<CR>";
 
       # lit
@@ -72,8 +73,8 @@
           normal."<leader>km" = "<CMD>Telescope keymaps<CR>";
           normal."<leader>sp" = "<CMD>Telescope spell_suggest<CR>";
           normal."<leader>tb" = "<CMD>Telescope buffers<CR>";
-          normal."<leader>tf" = "<CMD>Telescope find_files search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/.config/<CR>";
-          normal."<leader>tg" = "<CMD>Telescope live_grep search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/.config/<CR>";
+          normal."<leader>tf" = "<CMD>Telescope find_files search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/<CR>";
+          normal."<leader>tg" = "<CMD>Telescope live_grep search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/<CR>";
           normal."<leader>th" = "<CMD>Telescope highlights<CR>";
           normal."<leader>to" = "<CMD>Telescope oldfiles<CR>";
       
@@ -103,8 +104,8 @@
         # New
             # ZkNew -- set the fish path to ~/DIR/, no ~/DIR/.zk as it will be included in dir = below
             # this works when you are in fish shell
-                normal."<leader>ia" = "<CMD>ZkNew { dir = '75qimi8t', group = 'ir7i32c9', template = 'em5equg8.md', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
-                normal."<leader>dy" = "<CMD>ZkNew { dir = 'journal/daily/', group = 'daily', template = 'daily.md' }<CR>";
+                normal."<leader>ia" = "<CMD>ZkNew { dir = '/home/deeengan/PITH/', group = 'ir7i32c9', template = 'em5equg8.md', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
+                normal."<leader>dy" = "<CMD>ZkNew { dir = '/home/deeengan/PITH/WB3LHT7H/', group = '3DRLMKUS', template = '3DRLMKUS.md' }<CR>";
 
         # NewFromContentSelection
 

@@ -48,11 +48,17 @@
             DiagnosticWarn = { fg = "#FF9269"; bg = "NONE"; };
 
               # underline
-                DiagnosticUnderlineError = { fg = "#C94234"; bg = "NONE"; };
-                DiagnosticUnderlineHint = { fg = "#5FDAFF"; bg = "NONE"; };
-                DiagnosticUnderlineInfo = { fg = "#F6F7EC"; bg = "NONE"; };
-                DiagnosticUnderlineOk = { fg = "#98E036"; bg = "NONE"; };
-                DiagnosticUnderlineWarn = { fg = "#FF9269"; bg = "NONE"; };
+                  DiagnosticUnderlineError = { fg = "#C94234"; bg = "NONE"; };
+                  DiagnosticUnderlineHint = { fg = "#5FDAFF"; bg = "NONE"; };
+                  DiagnosticUnderlineInfo = { fg = "#F6F7EC"; bg = "NONE"; };
+                  DiagnosticUnderlineOk = { fg = "#98E036"; bg = "NONE"; };
+                  DiagnosticUnderlineWarn = { fg = "#FF9269"; bg = "NONE"; };
+
+        # spell
+            #SpellLocal = { undercurl = true; fg = "#C94234"; bg = "NONE"; };
+            #SpellRare = { fg = "#C94234"; bg = "NONE"; };
+            #SpellCap = { fg = "#C94234"; bg = "NONE"; };
+            SpellBad = { undercurl = true; fg = "#C94234"; bg = "NONE"; };
 
     # diff
         DiffDelete = { fg = "#FF645A"; bg = "NONE"; };

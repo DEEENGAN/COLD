@@ -23,7 +23,13 @@
   programs.fish.loginShellInit = ''
     '';
 
+
   programs.fish.functions = {
+      char = '' function char
+	grep -EIho '#LINE|#BARB|#JOHN|#RUBY|#HUGH|#OLE' ~/PITH/folk/timeline.md | sort -r | uniq -c
+      end
+  '';
+
       dots = '' function dots
         cp -r ~/.local/share/sioyek/ ~/DATA/
         cp -r ~/.config/nvim/syntax/ ~/DATA/

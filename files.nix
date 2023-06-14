@@ -3,8 +3,6 @@
   # files
       programs.nixvim.options = {
         filetype = "on";
-        spelllang = "en_us,de_de,cjk";
-        spell = false;
         autoread = true;
         completeopt = "preview";
 
