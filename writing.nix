@@ -9,16 +9,13 @@
     # basic
         programs.nixvim.maps = {
           normal."<leader><leader>" = "<CMD>:bn<CR>";
-          normal."<leader>bp" = "<CMD>:bp<CR>";
           normal."<leader>bd" = "<CMD>:bd<CR>";
+          normal."<leader>bp" = "<CMD>:bp<CR>";
           normal."<leader>gg" = "<CMD>:g<C-g><CR>";
+          normal."<leader>nh" = "<CMD>:noh<CR>";
           normal."<leader>wa" = "<CMD>:wa<CR>";
           normal."<leader>wq" = "<CMD>:wq<CR>";
-          normal."<leader>nh" = "<CMD>:noh<CR>";
           normal."ww" = "<CMD>:silent w<CR>";
-
-      # expand
-          insert."!lk" = "[link](https://)";
 
       # formatting
           normal."<leader>dx" = ":!pandoc -s commonmark % --output ~/.docx";
@@ -42,17 +39,28 @@
               normal."<leader>gh" = "<CMD>:Git push origin main<CR>";
               normal."<leader>gs" = "<CMD>:Git<CR>";
 
-      # language
-          insert."s|" = "ß";
-          insert."S|" = "ẞ";
-          insert."a|" = "ä";
-          insert."A|" = "Ä";
-          insert."o|" = "ö";
-          insert."O|" = "Ö";
-          insert."u|" = "ü";
-          insert."U|" = "Ü";
-          insert.",," = "„";
-          insert.",|" = "“";
+      # lit
+          # en
+              insert."aint" = "ain't";
+              insert."couldnt" = "couldn't";
+              insert."dont" = "don't";
+              insert."shouldnt" = "shouldn't";
+              insert."wont" = "won't";
+
+          # de
+              insert."s|" = "ß";
+              insert."S|" = "ẞ";
+              insert."a|" = "ä";
+              insert."A|" = "Ä";
+              insert."o|" = "ö";
+              insert."O|" = "Ö";
+              insert."u|" = "ü";
+              insert."U|" = "Ü";
+              insert.",," = "„";
+              insert.",|" = "“";
+
+          # zettle 
+              insert."!lk" = "[link](https://)";
 
       # Obession
           normal."<leader>o1" = "<CMD>Obsession!<CR>";
@@ -95,7 +103,7 @@
         # New
             # ZkNew -- set the fish path to ~/DIR/, no ~/DIR/.zk as it will be included in dir = below
             # this works when you are in fish shell
-                normal."<leader>ia" = "<CMD>ZkNew { dir = '784', group = 'w2i', template = '9au.md', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
+                normal."<leader>ia" = "<CMD>ZkNew { dir = '75qimi8t', group = 'ir7i32c9', template = 'em5equg8.md', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
                 normal."<leader>dy" = "<CMD>ZkNew { dir = 'journal/daily/', group = 'daily', template = 'daily.md' }<CR>";
 
         # NewFromContentSelection
@@ -104,7 +112,7 @@
 
         # Notes
             normal."<leader>zn" = "<CMD>ZkNotes<CR>";
-            normal."<leader>zm" = "<CMD>ZkNotes { sort = { 'modified' }, orphan = true }<CR>";
+            normal."<leader>zo" = "<CMD>ZkNotes { sort = { 'modified' }, orphan = true }<CR>";
             normal."<leader>zw" = "<CMD>ZkNotes { sort = { 'word-count' } }<CR>";
             normal."<leader>zf" = "<CMD>ZkNotes { matchStrategy = 'fts', match = { vim.fn.input('fts: ') } }<CR>";
             normal."<leader>ze" = "<CMD>ZkNotes { matchStrategy = 'exact', match = { vim.fn.input('exact: ') } }<CR>";
