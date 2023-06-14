@@ -55,10 +55,10 @@
                   DiagnosticUnderlineWarn = { fg = "#FF9269"; bg = "NONE"; };
 
         # spell
-            #SpellLocal = { undercurl = true; fg = "#C94234"; bg = "NONE"; };
-            #SpellRare = { fg = "#C94234"; bg = "NONE"; };
-            #SpellCap = { fg = "#C94234"; bg = "NONE"; };
             SpellBad = { undercurl = true; fg = "#C94234"; bg = "NONE"; };
+            SpellCap = { undercurl = true; fg = "#85C54C"; bg = "NONE"; };
+            SpellLocal = { undercurl = true; fg = "#1398B9"; bg = "NONE"; };
+            SpellRare = { undercurl = true; fg = "#E0D561"; bg = "NONE"; };
 
     # diff
         DiffDelete = { fg = "#FF645A"; bg = "NONE"; };
@@ -86,17 +86,24 @@
         NonText = { fg = "#675F54"; bg = "NONE"; };
 
     # plugins
-        #Noice
+        # indent-blankline
+            IndentBlanklineChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
+            IndentBlanklineSpaceChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
+            IndentBlanklineSpaceCharBlankline = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
+            IndentBanklineContextChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
+            IndentBanklineContextStart = { underline = true; fg = "#675F54"; bg = "NONE"; };
+
+        # noice
             NoicePopupmenuSelected = { fg = "NONE"; bg = "NONE"; };
             NoicePopupmenu = { fg = "NONE"; bg = "NONE"; };
             NoiceFormatConfirmDefault = { fg = "NONE"; bg = "NONE"; };
             NoiceFormatConfirm = { fg = "NONE"; bg = "NONE"; };
 
-        # Notify
+        # notify
             NotifyBackground = { fg = "NONE"; bg = "#F6F7EC"; };
 
-        # Todo-Comment
-            # Todo Sign
+        # todo-comment
+            # todo sign
                 TodoSignFIX = { fg = "#FF645A"; bg = "NONE"; };
                 TodoSignTODO = { fg = "#5FDAFF"; bg = "NONE"; };
                 TodoSignHACK = { fg = "#FF9269"; bg = "NONE"; };
@@ -105,7 +112,7 @@
                 TodoSignNOTE = { fg = "#509552"; bg = "NONE"; };
                 TodoSignTEST = { fg = "#F5AE2E"; bg = "NONE"; };
 
-            # Todo Bg
+            # todo bg
                 TodoBgFIX = { bold = true; italic = true; fg = "#121418"; bg = "#FF645A"; };
                 TodoBgTODO = { bold = true; italic = true; fg = "#121418"; bg = "#5FDAFF"; };
                 TodoBgHACK = { bold = true; italic = true; fg = "#121418"; bg = "#FF9269"; };
@@ -114,7 +121,7 @@
                 TodoBgNOTE = { bold = true; italic = true; fg = "#121418"; bg = "#509552"; };
                 TodoBgTEST = { bold = true; italic = true; fg = "#121418"; bg = "#F5AE2E"; };
 
-            # Todo Fg
+            # todo fg
                 TodoFgFIX = { fg = "#FF645A"; bg = "NONE"; };
                 TodoFgTODO = { fg = "#5FDAFF"; bg = "NONE"; };
                 TodoFgHACK = { fg = "#FF9269"; bg = "NONE"; };

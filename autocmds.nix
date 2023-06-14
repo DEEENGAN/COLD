@@ -7,7 +7,7 @@
       pattern = [
         "markdown"
     ];
-      command = "setlocal spell textwidth=80 formatoptions+=aw spelllang=en,de,cjk";
+      command = "setlocal spell textwidth=66 formatoptions+=aw spelllang=en,de,cjk";
     
     }
   ];
