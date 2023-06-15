@@ -14,7 +14,7 @@
         ./files.nix
         ./visual.nix
         ./writing.nix
-        ./autocmds.nix
+
 
     # visuals
         ./hi
@@ -22,7 +22,10 @@
     # plugins
         #./noice.nix
         #./notify.nix
+          ./autocmds.nix
           ./auto-save.nix
+        #./cursorline.nix
+          ./fugitive.nix
           ./indent-blankline.nix
           ./lsp.nix
           ./no-options.nix

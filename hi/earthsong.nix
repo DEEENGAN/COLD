@@ -28,9 +28,7 @@
         # cursor, lcursor has fg = bg
             Cursor = { fg = "NONE"; bg = "#C94234"; };
             CursorColumn = { fg = "NONE"; bg = "NONE"; };
-            CursorLine = { fg = "NONE"; bg = "NONE"; };
             CursorLineNR = { fg = "#121418"; bg = "NONE"; };
-            CurrentWordTwins = { bold = true; italic = true; underline = false; fg = "#C94234"; bg = "NONE"; };
             TermCursor = { fg = "NONE"; bg = "NONE"; };
             lCursor = { fg = "#E0D561"; bg = "#E0D561"; };
 
@@ -86,12 +84,15 @@
         NonText = { fg = "#675F54"; bg = "NONE"; };
 
     # plugins
+        # vim_current_word
+            CurrentWordTwins = { bold = false; italic = false; underline = false; strikethrough = true; fg = "#C94234"; bg = "NONE"; };
+
         # indent-blankline
-            IndentBlanklineChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
-            IndentBlanklineSpaceChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
-            IndentBlanklineSpaceCharBlankline = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
-            IndentBanklineContextChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
-            IndentBanklineContextStart = { underline = true; fg = "#675F54"; bg = "NONE"; };
+            #IndentBlanklineChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
+            #IndentBlanklineSpaceChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
+            #IndentBlanklineSpaceCharBlankline = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
+            #IndentBanklineContextChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
+            #IndentBanklineContextStart = { underline = true; fg = "#675F54"; bg = "NONE"; };
 
         # noice
             NoicePopupmenuSelected = { fg = "NONE"; bg = "NONE"; };
@@ -139,6 +140,5 @@
     # unknown
         FloatShadow = { fg = "NONE"; bg = "NONE"; };
         FloatShadowThrough = { fg = "NONE"; bg = "NONE"; };
-
   };
 }

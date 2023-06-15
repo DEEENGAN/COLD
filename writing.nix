@@ -20,9 +20,8 @@
       # formatting
           normal."<leader>dx" = ":!pandoc -s commonmark % --output ~/.docx";
           normal."<leader>ra" = ":%s/'/’/gc";
-          normal."<leader>sm" = ":%!pandoc --to=commonmark-smart";
-
-      # formatting && publishing
+          normal."<leader>cs" = ":%!pandoc --to=commonmark-smart";
+          visual."<leader>cs" = "!pandoc --to=commonmark-smart";
           visual."<leader>tb" = ":'<,'>!pandoc -t commonmark_x<CR>";
 
       # git
@@ -71,12 +70,13 @@
       # Telescope
           normal."<leader>cm" = "<CMD>Telescope commands<CR>";
           normal."<leader>km" = "<CMD>Telescope keymaps<CR>";
-          normal."<leader>sp" = "<CMD>Telescope spell_suggest<CR>";
+          normal."<leader>ss" = "<CMD>Telescope spell_suggest<CR>";
           normal."<leader>tb" = "<CMD>Telescope buffers<CR>";
           normal."<leader>tf" = "<CMD>Telescope find_files search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/<CR>";
           normal."<leader>tg" = "<CMD>Telescope live_grep search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/<CR>";
           normal."<leader>th" = "<CMD>Telescope highlights<CR>";
           normal."<leader>to" = "<CMD>Telescope oldfiles<CR>";
+          normal."<leader>tr" = "<CMD>Telescope registers<CR>";
       
       # Todo
           normal."<leader>td" = "<CMD>TodoTelescope<CR>";

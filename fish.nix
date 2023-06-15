@@ -26,7 +26,7 @@
 
   programs.fish.functions = {
       char = '' function char
-	grep -EIho '#LINE|#BARB|#JOHN|#RUBY|#HUGH|#OLE' ~/PITH/folk/timeline.md | sort -r | uniq -c
+        grep -EIho '#LINE|#BARB|#JOHN|#RUBY|#HUGH|#OLE' ~/PITH/timeline.md | sort -r | uniq -c
       end
   '';
 
