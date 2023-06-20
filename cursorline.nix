@@ -9,7 +9,7 @@
       
         cursorword = {
           enable = true;
-          hl = { bold = true; italic = true; underline = false; fg = "#C94234"; bg = "NONE"; };
+          hl = { bold = false; italic = false; underline = false; strikethrough = true; fg = "#C94234"; bg = "NONE"; };
 
     };
   };

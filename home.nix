@@ -14,7 +14,6 @@
                 # reading && writing && publishing
                   ./neovim.nix
                   ./git.nix
-                  ./bat.nix
                   ./sioyek.nix
 
                 # terminal

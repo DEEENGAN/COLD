@@ -11,18 +11,20 @@
           normal."<leader><leader>" = "<CMD>:bn<CR>";
           normal."<leader>bd" = "<CMD>:bd<CR>";
           normal."<leader>bp" = "<CMD>:bp<CR>";
-          normal."<leader>gg" = "<CMD>:g<C-g><CR>";
+          normal."<leader>wc" = "<CMD>:g<C-g><CR>";
           normal."<leader>nh" = "<CMD>:noh<CR>";
           normal."<leader>wa" = "<CMD>:wa<CR>";
           normal."<leader>wq" = "<CMD>:wq<CR>";
           normal."ww" = "<CMD>:silent w<CR>";
 
       # formatting
+          normal."<leader>cs" = ":%!pandoc --to=commonmark-smart";
           normal."<leader>dx" = ":!pandoc -s commonmark % --output ~/.docx";
           normal."<leader>ra" = ":%s/'/’/gc";
-          normal."<leader>cs" = ":%!pandoc --to=commonmark-smart";
           visual."<leader>cs" = "!pandoc --to=commonmark-smart";
-          visual."<leader>tb" = ":'<,'>!pandoc -t commonmark_x<CR>";
+          visual."<leader>sn" = ":sort n";
+          visual."<leader>st" = ":sort";
+          visual."<leader>tb" = ":'<,'>!pandoc -t commonmark_x";
 
       # git
           # edits
@@ -39,13 +41,8 @@
               normal."<leader>g2" = "<CMD>:Git push clone main<CR>";
               normal."<leader>gs" = "<CMD>:Git<CR>";
 
-      # lit
-          # en
-              insert."aint" = "ain't";
-              insert."couldnt" = "couldn't";
-              insert."dont" = "don't";
-              insert."shouldnt" = "shouldn't";
-              insert."wont" = "won't";
+      # LIT
+          # EN
 
           # de
               insert."s|" = "ß";
@@ -59,39 +56,45 @@
               insert.",," = "„";
               insert.",|" = "“";
 
-          # zettle 
+          # HTML, EXAMPLE OF HOW TO BACKSLASH
               insert."!lk" = "[link](https://)";
+              insert."!hf" = "<span class=\"body-text-link-pink\"><a href=\"LINK.html\">TITLE</a></span>";
+              insert."!sp" = "&nbsp;&nbsp;&nbsp;";
 
-      # Obession
+      # OBESSION
           normal."<leader>o1" = "<CMD>Obsession!<CR>";
-          normal."<leader>ob" = "<CMD>Obsession ~/PITH/ob<CR>";
-          normal."<leader>sc" = "<CMD>:source ~/PITH/ob<CR>";
+          normal."<leader>ob" = "<CMD>Obsession ~/PITH/N6949URA.vim<CR>";
+          normal."<leader>sc" = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
 
-      # Telescope
+      # telescope
           normal."<leader>cm" = "<CMD>Telescope commands<CR>";
           normal."<leader>km" = "<CMD>Telescope keymaps<CR>";
           normal."<leader>ss" = "<CMD>Telescope spell_suggest<CR>";
           normal."<leader>tb" = "<CMD>Telescope buffers<CR>";
-          normal."<leader>tf" = "<CMD>Telescope find_files search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/<CR>";
-          normal."<leader>tg" = "<CMD>Telescope live_grep search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/<CR>";
+          normal."<leader>tf" = "<CMD>Telescope find_files search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
+          normal."<leader>tg" = "<CMD>Telescope grep_string search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
           normal."<leader>th" = "<CMD>Telescope highlights<CR>";
           normal."<leader>to" = "<CMD>Telescope oldfiles<CR>";
           normal."<leader>tr" = "<CMD>Telescope registers<CR>";
-      
-      # Todo
+          normal."<leader>tz" = "<CMD>Telescope current_buffer_fuzzy_find<CR>";
+
+      # TODO
           normal."<leader>td" = "<CMD>TodoTelescope<CR>";
 
-      # Undotree
+      # UNDOTREE
           normal."<leader>dt" = "<CMD>:UndotreeToggle<CR>";
 
-      # zk
+      # ZK
 
         # BackLinks
         # Cd
         # Index
 
         # InsertLink
-            normal."<leader>ll" = "<CMD>ZkInsertLink { match = { vim.fn.input('Search: ')} }<CR>";
+            normal."<leader>le" = "<CMD>ZkInsertLink { matchStrategy = 'exact', match = { vim.fn.input('Search: ')} }<CR>";
+            normal."<leader>lf" = "<CMD>ZkInsertLink { matchStrategy = 'fts', match = { vim.fn.input('Search: ')} }<CR>";
+            normal."<leader>ll" = "<CMD>ZkInsertLink<CR>";
+            normal."<leader>lr" = "<CMD>ZkInsertLink { matchStrategy = 're', match = { vim.fn.input('Search: ')} }<CR>";
 
         # InsertLinkAtSelection
             visual."<leader>zl" = ":'<,'>ZkInsertLinkAtSelection { matchSelected = true }";
@@ -104,7 +107,7 @@
         # New
             # ZkNew -- set the fish path to ~/DIR/, no ~/DIR/.zk as it will be included in dir = below
             # this works when you are in fish shell
-                normal."<leader>ia" = "<CMD>ZkNew { dir = '/home/deeengan/PITH/', group = 'ir7i32c9', template = 'em5equg8.md', title = vim.fn.input('Title: '), content = vim.fn.input('Content: ') }<CR>";
+                normal."<leader>ia" = "<CMD>ZkNew { dir = '/home/deeengan/PITH/', group = 'IR7I32C9', template = 'EM5EQUG8.md', title = vim.fn.input('Title: '), content = vim.fn.input('Tags: ') }<CR>";
                 normal."<leader>dy" = "<CMD>ZkNew { dir = '/home/deeengan/PITH/WB3LHT7H/', group = '3DRLMKUS', template = '3DRLMKUS.md' }<CR>";
 
         # NewFromContentSelection

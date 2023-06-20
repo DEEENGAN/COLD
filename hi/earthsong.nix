@@ -2,7 +2,7 @@
 
   programs.nixvim.highlight = {
 
-    # broadest && most general
+    # BROADEST && MOST GENERAL
         ColorColumn = { fg = "#85C54C"; bg = "#F6F7EC"; };
         Comment = { fg = "#E0D561"; bg = "NONE"; };
         Conceal = { fg = "#85C54C"; bg = "NONE"; };
@@ -25,7 +25,7 @@
         Underlined = { fg = "#98E036"; bg = "NONE"; };
         Visual = { fg = "#C94234"; bg = "NONE"; };
 
-        # cursor, lcursor has fg = bg
+        # CURSOR, LCURSOR HAS FG = BG
             Cursor = { fg = "NONE"; bg = "#C94234"; };
             CursorColumn = { fg = "NONE"; bg = "NONE"; };
             CursorLineNR = { fg = "#121418"; bg = "NONE"; };
@@ -83,8 +83,8 @@
         SpecialKey = { fg = "#675F54"; bg = "NONE"; };
         NonText = { fg = "#675F54"; bg = "NONE"; };
 
-    # plugins
-        # vim_current_word
+    # PLUGINS
+        # CURSOR
             CurrentWordTwins = { bold = false; italic = false; underline = false; strikethrough = true; fg = "#C94234"; bg = "NONE"; };
 
         # indent-blankline
@@ -140,5 +140,6 @@
     # unknown
         FloatShadow = { fg = "NONE"; bg = "NONE"; };
         FloatShadowThrough = { fg = "NONE"; bg = "NONE"; };
+
   };
 }

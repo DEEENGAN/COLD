@@ -4,7 +4,7 @@
   programs.fish.shellInit = ''
        echo "TO DO"
        echo -e '\033[1;33m'"Entering the\033[0m \033[1;35mHill Country . . . "'\033[0m' &&
-       grep --color=always -E "ATTN|MINUTES|READ|TRANSFER|WORK" ~/PITH/to-do.md
+       grep --color=always -E "ATTN|MINUTES|READ|TRANSFER|WORK" ~/PITH/8TK2EM6Q.md
        readme
     '';
   programs.fish.interactiveShellInit = ''
@@ -26,7 +26,7 @@
 
   programs.fish.functions = {
       char = '' function char
-        grep -EIho '#LINE|#BARB|#JOHN|#RUBY|#HUGH|#OLE' ~/PITH/timeline.md | sort -r | uniq -c
+        grep -EIho '#LTT|#BER|#JCD|#RSP|#HSP|#OBV' ~/PITH/N5L5G6WB.md | sort -r | uniq -c
       end
   '';
 

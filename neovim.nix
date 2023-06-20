@@ -15,16 +15,12 @@
         ./visual.nix
         ./writing.nix
 
-
     # visuals
         ./hi
 
     # plugins
-        #./noice.nix
-        #./notify.nix
-          ./autocmds.nix
           ./auto-save.nix
-        #./cursorline.nix
+          ./autocmds.nix
           ./fugitive.nix
           ./indent-blankline.nix
           ./lsp.nix
@@ -35,6 +31,10 @@
           ./treesitter.nix
           ./undotree.nix
           ./zk.nix
+        #./auto-session.nix
+        #./cursorline.nix
+        #./noice.nix
+        #./notify.nix
 ];
 
     # anything else
