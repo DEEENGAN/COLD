@@ -2,8 +2,8 @@
 
   description = "moonshine, sunshine, and the shine of my suffering";
 
-    inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
-    inputs.home-manager.url = "github:nix-community/home-manager/release-23.05";
+    inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    inputs.home-manager.url = "github:nix-community/home-manager";
     inputs.home-manager.inputs.nixpkgs.follows = "nixpkgs";
     inputs.nixvim.url = "github:pta2002/nixvim";
     inputs.nixvim.inputs.nixpkgs.follows = "nixpkgs";
