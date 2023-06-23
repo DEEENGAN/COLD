@@ -13,6 +13,7 @@
 
                 # reading && writing && publishing
                   ./neovim.nix
+                  ./bat.nix
                   ./git.nix
                   ./sioyek.nix
 

@@ -87,6 +87,8 @@
       # ZK
 
         # BackLinks
+            normal."<leader>zb" = "<CMD>:ZkBacklinks<CR>";
+
         # Cd
         # Index
 
@@ -97,7 +99,7 @@
             normal."<leader>lr" = "<CMD>ZkInsertLink { matchStrategy = 're', match = { vim.fn.input('Search: ')} }<CR>";
 
         # InsertLinkAtSelection
-            visual."<leader>zl" = ":'<,'>ZkInsertLinkAtSelection { matchSelected = true }";
+            visual."<leader>zl" = ":ZkInsertLinkAtSelection { matchSelected = true }";
 
         # Links
             normal."<leader>zl" = "<CMD>ZkLinks<CR>";
@@ -111,8 +113,10 @@
                 normal."<leader>dy" = "<CMD>ZkNew { dir = '/home/deeengan/PITH/WB3LHT7H/', group = '3DRLMKUS', template = '3DRLMKUS.md' }<CR>";
 
         # NewFromContentSelection
+            visual."<leader>lc" = ":ZkNewFromContentSelection";
 
         # NewFromTitleSelection
+            visual."<leader>lt" = ":ZkNewFromTitleSelection";
 
         # Notes
             normal."<leader>zn" = "<CMD>ZkNotes<CR>";

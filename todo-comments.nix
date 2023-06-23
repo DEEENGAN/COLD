@@ -24,7 +24,7 @@
       keywords.WARN = { icon = " ";  alt = [ "TRASH" ]; };
       keywords.PERF = { icon = " ";  alt = [ "END" "OPT" ]; };
       keywords.NOTE = { icon = " "; alt = [ "INFO" ]; };
-      keywords.TEST = { icon = " "; alt = [ "TRY" ]; };
+      keywords.TEST = { icon = " "; alt = [ "TRY" "EXTRA" ]; };
 
 
   };
