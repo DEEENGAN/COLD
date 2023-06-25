@@ -1,12 +1,12 @@
 { ... }: {
 
-    # keys, spacebar " "
-      programs.nixvim.globals = {
-        mapleader = " ";
-        maplocalleader = " ";
+    # KEYS, SPACEBAR " "
+        programs.nixvim.globals = {
+          mapleader = " ";
+          maplocalleader = " ";
 };
 
-    # basic
+    # BASIC
         programs.nixvim.maps = {
           normal."<leader><leader>" = "<CMD>:bn<CR>";
           normal."<leader>bd" = "<CMD>:bd<CR>";
@@ -16,8 +16,9 @@
           normal."<leader>wa" = "<CMD>:wa<CR>";
           normal."<leader>wq" = "<CMD>:wq<CR>";
           normal."ww" = "<CMD>:silent w<CR>";
+          visual."<S-Y>" = "\"+y";
 
-      # formatting
+      # FORMATTING
           normal."<leader>cs" = ":%!pandoc --to=commonmark-smart";
           normal."<leader>dx" = ":!pandoc -s commonmark % --output ~/.docx";
           normal."<leader>ra" = ":%s/'/’/gc";
@@ -26,14 +27,14 @@
           visual."<leader>st" = ":sort";
           visual."<leader>tb" = ":'<,'>!pandoc -t commonmark_x";
 
-      # git
-          # edits
+      # GIT
+          # EDITS
               insert."<bc" = "BREAKING CHANGE:";
               insert."<rf" ="refactor():";
               insert."<x" = "fix():";
               insert."<f" = "feat():";
 
-          # repos
+          # REPOS
               normal."<leader>gl" = "<CMD>:Git pull origin main<CR>";
               normal."<leader>ga" = "<CMD>:Git add --all<CR>";
               normal."<leader>gc" = "<CMD>:Git commit<CR>";
@@ -44,7 +45,7 @@
       # LIT
           # EN
 
-          # de
+          # DE
               insert."s|" = "ß";
               insert."S|" = "ẞ";
               insert."a|" = "ä";
@@ -66,7 +67,7 @@
           normal."<leader>ob" = "<CMD>Obsession ~/PITH/N6949URA.vim<CR>";
           normal."<leader>sc" = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
 
-      # telescope
+      # TELESCOPE
           normal."<leader>cm" = "<CMD>Telescope commands<CR>";
           normal."<leader>km" = "<CMD>Telescope keymaps<CR>";
           normal."<leader>ss" = "<CMD>Telescope spell_suggest<CR>";
