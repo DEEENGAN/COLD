@@ -15,7 +15,6 @@
           normal."<leader>nh" = "<CMD>:noh<CR>";
           normal."<leader>wa" = "<CMD>:wa<CR>";
           normal."<leader>wq" = "<CMD>:wq<CR>";
-          normal."ww" = "<CMD>:silent w<CR>";
           visual."<S-Y>" = "\"+y";
 
       # FORMATTING
