@@ -12,13 +12,13 @@
 
     environment = {
       BORG_CACHE_DIR = "/home/deeengan/.cache/borg";
-      BORG_REPO = "/run/media/deeengan/Samsung\ USB/nixos-2023";
-      compact = "/run/media/deeengan/50de347c-e577-467c-93a4-e3e843a8e8f8/nixos-2023";
+      BORG_REPO = "/run/media/deeengan/Samsung\ USB";
+      compact = "/run/media/deeengan/Samsung\ USB";
       persistent = "true";
       randomizeddelaysec = "600";
 };
 
-    repo = "/run/media/deeengan/Samsung\ USB/archive";
+    repo = "/run/media/deeengan/Samsung\ USB";
 
     encryption = {
       mode = "repokey-blake2";
