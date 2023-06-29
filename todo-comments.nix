@@ -20,11 +20,11 @@
 
       keywords.FIX = { icon = " "; alt = [ "BUG" ]; };
       keywords.TODO = { icon = " "; alt = [ "MERGE" "CONT" ]; };
-      keywords.HACK = { icon = " "; alt = [ "WORD" ]; };
-      keywords.WARN = { icon = " ";  alt = [ "TRASH" ]; };
-      keywords.PERF = { icon = " ";  alt = [ "END" "OPT" ]; };
+      keywords.HACK = { icon = " "; alt = [ "EDIT" ]; };
+      keywords.WARN = { icon = " ";  alt = [ "TRASH" "PLOT" ]; };
+      keywords.PERF = { icon = " ";  alt = [ "END" ]; };
       keywords.NOTE = { icon = " "; alt = [ "INFO" ]; };
-      keywords.TEST = { icon = " "; alt = [ "TRY" "EXTRA" ]; };
+      keywords.TEST = { icon = " "; alt = [ "TRY" ]; };
 
 
   };
