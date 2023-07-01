@@ -71,7 +71,7 @@
           normal."<leader>km" = "<CMD>Telescope keymaps<CR>";
           normal."<leader>ss" = "<CMD>Telescope spell_suggest<CR>";
           normal."<leader>tb" = "<CMD>Telescope buffers<CR>";
-          normal."<leader>tf" = "<CMD>Telescope find_files search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
+          normal."<leader>tf" = "<CMD>Telescope find_files disable_devicons=true search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
           normal."<leader>tg" = "<CMD>Telescope grep_string search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
           normal."<leader>th" = "<CMD>Telescope highlights<CR>";
           normal."<leader>to" = "<CMD>Telescope oldfiles<CR>";
@@ -89,36 +89,36 @@
         # BackLinks
             normal."<leader>zb" = "<CMD>:ZkBacklinks<CR>";
 
-        # Cd
-        # Index
+        # CD
+        # INDEX
 
-        # InsertLink
+        # INSERTLINK
             normal."<leader>le" = "<CMD>ZkInsertLink { matchStrategy = 'exact', match = { vim.fn.input('Search: ')} }<CR>";
             normal."<leader>lf" = "<CMD>ZkInsertLink { matchStrategy = 'fts', match = { vim.fn.input('Search: ')} }<CR>";
             normal."<leader>ll" = "<CMD>ZkInsertLink<CR>";
             normal."<leader>lr" = "<CMD>ZkInsertLink { matchStrategy = 're', match = { vim.fn.input('Search: ')} }<CR>";
 
-        # InsertLinkAtSelection
+        # INSERTLINKATSELECTION
             visual."<leader>zl" = ":ZkInsertLinkAtSelection { matchSelected = true }";
 
-        # Links
+        # LINKS
             normal."<leader>zl" = "<CMD>ZkLinks<CR>";
 
-        # Match
+        # MATCH
 
-        # New
+        # NEW
             # ZkNew -- set the fish path to ~/DIR/, no ~/DIR/.zk as it will be included in dir = below
             # this works when you are in fish shell
                 normal."<leader>ia" = "<CMD>ZkNew { dir = '/home/deeengan/PITH/', group = 'IR7I32C9', template = 'EM5EQUG8.md', title = vim.fn.input('Title: '), content = vim.fn.input('Tags: ') }<CR>";
                 normal."<leader>dy" = "<CMD>ZkNew { dir = '/home/deeengan/PITH/WB3LHT7H/', group = '3DRLMKUS', template = '3DRLMKUS.md' }<CR>";
 
-        # NewFromContentSelection
+        # NEWFROMCONTENTSELECTION
             visual."<leader>lc" = ":ZkNewFromContentSelection";
 
-        # NewFromTitleSelection
+        # NEWFROMTITLESELECTION
             visual."<leader>lt" = ":ZkNewFromTitleSelection";
 
-        # Notes
+        # NOTES
             normal."<leader>zn" = "<CMD>ZkNotes<CR>";
             normal."<leader>zo" = "<CMD>ZkNotes { sort = { 'modified' }, orphan = true }<CR>";
             normal."<leader>zw" = "<CMD>ZkNotes { sort = { 'word-count' } }<CR>";
@@ -126,7 +126,7 @@
             normal."<leader>ze" = "<CMD>ZkNotes { matchStrategy = 'exact', match = { vim.fn.input('exact: ') } }<CR>";
             normal."<leader>zr" = "<CMD>ZkNotes { matchStrategy = 're', match = { vim.fn.input('re: ') } }<CR>";
 
-        # Tags
+        # TAGS
             normal."<leader>zt" = "<CMD>ZkTags<CR>";
 
   };
