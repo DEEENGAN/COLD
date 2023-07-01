@@ -60,6 +60,10 @@
               insert."!lk" = "[link](https://)";
               insert."!hf" = "<span class=\"body-text-link-pink\"><a href=\"LINK.html\">TITLE</a></span>";
               insert."!sp" = "&nbsp;&nbsp;&nbsp;";
+      # MINI
+          # FILES
+              normal."<leader>ml" = "<CMD>:lua MiniFiles.open()<CR>";
+             
 
       # OBESSION
           normal."<leader>o1" = "<CMD>Obsession!<CR>";

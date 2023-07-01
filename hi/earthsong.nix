@@ -85,7 +85,8 @@
 
     # PLUGINS
         # CURSOR
-            CurrentWordTwins = { bold = false; italic = false; underline = false; strikethrough = true; fg = "#C94234"; bg = "NONE"; };
+            MiniCursorword = { bold = false; italic = false; underline = false; strikethrough = true; fg = "#C94234"; bg = "NONE"; };
+            MiniCursorwordCurrent = { fg = "#C94234"; bg = "NONE";  };
 
         # indent-blankline
             #IndentBlanklineChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
@@ -110,7 +111,7 @@
                 TodoSignHACK = { fg = "#FF9269"; bg = "NONE"; };
                 TodoSignWARN = { fg = "#E0D561"; bg = "NONE"; };
                 TodoSignPERF = { fg = "#84F088"; bg = "NONE"; };
-                TodoSignNOTE = { fg = "#509552"; bg = "NONE"; };
+                TodoSignNOTE = { fg = "#98E036"; bg = "NONE"; };
                 TodoSignTEST = { fg = "#F5AE2E"; bg = "NONE"; };
 
             # todo bg
@@ -119,7 +120,7 @@
                 TodoBgHACK = { bold = true; italic = true; fg = "#121418"; bg = "#FF9269"; };
                 TodoBgWARN = { bold = true; italic = true; fg = "#121418"; bg = "#E0D561"; };
                 TodoBgPERF = { bold = true; italic = true; fg = "#121418"; bg = "#84F088"; };
-                TodoBgNOTE = { bold = true; italic = true; fg = "#121418"; bg = "#509552"; };
+                TodoBgNOTE = { bold = true; italic = true; fg = "#121418"; bg = "#98E036"; };
                 TodoBgTEST = { bold = true; italic = true; fg = "#121418"; bg = "#F5AE2E"; };
 
             # todo fg
@@ -128,7 +129,7 @@
                 TodoFgHACK = { fg = "#FF9269"; bg = "NONE"; };
                 TodoFgWARN = { fg = "#E0D561"; bg = "NONE"; };
                 TodoFgPERF = { fg = "#84F088"; bg = "NONE"; };
-                TodoFgNOTE = { fg = "#509552"; bg = "NONE"; };
+                TodoFgNOTE = { fg = "#98E036"; bg = "NONE"; };
                 TodoFgTEST = { fg = "#F5AE2E"; bg = "NONE"; };
 
     # redraw

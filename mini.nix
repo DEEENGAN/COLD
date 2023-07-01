@@ -4,6 +4,18 @@
     enable = true;
 
       modules = {
+        cursorword = {
+          delay = 0;
+    };
+
+        files = {
+          windows = {
+            preview = true;
+      };
+    };
+
+        # session = { 
+
         starter = {
           autoopen = true;
           header = "
