@@ -66,8 +66,6 @@
              
 
       # OBESSION
-          normal."<leader>o1" = "<CMD>Obsession!<CR>";
-          normal."<leader>ob" = "<CMD>Obsession ~/PITH/N6949URA.vim<CR>";
           normal."<leader>sc" = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
 
       # TELESCOPE

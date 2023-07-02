@@ -31,7 +31,7 @@
           ./treesitter.nix
           ./undotree.nix
           ./zk.nix
-          ./mini.nix
+          ./mini.nix # files, session, starter
         #./auto-session.nix
         #./cursorline.nix
         #./noice.nix
