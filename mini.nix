@@ -9,9 +9,20 @@
     };
 
         files = {
+          windows = {
+            preview = true;
+            width_preview = 100;
+      };
     };
 
-        # session = { };
+        sessions = {
+          autoread = false;
+          autowrite = true;
+          directory = "~/PITH/";
+          file = "N6949URA.vim";
+          force = { read = false; write = true; delete = false; };
+          verbose = { read = false; write = true; delete = true; };
+    };
 
         starter = {
           autoopen = true;

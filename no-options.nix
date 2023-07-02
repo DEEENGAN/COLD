@@ -1,7 +1,7 @@
 { pkgs, ... }: {
 
-  # outside
+  # OUTSIDE
       programs.nixvim.extraPlugins = with pkgs.vimPlugins; [
-              vim-obsession
+              #vim-obsession
   ];
 }

@@ -3,23 +3,40 @@
   programs.nixvim.colorscheme = "default";
   programs.nixvim.options = {
 
-    # 'thetics 
+    # 'THETICS 
         conceallevel = 2;
         display = "lastline";
         linebreak = true;
         syntax = "on";
 
-      # despite terminal use, gui opts must be set for colors etc.
+
+      # DESPITE TERMINAL USE, GUI OPTS MUST BE SET FOR COLORS ETC.
           guicursor = "n-c-v-sm:Cursor,i-ci-ve:ver33-Cursor,r-cr-o:hor33-Cursor,a:blinkwait0-blinkon2000-blinkoff0";
           guifont = "FantasqueSansM";
           guifontwide = "";
           guioptions = "!";
           termguicolors = true;
 
-    # number line
+    # NUMBER LINE
         relativenumber = true;
 
-    # tabs && spaces
+    # SEARCH
+        incsearch = true;
+        ignorecase = true;
+        hlsearch = true;
+        wildmenu = true;
+        wildmode = "longest:full,full";
+        scrolloff = 50;
+
+    # SESSIONS
+        sessionoptions = "blank,buffers,curdir,folds,help,options,tabpages,winsize,terminal";
+
+    # STATUS LINE
+        laststatus = 3;
+        statusline = "%{FugitiveStatusline()} %<%F %{wordcount().words} %l/%L %p%%%r%h%m";
+        fillchars = "stl:─,stlnc:─";
+
+    # TABS && SPACES
         expandtab = true;
         list = true;
         listchars = "tab:>.,trail:.,extends:#,nbsp:.";
@@ -28,19 +45,6 @@
         smarttab = true;
         softtabstop = 0;
         tabstop = 2;
-
-    # search
-        incsearch = true;
-        ignorecase = true;
-        hlsearch = true;
-        wildmenu = true;
-        wildmode = "longest:full,full";
-        scrolloff = 50;
-
-    # status line
-        laststatus = 3;
-        statusline = "%{FugitiveStatusline()} %<%F %{wordcount().words} %l/%L %p%%%{ObsessionStatus()}%r%h%m";
-        fillchars = "stl:─,stlnc:─";
 
   };
 }
