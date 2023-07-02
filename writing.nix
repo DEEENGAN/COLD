@@ -57,13 +57,12 @@
               insert.",|" = "“";
 
           # HTML, EXAMPLE OF HOW TO BACKSLASH
-              insert."!ll" = "[]()";
               insert."!hf" = "<span class=\"body-text-link-pink\"><a href=\"LINK.html\">TITLE</a></span>";
               insert."!sp" = "&nbsp;&nbsp;&nbsp;";
       # MINI
           # FILES
-              normal."<leader>ml" = "<CMD>:lua MiniFiles.open()<CR>";
-             
+              #normal."<leader>ml" = "<CMD>:lua MiniFiles.open()<CR>";
+
 
       # OBESSION
           normal."<leader>sc" = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
@@ -79,6 +78,10 @@
           normal."<leader>to" = "<CMD>Telescope oldfiles<CR>";
           normal."<leader>tr" = "<CMD>Telescope registers<CR>";
           normal."<leader>tz" = "<CMD>Telescope current_buffer_fuzzy_find<CR>";
+
+            # EXTENSIONS
+                # FILE_BROWSER
+                    normal."<leader>fb" = "<CMD>Telescope file_browser path=%:p:h<CR>";
 
       # TODO
           normal."<leader>td" = "<CMD>TodoTelescope<CR>";

@@ -8,13 +8,6 @@
           delay = 0;
     };
 
-        files = {
-          windows = {
-            preview = true;
-            width_preview = 100;
-      };
-    };
-
         sessions = {
           autoread = false;
           autowrite = true;

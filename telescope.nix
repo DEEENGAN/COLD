@@ -9,5 +9,11 @@
         filetypes = [ "png" "webp" "jpg" "jpeg" ];
 
     };
+
+       extensions.file_browser = {
+        enable = true;
+        addDirs = true;
+
+   };
   };
 }
