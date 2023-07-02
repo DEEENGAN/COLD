@@ -27,6 +27,7 @@
 
         # CURSOR, LCURSOR HAS FG = BG
             Cursor = { fg = "NONE"; bg = "#C94234"; };
+            CursorLine = { fg = "NONE"; bg = "NONE"; };
             CursorColumn = { fg = "NONE"; bg = "NONE"; };
             CursorLineNR = { fg = "#121418"; bg = "NONE"; };
             TermCursor = { fg = "NONE"; bg = "NONE"; };
