@@ -31,9 +31,11 @@
           ./treesitter.nix
           ./undotree.nix
           ./zk.nix
-          ./mini.nix # cursorword, session, starter
-        #./auto-session.nix
-        #./cursorline.nix
+          ./mini.nix
+          ./cursorword.nix
+          ./sessions.nix
+          ./starter.nix
+          ./surround.nix
         #./noice.nix
         #./notify.nix
 ];
