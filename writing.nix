@@ -19,7 +19,7 @@
 
       # FORMATTING
           normal."<leader>cs" = ":%!pandoc --to=commonmark-smart";
-          normal."<leader>dx" = ":!pandoc -s commonmark % --output ~/.docx";
+          normal."<leader>dx" = ":!pandoc -s % --output ~/.docx";
           normal."<leader>ra" = ":%s/'/’/gc";
           visual."<leader>cs" = "!pandoc --to=commonmark-smart";
           visual."<leader>sn" = ":sort n";
