@@ -59,13 +59,12 @@
           # HTML, EXAMPLE OF HOW TO BACKSLASH
               insert."!hf" = "<span class=\"body-text-link-pink\"><a href=\"LINK.html\">TITLE</a></span>";
               insert."!sp" = "&nbsp;&nbsp;&nbsp;";
-      # MINI
-          # FILES
-              #normal."<leader>ml" = "<CMD>:lua MiniFiles.open()<CR>";
+              insert."!lk" = "[]()";
 
 
-      # OBESSION
+      # SESSIONS
           normal."<leader>sc" = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
+          normal."<leader>mk" = "<CMD>:mksession! ~/PITH/N6949URA.vim<CR>";
 
       # TELESCOPE
           normal."<leader>cm" = "<CMD>Telescope commands<CR>";
