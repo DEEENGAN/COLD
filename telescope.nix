@@ -13,6 +13,8 @@
        extensions.file_browser = {
         enable = true;
         addDirs = true;
+        hijackNetrw = true;
+        useFd = true;
 
    };
   };

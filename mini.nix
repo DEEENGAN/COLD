@@ -4,6 +4,7 @@
     enable = true;
 
       modules = {
+
         cursorword = {
           delay = 0;
     };
@@ -37,7 +38,9 @@ _/_(/    _       /---/     // //      /       ___   __  _/_ __                  
           ";
       };
 
-        
+        surround = {
+
+      };
     };
   };
 }
