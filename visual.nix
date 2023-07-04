@@ -29,7 +29,7 @@
         scrolloff = 50;
 
     # SESSIONS
-        sessionoptions = "blank,buffers,curdir,folds,help,options,tabpages,winsize,terminal";
+        sessionoptions = "blank,buffers,curdir,folds,help,resize,tabpages,winpos,winsize,terminal";
 
     # STATUS LINE
         laststatus = 3;
