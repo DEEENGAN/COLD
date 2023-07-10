@@ -2,7 +2,7 @@
       
   programs.git = {
     enable = true;
-    ignores = [ ".DS_Store" "hardware-configuration.nix" ];
+    ignores = [ ".zk/notebook.db" "*.db" ".DS_Store" "hardware-configuration.nix" ];
     userEmail = "writing@deeengan.com";
     userName = "Dee Engan";
 

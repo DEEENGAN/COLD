@@ -34,12 +34,13 @@
               insert."<f" = "feat():";
 
           # REPOS
-              normal."<leader>gl" = "<CMD>:Git pull origin main<CR>";
+              normal."<leader>gp" = "<CMD>:Git pull origin main<CR>";
               normal."<leader>ga" = "<CMD>:Git add --all<CR>";
               normal."<leader>gc" = "<CMD>:Git commit<CR>";
               normal."<leader>gh" = "<CMD>:Git push origin main<CR>";
               normal."<leader>g2" = "<CMD>:Git push clone main<CR>";
               normal."<leader>gs" = "<CMD>:Git<CR>";
+              normal."<leader>gl" = "<CMD>:Git log<CR>";
 
       # LIT
           # EN
