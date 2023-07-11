@@ -1,5 +1,5 @@
 {
-      
+
   programs.git = {
     enable = true;
     ignores = [ ".zk/notebook.db" "*.db" ".DS_Store" "hardware-configuration.nix" ];

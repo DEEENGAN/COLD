@@ -33,6 +33,7 @@
       dots = '' function dots
         cp -r ~/.local/share/sioyek/ ~/DATA/
         cp -r ~/.config/nvim/syntax/ ~/DATA/
+        cp -r ~/.config/nvim/spell/ ~/DATA/
       end
   '';
 

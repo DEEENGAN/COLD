@@ -18,13 +18,13 @@
         maxLineLen = 400;
 };
 
-      keywords.FIX = { icon = " "; alt = [ "BUG" ]; };
-      keywords.TODO = { icon = " "; alt = [ "MERGE" "CONT" ]; };
-      keywords.HACK = { icon = " "; alt = [ "EDIT" ]; };
-      keywords.WARN = { icon = " ";  alt = [ "TRASH" "PLOT" ]; };
-      keywords.PERF = { icon = " ";  alt = [ "END" ]; };
+      keywords.FIX = { icon = " "; alt = [ "BUG" "JCD" ]; };
+      keywords.TODO = { icon = " "; alt = [ "MERGE" "CONT" "HPS" ]; };
+      keywords.HACK = { icon = " "; alt = [ "EDIT" "BER" ]; };
+      keywords.WARN = { icon = " ";  alt = [ "TRASH" "PLOT" "LTT" ]; };
+      keywords.PERF = { icon = " ";  alt = [ "END" "RSP" ]; };
       keywords.NOTE = { icon = " "; alt = [ "INFO" ]; };
-      keywords.TEST = { icon = " "; alt = [ "TRY" ]; };
+      keywords.TEST = { icon = " "; alt = [ "TRY" "OBV" ]; };
 
 
   };
