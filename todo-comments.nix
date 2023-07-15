@@ -23,7 +23,7 @@
       keywords.HACK = { icon = " "; alt = [ "EDIT" "BER" ]; };
       keywords.WARN = { icon = " ";  alt = [ "TRASH" "MARK" "LTT" ]; };
       keywords.PERF = { icon = " ";  alt = [ "END" "RSP" ]; };
-      keywords.NOTE = { icon = " "; alt = [ "INFO" ]; };
+      keywords.NOTE = { icon = " "; alt = [ "PLOT" "ME" ]; };
       keywords.TEST = { icon = " "; alt = [ "TRY" "OBV" ]; };
 
 

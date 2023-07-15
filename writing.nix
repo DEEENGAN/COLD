@@ -11,7 +11,7 @@
           normal."<leader><leader>" = "<CMD>:bn<CR>";
           normal."<leader>bd" = "<CMD>:bd<CR>";
           normal."<leader>bp" = "<CMD>:bp<CR>";
-          normal."<leader>wc" = "<CMD>:g<C-g><CR>";
+          normal."<leader>wc" = "g<C-g>";
           normal."<leader>nh" = "<CMD>:noh<CR>";
           normal."<leader>wa" = "<CMD>:wa<CR>";
           normal."<leader>wq" = "<CMD>:wq<CR>";

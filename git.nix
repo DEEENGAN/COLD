@@ -13,6 +13,7 @@
         pull.rebase = true;
         rebase.autoStash = true;
         user.signingkey = "8C0C6887!";
+        #http.postBuffer = 524288000;
 
           filter.lfs = {
             clean = "git-lfs clean -- %f";
