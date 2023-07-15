@@ -116,13 +116,13 @@
                 TodoSignTEST = { fg = "#F5AE2E"; bg = "NONE"; };
 
             # todo bg
-                TodoBgFIX = { bold = true; italic = true; fg = "#121418"; bg = "#FF645A"; };
-                TodoBgTODO = { bold = true; italic = true; fg = "#121418"; bg = "#5FDAFF"; };
-                TodoBgHACK = { bold = true; italic = true; fg = "#121418"; bg = "#FF9269"; };
-                TodoBgWARN = { bold = true; italic = true; fg = "#121418"; bg = "#E0D561"; };
-                TodoBgPERF = { bold = true; italic = true; fg = "#121418"; bg = "#84F088"; };
-                TodoBgNOTE = { bold = true; italic = true; fg = "#121418"; bg = "#98E036"; };
-                TodoBgTEST = { bold = true; italic = true; fg = "#121418"; bg = "#F5AE2E"; };
+                TodoBgFIX = { bold = true; underline = true; fg = "#121418"; bg = "#FF645A"; };
+                TodoBgTODO = { bold = true; underline = true; fg = "#121418"; bg = "#5FDAFF"; };
+                TodoBgHACK = { bold = true; underline = true; fg = "#121418"; bg = "#FF9269"; };
+                TodoBgWARN = { bold = true; underline = true; fg = "#121418"; bg = "#E0D561"; };
+                TodoBgPERF = { bold = true; underline = true; fg = "#121418"; bg = "#84F088"; };
+                TodoBgNOTE = { bold = true; underline = true; fg = "#121418"; bg = "#98E036"; };
+                TodoBgTEST = { bold = true; underline = true; fg = "#121418"; bg = "#F5AE2E"; };
 
             # todo fg
                 TodoFgFIX = { fg = "#FF645A"; bg = "NONE"; };
