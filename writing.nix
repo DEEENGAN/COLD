@@ -104,7 +104,7 @@
             normal."<leader>lr" = "<CMD>ZkInsertLink { matchStrategy = 're', match = { vim.fn.input('Search: ')} }<CR>";
 
         # INSERTLINKATSELECTION
-            visual."<leader>zl" = ":ZkInsertLinkAtSelection { matchSelected = true }";
+            visual."<leader>zl" = ":ZkInsertLinkAtSelection";
 
         # LINKS
             normal."<leader>zl" = "<CMD>ZkLinks<CR>";
