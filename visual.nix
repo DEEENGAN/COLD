@@ -10,7 +10,6 @@
         syntax = "on";
         foldmethod = "indent";
 
-
       # DESPITE TERMINAL USE, GUI OPTS MUST BE SET FOR COLORS ETC.
           guicursor = "n-c-v-sm:Cursor,i-ci-ve:ver33-Cursor,r-cr-o:hor33-Cursor,a:blinkwait0-blinkon2000-blinkoff0";
           guifont = "FantasqueSansM";
