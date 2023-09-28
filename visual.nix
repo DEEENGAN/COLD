@@ -8,6 +8,7 @@
         display = "lastline";
         linebreak = true;
         syntax = "on";
+        foldmethod = "indent";
 
 
       # DESPITE TERMINAL USE, GUI OPTS MUST BE SET FOR COLORS ETC.
