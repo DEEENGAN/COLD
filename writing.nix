@@ -7,15 +7,52 @@
 };
 
     # BASIC
+        programs.nixvim.keymaps = [
+          { 
+            mode = "n";
+            key = "<leader><leader>";
+            action = "<CMD>:bn<CR>";
+        }
+          { 
+            mode = "n";
+            key = "<leader>bd";
+            action = "<CMD>:bd<CR>";
+        }
+          { 
+            mode = "n";
+            key = "<leader>wc";
+            action = "g<C-g>";
+        }
+          { 
+            mode = "n";
+            key = "<leader>nh";
+            action = "<CMD>:noh<CR>";
+        }
+          { 
+            mode = "n";
+            key = "<leader>wa";
+            action = "<CMD>:wa<CR>";
+        }
+          { 
+            mode = "n";
+            key = "<leader>wq";
+            action = "<CMD>:wq<CR>";
+        }
+          { 
+            mode = "v";
+            key = "<S-Y>";
+            action = "\"+y";
+        }
+      ];
+
         programs.nixvim.maps = {
-          normal."<leader><leader>" = "<CMD>:bn<CR>";
-          normal."<leader>bd" = "<CMD>:bd<CR>";
-          normal."<leader>bp" = "<CMD>:bp<CR>";
-          normal."<leader>wc" = "g<C-g>";
-          normal."<leader>nh" = "<CMD>:noh<CR>";
-          normal."<leader>wa" = "<CMD>:wa<CR>";
-          normal."<leader>wq" = "<CMD>:wq<CR>";
-          visual."<S-Y>" = "\"+y";
+          #normal."<leader><leader>" = "<CMD>:bn<CR>";
+          #normal."<leader>bd" = "<CMD>:bd<CR>";
+          #normal."<leader>wc" = "g<C-g>";
+          #normal."<leader>nh" = "<CMD>:noh<CR>";
+          #normal."<leader>wa" = "<CMD>:wa<CR>";
+          #normal."<leader>wq" = "<CMD>:wq<CR>";
+          #visual."<S-Y>" = "\"+y";
 
       # FORMATTING
           normal."<leader>cs" = ":%!pandoc --to=commonmark-smart";
