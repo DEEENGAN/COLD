@@ -8,37 +8,42 @@
 
     # BASIC
         programs.nixvim.keymaps = [
-          { 
+          {
             mode = "n";
             key = "<leader><leader>";
             action = "<CMD>:bn<CR>";
         }
-          { 
+          {
             mode = "n";
             key = "<leader>bd";
             action = "<CMD>:bd<CR>";
         }
-          { 
+          {
+            mode = "n";
+            key = "<leader>bp";
+            action = "<CMD>:bp<CR>";
+        }
+          {
             mode = "n";
             key = "<leader>wc";
             action = "g<C-g>";
         }
-          { 
+          {
             mode = "n";
             key = "<leader>nh";
             action = "<CMD>:noh<CR>";
         }
-          { 
+          {
             mode = "n";
             key = "<leader>wa";
             action = "<CMD>:wa<CR>";
         }
-          { 
+          {
             mode = "n";
             key = "<leader>wq";
             action = "<CMD>:wq<CR>";
         }
-          { 
+          {
             mode = "v";
             key = "<S-Y>";
             action = "\"+y";
