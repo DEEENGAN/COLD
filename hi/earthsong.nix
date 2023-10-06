@@ -9,7 +9,7 @@
         Constant = { fg = "#F5AE2E"; bg = "NONE"; };
         Directory = { fg = "#98E036"; bg = "NONE"; };
         FoldColumn = { fg = "#1398B9"; bg = "NONE"; };
-        Folded = { fg = "#85C54C"; bg = "NONE"; };
+        Folded = { fg = "#F6F7EC"; bg = "NONE"; };
         Identifier = { fg = "#84F088"; bg = "NONE"; };
         MatchParen = { fg = "#C94234"; bg = "NONE"; };
         MoreMsg = { fg = "#1398B9"; bg = "NONE"; };
