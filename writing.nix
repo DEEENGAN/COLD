@@ -81,24 +81,27 @@
             action = ":'<,'>!pandoc -t commonmark_x";
         }
 
+    # GIT
+          {
+            mode = "i";
+            key = "<rf";
+            action = "refactor():";
+        }
+          {
+            mode = "i";
+            key = "<fx";
+            action = "fix():";
+        }
+          {
+            mode = "i";
+            key = "<ft";
+            action = "feat():";
+        }
+
+
       ];
 
         programs.nixvim.maps = {
-
-      # FORMATTING
-          #normal."<leader>cs" = ":%!pandoc --to=commonmark-smart";
-          #normal."<leader>dx" = ":!pandoc -s % --output ~/.docx";
-          #visual."<leader>cs" = "!pandoc --to=commonmark-smart";
-          #visual."<leader>sn" = ":sort n";
-          #visual."<leader>st" = ":sort";
-          #visual."<leader>tb" = ":'<,'>!pandoc -t commonmark_x";
-
-      # GIT
-          # EDITS
-              insert."<bc" = "BREAKING CHANGE:";
-              insert."<rf" ="refactor():";
-              insert."<x" = "fix():";
-              insert."<f" = "feat():";
 
           # REPOS
               normal."<leader>gp" = "<CMD>:Git pull origin main<CR>";
