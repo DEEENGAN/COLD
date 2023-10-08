@@ -48,25 +48,50 @@
             key = "<S-Y>";
             action = "\"+y";
         }
+
+    # FORMATTING
+          {
+            mode = "n";
+            key = "<leader>cs";
+            action = ":%!pandoc --to=commonmark-smart";
+        }
+          {
+            mode = "v";
+            key = "<leader>cs";
+            action = ":%!pandoc --to=commonmark-smart";
+        }
+          {
+            mode = "n";
+            key = "<leader>dx";
+            action = ":!pandoc -s % --output ~/.docx";
+        }
+          {
+            mode = "v";
+            key = "<leader>sn";
+            action = ":sort n";
+        }
+          {
+            mode = "v";
+            key = "<leader>st";
+            action = ":sort";
+        }
+          {
+            mode = "v";
+            key = "<leader>tb";
+            action = ":'<,'>!pandoc -t commonmark_x";
+        }
+
       ];
 
         programs.nixvim.maps = {
-          #normal."<leader><leader>" = "<CMD>:bn<CR>";
-          #normal."<leader>bd" = "<CMD>:bd<CR>";
-          #normal."<leader>wc" = "g<C-g>";
-          #normal."<leader>nh" = "<CMD>:noh<CR>";
-          #normal."<leader>wa" = "<CMD>:wa<CR>";
-          #normal."<leader>wq" = "<CMD>:wq<CR>";
-          #visual."<S-Y>" = "\"+y";
 
       # FORMATTING
-          normal."<leader>cs" = ":%!pandoc --to=commonmark-smart";
-          normal."<leader>dx" = ":!pandoc -s % --output ~/.docx";
-          normal."<leader>ra" = ":%s/'/’/gc";
-          visual."<leader>cs" = "!pandoc --to=commonmark-smart";
-          visual."<leader>sn" = ":sort n";
-          visual."<leader>st" = ":sort";
-          visual."<leader>tb" = ":'<,'>!pandoc -t commonmark_x";
+          #normal."<leader>cs" = ":%!pandoc --to=commonmark-smart";
+          #normal."<leader>dx" = ":!pandoc -s % --output ~/.docx";
+          #visual."<leader>cs" = "!pandoc --to=commonmark-smart";
+          #visual."<leader>sn" = ":sort n";
+          #visual."<leader>st" = ":sort";
+          #visual."<leader>tb" = ":'<,'>!pandoc -t commonmark_x";
 
       # GIT
           # EDITS
@@ -110,12 +135,11 @@
           normal."<leader>mk" = "<CMD>:mksession! ~/PITH/N6949URA.vim<CR>";
 
       # TELESCOPE
-          normal."<leader>cm" = "<CMD>Telescope commands<CR>";
           normal."<leader>km" = "<CMD>Telescope keymaps<CR>";
           normal."<leader>ss" = "<CMD>Telescope spell_suggest<CR>";
-          normal."<leader>tb" = "<CMD>Telescope buffers<CR>";
           normal."<leader>tf" = "<CMD>Telescope find_files disable_devicons=true search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
           normal."<leader>tg" = "<CMD>Telescope grep_string search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
+          normal."<leader>tp" = "<CMD>Telescope grep_string type_filter=\"*#SPEECH*\" search_dirs=~/PITH/<CR>";
           normal."<leader>th" = "<CMD>Telescope highlights<CR>";
           normal."<leader>to" = "<CMD>Telescope oldfiles<CR>";
           normal."<leader>tr" = "<CMD>Telescope registers<CR>";
