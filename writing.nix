@@ -178,7 +178,6 @@
           # HTML, EXAMPLE OF HOW TO BACKSLASH
               insert."!hf" = "<span class=\"body-text-link-pink\"><a href=\"LINK.html\">TITLE</a></span>";
               insert."!sp" = "&nbsp;&nbsp;&nbsp;";
-              insert."!lk" = "[]()";
 
 
       # SESSIONS
