@@ -31,8 +31,7 @@
           {
             mode = "n";
             key = "<leader>nh";
-            action = "<CMD>:noh<CR>";
-        }
+            action = "<CMD>:noh<CR>"; }
           {
             mode = "n";
             key = "<leader>wa";
@@ -98,19 +97,68 @@
             action = "feat():";
         }
 
+    # SPLITS
+          {
+            mode = "n";
+            key = "<leader>vs";
+            action = "<CMD>:vsplit<CR>";
+        }
+          {
+            mode = "n";
+            key = "<leader>oo";
+            action = "<CMD>:only<CR>";
+        }
+
+    # REPOS
+          {
+            mode = "n";
+            key = "<leader>gp";
+            action = "<CMD>:Git pull origin main<CR>";
+        }
+          {
+            mode = "n";
+            key = "<leader>ga";
+            action = "<CMD>:Git add --all<CR>";
+        }
+          {
+            mode = "n";
+            key = "<leader>gc";
+            action = "<CMD>:Git commit<CR>";
+        }
+          {
+            mode = "n";
+            key = "<leader>gh";
+            action = "<CMD>:Git push origin main<CR>";
+        }
+          {
+            mode = "n";
+            key = "<leader>g2";
+            action = "<CMD>:Git push clone main<CR>";
+        }
+          {
+            mode = "n";
+            key = "<leader>gs";
+            action = "<CMD>:Git<CR>";
+        }
+          {
+            mode = "n";
+            key = "<leader>gl";
+            action = "<CMD>:Git log<CR>";
+        }
+
 
       ];
 
         programs.nixvim.maps = {
 
           # REPOS
-              normal."<leader>gp" = "<CMD>:Git pull origin main<CR>";
-              normal."<leader>ga" = "<CMD>:Git add --all<CR>";
-              normal."<leader>gc" = "<CMD>:Git commit<CR>";
-              normal."<leader>gh" = "<CMD>:Git push origin main<CR>";
-              normal."<leader>g2" = "<CMD>:Git push clone main<CR>";
-              normal."<leader>gs" = "<CMD>:Git<CR>";
-              normal."<leader>gl" = "<CMD>:Git log<CR>";
+              #normal."<leader>gp" = "<CMD>:Git pull origin main<CR>";
+              #normal."<leader>ga" = "<CMD>:Git add --all<CR>";
+              #normal."<leader>gc" = "<CMD>:Git commit<CR>";
+              #normal."<leader>gh" = "<CMD>:Git push origin main<CR>";
+              #normal."<leader>g2" = "<CMD>:Git push clone main<CR>";
+              #normal."<leader>gs" = "<CMD>:Git<CR>";
+              #normal."<leader>gl" = "<CMD>:Git log<CR>";
 
       # LIT
           # EN
@@ -136,6 +184,9 @@
       # SESSIONS
           normal."<leader>sc" = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
           normal."<leader>mk" = "<CMD>:mksession! ~/PITH/N6949URA.vim<CR>";
+
+      # SPLITS
+          
 
       # TELESCOPE
           normal."<leader>km" = "<CMD>Telescope keymaps<CR>";
