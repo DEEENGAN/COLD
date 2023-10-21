@@ -1,179 +1,238 @@
 { ... }: {
 
-    # KEYS, SPACEBAR " "
-        programs.nixvim.globals = {
-          mapleader = " ";
-          maplocalleader = " ";
+  # KEYS, SPACEBAR " "
+      programs.nixvim.globals = {
+        mapleader = " ";
+        maplocalleader = " ";
 };
 
-    # BASIC
-        programs.nixvim.keymaps = [
-          {
-            mode = "n";
-            key = "<leader><leader>";
-            action = "<CMD>:bn<CR>";
-        }
-          {
-            mode = "n";
-            key = "<leader>bd";
-            action = "<CMD>:bd<CR>";
-        }
-          {
-            mode = "n";
-            key = "<leader>bp";
-            action = "<CMD>:bp<CR>";
-        }
-          {
-            mode = "n";
-            key = "<leader>wc";
-            action = "g<C-g>";
-        }
-          {
-            mode = "n";
-            key = "<leader>nh";
-            action = "<CMD>:noh<CR>"; }
-          {
-            mode = "n";
-            key = "<leader>wa";
-            action = "<CMD>:wa<CR>";
-        }
-          {
-            mode = "n";
-            key = "<leader>wq";
-            action = "<CMD>:wq<CR>";
-        }
-          {
-            mode = "v";
-            key = "<S-Y>";
-            action = "\"+y";
-        }
+  # BASIC
+      programs.nixvim.keymaps = [
+        {
+          mode = "n";
+          key = "<leader><leader>";
+          action = "<CMD>:bn<CR>";
+      }
+        {
+          mode = "n";
+          key = "<leader>bd";
+          action = "<CMD>:bd<CR>";
+      }
+        {
+          mode = "n";
+          key = "<leader>bp";
+          action = "<CMD>:bp<CR>";
+      }
+        {
+          mode = "n";
+          key = "<leader>wc";
+          action = "g<C-g>";
+      }
+        {
+          mode = "n";
+          key = "<leader>nh";
+          action = "<CMD>:noh<CR>"; }
+        {
+          mode = "n";
+          key = "<leader>wa";
+          action = "<CMD>:wa<CR>";
+      }
+        {
+          mode = "n";
+          key = "<leader>wq";
+          action = "<CMD>:wq<CR>";
+      }
+        {
+          mode = "v";
+          key = "<S-Y>";
+          action = "\"+y";
+      }
 
-    # FORMATTING
-          {
-            mode = "n";
-            key = "<leader>cs";
-            action = ":%!pandoc --to=commonmark-smart";
-        }
-          {
-            mode = "v";
-            key = "<leader>cs";
-            action = ":%!pandoc --to=commonmark-smart";
-        }
-          {
-            mode = "n";
-            key = "<leader>dx";
-            action = ":!pandoc -s % --output ~/.docx";
-        }
-          {
-            mode = "v";
-            key = "<leader>sn";
-            action = ":sort n";
-        }
-          {
-            mode = "v";
-            key = "<leader>st";
-            action = ":sort";
-        }
-          {
-            mode = "v";
-            key = "<leader>tb";
-            action = ":'<,'>!pandoc -t commonmark_x";
-        }
+  # FORMATTING
+        {
+          mode = "n";
+          key = "<leader>cs";
+          action = ":%!pandoc --to=commonmark-smart";
+      }
+        {
+          mode = "v";
+          key = "<leader>cs";
+          action = ":%!pandoc --to=commonmark-smart";
+      }
+        {
+          mode = "n";
+          key = "<leader>dx";
+          action = ":!pandoc -s % --output ~/.docx";
+      }
+        {
+          mode = "v";
+          key = "<leader>sn";
+          action = ":sort n";
+      }
+        {
+          mode = "v";
+          key = "<leader>st";
+          action = ":sort";
+      }
+        {
+          mode = "v";
+          key = "<leader>tb";
+          action = ":'<,'>!pandoc -t commonmark_x";
+      }
 
-    # GIT
-          {
-            mode = "i";
-            key = "<rf";
-            action = "refactor():";
-        }
-          {
-            mode = "i";
-            key = "<fx";
-            action = "fix():";
-        }
-          {
-            mode = "i";
-            key = "<ft";
-            action = "feat():";
-        }
+  # GIT
+        {
+          mode = "i";
+          key = "<rf";
+          action = "refactor():";
+      }
+        {
+          mode = "i";
+          key = "<fx";
+          action = "fix():";
+      }
+        {
+          mode = "i";
+          key = "<ft";
+          action = "feat():";
+      }
 
-    # SPLITS
-          {
-            mode = "n";
-            key = "<leader>vs";
-            action = "<CMD>:vsplit<CR>";
-        }
-          {
-            mode = "n";
-            key = "<leader>oo";
-            action = "<CMD>:only<CR>";
-        }
+  # SPLITS
+        {
+          mode = "n";
+          key = "<leader>vs";
+          action = "<CMD>:vsplit<CR>";
+      }
+        {
+          mode = "n";
+          key = "<leader>oo";
+          action = "<CMD>:only<CR>";
+      }
 
-    # REPOS
-          {
-            mode = "n";
-            key = "<leader>gp";
-            action = "<CMD>:Git pull origin main<CR>";
-        }
-          {
-            mode = "n";
-            key = "<leader>ga";
-            action = "<CMD>:Git add --all<CR>";
-        }
-          {
-            mode = "n";
-            key = "<leader>gc";
-            action = "<CMD>:Git commit<CR>";
-        }
-          {
-            mode = "n";
-            key = "<leader>gh";
-            action = "<CMD>:Git push origin main<CR>";
-        }
-          {
-            mode = "n";
-            key = "<leader>g2";
-            action = "<CMD>:Git push clone main<CR>";
-        }
-          {
-            mode = "n";
-            key = "<leader>gs";
-            action = "<CMD>:Git<CR>";
-        }
-          {
-            mode = "n";
-            key = "<leader>gl";
-            action = "<CMD>:Git log<CR>";
-        }
+  # REPOS
+        {
+          mode = "n";
+          key = "<leader>gp";
+          action = "<CMD>:Git pull origin main<CR>";
+      }
+        {
+          mode = "n";
+          key = "<leader>ga";
+          action = "<CMD>:Git add --all<CR>";
+      }
+        {
+          mode = "n";
+          key = "<leader>gc";
+          action = "<CMD>:Git commit<CR>";
+      }
+        {
+          mode = "n";
+          key = "<leader>gh";
+          action = "<CMD>:Git push origin main<CR>";
+      }
+        {
+          mode = "n";
+          key = "<leader>g2";
+          action = "<CMD>:Git push clone main<CR>";
+      }
+        {
+          mode = "n";
+          key = "<leader>gs";
+          action = "<CMD>:Git<CR>";
+      }
+        {
+          mode = "n";
+          key = "<leader>gl";
+          action = "<CMD>:Git log<CR>";
+      }
 
+  # SEARCHES
+    {
+      mode = "n";
+      key = "<leader>a1";
+      action = "<CMD>/ä<CR>";
+  }
+    {
+      mode = "n";
+      key = "<leader>a2";
+      action = "<CMD>/Ä<CR>";
+  }
+    {
+      mode = "n";
+      key = "<leader>o1";
+      action = "<CMD>/ö<CR>";
+  }
+    {
+      mode = "n";
+      key = "<leader>o2";
+      action = "<CMD>/Ö<CR>";
+  }
+    {
+      mode = "n";
+      key = "<leader>u1";
+      action = "<CMD>/ü<CR>";
+  }
+    {
+      mode = "n";
+      key = "<leader>u2";
+      action = "<CMD>/Ü<CR>";
+  }
+
+  # REPLACEMENTS
+    #EN
+    #DE
+      {
+        mode = "i";
+        key = "s|";
+        action = "ß";
+    }
+      {
+        mode = "i";
+        key = "S|";
+        action = "ẞ";
+    }
+      {
+        mode = "i";
+        key = "a|";
+        action = "ä";
+    }
+      {
+        mode = "i";
+        key = "A|";
+        action = "Ä";
+    }
+      {
+        mode = "i";
+        key = "o|";
+        action = "ö";
+    }
+      {
+        mode = "i";
+        key = "O|";
+        action = "Ö";
+    }
+      {
+        mode = "i";
+        key = "u|";
+        action = "ü";
+    }
+      {
+        mode = "i";
+        key = "U|";
+        action = "Ü";
+    }
+      {
+        mode = "i";
+        key = ",,";
+        action = "„";
+    }
+    #ZH
 
       ];
 
         programs.nixvim.maps = {
 
-          # REPOS
-              #normal."<leader>gp" = "<CMD>:Git pull origin main<CR>";
-              #normal."<leader>ga" = "<CMD>:Git add --all<CR>";
-              #normal."<leader>gc" = "<CMD>:Git commit<CR>";
-              #normal."<leader>gh" = "<CMD>:Git push origin main<CR>";
-              #normal."<leader>g2" = "<CMD>:Git push clone main<CR>";
-              #normal."<leader>gs" = "<CMD>:Git<CR>";
-              #normal."<leader>gl" = "<CMD>:Git log<CR>";
-
-      # LIT
-          # EN
-
-          # DE
-              insert."s|" = "ß";
-              insert."S|" = "ẞ";
-              insert."a|" = "ä";
-              insert."A|" = "Ä";
-              insert."o|" = "ö";
-              insert."O|" = "Ö";
-              insert."u|" = "ü";
-              insert."U|" = "Ü";
-              insert.",," = "„";
-              insert.",|" = "“";
+              #insert.",|" = " “ ";
 
           # HTML, EXAMPLE OF HOW TO BACKSLASH
               insert."!hf" = "<span class=\"body-text-link-pink\"><a href=\"LINK.html\">TITLE</a></span>";
@@ -184,8 +243,6 @@
           normal."<leader>sc" = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
           normal."<leader>mk" = "<CMD>:mksession! ~/PITH/N6949URA.vim<CR>";
 
-      # SPLITS
-          
 
       # TELESCOPE
           normal."<leader>km" = "<CMD>Telescope keymaps<CR>";
