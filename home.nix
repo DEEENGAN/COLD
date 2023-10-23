@@ -23,7 +23,7 @@
                   ./starship.nix
 
                 # utilities
-                  ./firefox.nix
+                  ./brave.nix
                   ./gpg.nix
                   ./pandoc.nix
                   ./pass.nix
