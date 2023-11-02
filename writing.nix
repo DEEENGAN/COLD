@@ -226,38 +226,102 @@
         key = ",,";
         action = "„";
     }
-    #ZH
+    # ZH
+      {
+        mode = "i";
+        key = "n~";
+        action = "ñ";
+    }
+      {
+        mode = "i";
+        key = "N~";
+        action = "Ñ";
+    }
 
-      ];
+    # HTML, BACKSLASH
+
+      {
+        mode = "i";
+        key = "!hf";
+        action = "<span class=\"body-text-link-pink\"><a href=\"LINK.html\">TITLE</a></span>";
+    }
+      {
+        mode = "i";
+        key = "!sp";
+        action = "&nbsp;&nbsp;&nbsp;";
+    }
+
+  # SESSIONS
+      {
+        mode = "n";
+        key = "<leader>sc";
+        action = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>mk";
+        action = "<CMD>:mksession! ~/PITH/N6949URA.vim<CR>";
+    }
+
+  # TELESCOPE
+      {
+        mode = "n";
+        key = "<leader>km";
+        action = "<CMD>Telescope keymaps<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>ss";
+        action = "<CMD>Telescope spell_suggest<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>tf";
+        action = "<CMD>Telescope find_files disable_devicons=true search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>tg";
+        action = "<CMD>Telescope grep_string search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>tp";
+        action = "<CMD>Telescope grep_string type_filter=\"*#SPEECH*\" search_dirs=~/PITH/<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>th";
+        action = "<CMD>Telescope highlights<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>to";
+        action = "<CMD>Telescope oldfiles<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>tr";
+        action = "<CMD>Telescope registers<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>tz";
+        action = "<CMD>Telescope current_buffer_fuzzy_find<CR>";
+    }
+
+  # EXTENSIONS
+    #FILE BROWSER
+      
+      {
+        mode = "n";
+        key = "<leader>fb";
+        action = "<CMD>Telescope file_browser path=%:p:h<CR>";
+    }
+
+    ];
 
         programs.nixvim.maps = {
-
-              #insert.",|" = " “ ";
-
-          # HTML, EXAMPLE OF HOW TO BACKSLASH
-              insert."!hf" = "<span class=\"body-text-link-pink\"><a href=\"LINK.html\">TITLE</a></span>";
-              insert."!sp" = "&nbsp;&nbsp;&nbsp;";
-
-
-      # SESSIONS
-          normal."<leader>sc" = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
-          normal."<leader>mk" = "<CMD>:mksession! ~/PITH/N6949URA.vim<CR>";
-
-
-      # TELESCOPE
-          normal."<leader>km" = "<CMD>Telescope keymaps<CR>";
-          normal."<leader>ss" = "<CMD>Telescope spell_suggest<CR>";
-          normal."<leader>tf" = "<CMD>Telescope find_files disable_devicons=true search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
-          normal."<leader>tg" = "<CMD>Telescope grep_string search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
-          normal."<leader>tp" = "<CMD>Telescope grep_string type_filter=\"*#SPEECH*\" search_dirs=~/PITH/<CR>";
-          normal."<leader>th" = "<CMD>Telescope highlights<CR>";
-          normal."<leader>to" = "<CMD>Telescope oldfiles<CR>";
-          normal."<leader>tr" = "<CMD>Telescope registers<CR>";
-          normal."<leader>tz" = "<CMD>Telescope current_buffer_fuzzy_find<CR>";
-
-            # EXTENSIONS
-                # FILE_BROWSER
-                    normal."<leader>fb" = "<CMD>Telescope file_browser path=%:p:h<CR>";
 
       # TODO
           normal."<leader>td" = "<CMD>TodoTelescope<CR>";
