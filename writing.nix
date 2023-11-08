@@ -179,46 +179,46 @@
   }
 
   # REPLACEMENTS
-    #EN
-    #DE
+    # EN
+    # DE
       {
         mode = "i";
-        key = "s|";
+        key = "s`";
         action = "ß";
     }
       {
         mode = "i";
-        key = "S|";
+        key = "S`";
         action = "ẞ";
     }
       {
         mode = "i";
-        key = "a|";
+        key = "a`";
         action = "ä";
     }
       {
         mode = "i";
-        key = "A|";
+        key = "A`";
         action = "Ä";
     }
       {
         mode = "i";
-        key = "o|";
+        key = "o`";
         action = "ö";
     }
       {
         mode = "i";
-        key = "O|";
+        key = "O`";
         action = "Ö";
     }
       {
         mode = "i";
-        key = "u|";
+        key = "u`";
         action = "ü";
     }
       {
         mode = "i";
-        key = "U|";
+        key = "U`";
         action = "Ü";
     }
       {
@@ -226,6 +226,7 @@
         key = ",,";
         action = "„";
     }
+  # OE
       {
         mode = "i";
         key = "ae|";
@@ -256,6 +257,127 @@
         key = "D|";
         action = "Ð";
     }
+      {
+        mode = "i";
+        key = "e|";
+        action = "ē";
+    }
+      {
+        mode = "i";
+        key = "E|";
+        action = "Ē";
+    }
+      {
+        mode = "i";
+        key = "ea|";
+        action = "ēa";
+    }
+      {
+        mode = "i";
+        key = "Ea|";
+        action = "Ēa";
+    }
+      {
+        mode = "i";
+        key = "eo|";
+        action = "ēo";
+    }
+      {
+        mode = "i";
+        key = "Eo|";
+        action = "Ēo";
+    }
+      {
+        mode = "i";
+        key = "i|";
+        action = "ī";
+    }
+      {
+        mode = "i";
+        key = "I|";
+        action = "Ī";
+    }
+      {
+        mode = "i";
+        key = "ie|";
+        action = "īe";
+    }
+      {
+        mode = "i";
+        key = "Ie|";
+        action = "Īe";
+    }
+      {
+        mode = "i";
+        key = "io|";
+        action = "īo";
+    }
+      {
+        mode = "i";
+        key = "Io|";
+        action = "Īo";
+    }
+      {
+        mode = "i";
+        key = "o|";
+        action = "ō";
+    }
+      {
+        mode = "i";
+        key = "O|";
+        action = "Ō";
+    }
+      {
+        mode = "i";
+        key = "oe|";
+        action = "ōe";
+    }
+      {
+        mode = "i";
+        key = "Oe|";
+        action = "Ōe";
+    }
+      {
+        mode = "i";
+        key = "u|";
+        action = "ū";
+    }
+      {
+        mode = "i";
+        key = "U|";
+        action = "Ū";
+    }
+      {
+        mode = "i";
+        key = "y|";
+        action = "ȳ";
+    }
+      {
+        mode = "i";
+        key = "Y|";
+        action = "Ȳ";
+    }
+      {
+        mode = "i";
+        key = "c|";
+        action = "ċ";
+    }
+      {
+        mode = "i";
+        key = "C|";
+        action = "Ċ";
+    }
+      {
+        mode = "i";
+        key = "g|";
+        action = "ġ";
+    }
+      {
+        mode = "i";
+        key = "G|";
+        action = "Ġ";
+    }
+
     # ZH
       {
         mode = "i";
