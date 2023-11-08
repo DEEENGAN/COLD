@@ -226,6 +226,36 @@
         key = ",,";
         action = "„";
     }
+      {
+        mode = "i";
+        key = "ae|";
+        action = "æ";
+    }
+      {
+        mode = "i";
+        key = "AE|";
+        action = "Æ";
+    }
+      {
+        mode = "i";
+        key = "p|";
+        action = "þ";
+    }
+      {
+        mode = "i";
+        key = "P|";
+        action = "Þ";
+    }
+      {
+        mode = "i";
+        key = "d|";
+        action = "ð";
+    }
+      {
+        mode = "i";
+        key = "D|";
+        action = "Ð";
+    }
     # ZH
       {
         mode = "i";
