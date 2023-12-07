@@ -550,7 +550,7 @@
       {
         mode = "v";
         key = "<leader>zl";
-        action = "<CMD>:ZkInsertLinkAtSelection<CR>";
+        action = "<CMD>'<,'>ZkInsertLinkAtSelection<CR>";
     }
 
     #Links
@@ -582,14 +582,14 @@
       {
         mode = "v";
         key = "<leader>lc";
-        action = "<CMD>:ZkNewFromContentSelection<CR>";
+        action = "<CMD>'<,'>ZkNewFromContentSelection<CR>";
     }
     #New From Title Selection
 
        {
           mode = "v";
           key = "<leader>lt";
-          action = "<CMD>:ZkNewFromTitleSelection<CR>";
+          action = "<CMD>'<,'>ZkNewFromTitleSelection<CR>";
       }
 
     # Notes
