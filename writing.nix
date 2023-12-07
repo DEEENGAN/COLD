@@ -229,13 +229,33 @@
   # OE
       {
         mode = "i";
-        key = "ae|";
+        key = "a|";
+        action = "ā";
+    }
+      {
+        mode = "i";
+        key = "A|";
+        action = "Ā";
+    }
+      {
+        mode = "i";
+        key = "ae)";
         action = "æ";
     }
       {
         mode = "i";
-        key = "AE|";
+        key = "AE)";
         action = "Æ";
+    }
+      {
+        mode = "i";
+        key = "ae|";
+        action = "ǣ";
+    }
+      {
+        mode = "i";
+        key = "AE|";
+        action = "Ǣ";
     }
       {
         mode = "i";
@@ -471,60 +491,148 @@
         action = "<CMD>Telescope file_browser path=%:p:h<CR>";
     }
 
+    #TODO
+      
+      {
+        mode = "n";
+        key = "<leader>td";
+        action = "<CMD>TodoTelescope<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>dt";
+        action = "<CMD>:UndotreeToggle<CR>";
+    }
+    
+    #Undotree
+      {
+        mode = "n";
+        key = "<leader>fb";
+        action = "<CMD>Telescope file_browser path=%:p:h<CR>";
+    }
+
+    #ZK
+      #Backlinks
+        
+      {
+        mode = "n";
+        key = "<leader>zb";
+        action = "<CMD>:ZkBacklinks<CR>";
+    }
+
+    #CD
+    #Index
+    #Insertlink
+      
+      {
+        mode = "n";
+        key = "<leader>le";
+        action = "<CMD>ZkInsertLink { matchStrategy = 'exact', match = { vim.fn.input('Search: ')} }<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>lf";
+        action = "<CMD>ZkInsertLink { matchStrategy = 'fts', match = { vim.fn.input('Search: ')} }<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>ll";
+        action = "<CMD>ZkInsertLink<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>lr";
+        action = "<CMD>ZkInsertLink { matchStrategy = 're', match = { vim.fn.input('Search: ')} }<CR>";
+    }
+
+    #InsertLinkatSelection
+      
+      {
+        mode = "v";
+        key = "<leader>zl";
+        action = "<CMD>:ZkInsertLinkAtSelection<CR>";
+    }
+
+    #Links
+
+      {
+        mode = "n";
+        key = "<leader>zl";
+        action = "<CMD>ZkLinks<CR>";
+    }
+
+    #Match
+    #New
+             # ZkNew -- set the fish path to ~/DIR/, no ~/DIR/.zk as it will be included in dir = below
+            # this works when you are in fish shell
+     
+      {
+        mode = "n";
+        key = "<leader>ia";
+        action = "<CMD>ZkNew { dir = '/home/deeengan/PITH/', group = 'IR7I32C9', template = 'EM5EQUG8.md', title = vim.fn.input('Title: '), content = vim.fn.input('Tags: ') }<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>dy";
+        action = "<CMD>ZkNew { dir = '/home/deeengan/PITH/WB3LHT7H/', group = '3DRLMKUS', template = '3DRLMKUS.md' }<CR>";
+    }
+
+    #New From Content Selection
+      
+      {
+        mode = "v";
+        key = "<leader>lc";
+        action = "<CMD>:ZkNewFromContentSelection<CR>";
+    }
+    #New From Title Selection
+
+       {
+          mode = "v";
+          key = "<leader>lt";
+          action = "<CMD>:ZkNewFromTitleSelection<CR>";
+      }
+
+    # Notes
+      
+      {
+        mode = "n";
+        key = "<leader>zn";
+        action = "<CMD>ZkNotes<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>zo";
+        action = "<CMD>ZkNotes { sort = { 'modified' }, orphan = true }<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>zw";
+        action = "<CMD>ZkNotes { sort = { 'word-count' } }<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>zf";
+        action = "<CMD>ZkNotes { matchStrategy = 'fts', match = { vim.fn.input('fts: ') } }<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>ze";
+        action = "<CMD>ZkNotes { matchStrategy = 'exact', match = { vim.fn.input('exact: ') } }<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>zr";
+        action = "<CMD>ZkNotes { matchStrategy = 're', match = { vim.fn.input('re: ') } }<CR>";
+    }
+
+    # Tags
+      
+      {
+        mode = "n";
+        key = "<leader>zt";
+        action = "<CMD>ZkTags<CR>";
+    }
+
     ];
 
-        programs.nixvim.maps = {
-
-      # TODO
-          normal."<leader>td" = "<CMD>TodoTelescope<CR>";
-
-      # UNDOTREE
-          normal."<leader>dt" = "<CMD>:UndotreeToggle<CR>";
-
-      # ZK
-
-        # BackLinks
-            normal."<leader>zb" = "<CMD>:ZkBacklinks<CR>";
-
-        # CD
-        # INDEX
-
-        # INSERTLINK
-            normal."<leader>le" = "<CMD>ZkInsertLink { matchStrategy = 'exact', match = { vim.fn.input('Search: ')} }<CR>";
-            normal."<leader>lf" = "<CMD>ZkInsertLink { matchStrategy = 'fts', match = { vim.fn.input('Search: ')} }<CR>";
-            normal."<leader>ll" = "<CMD>ZkInsertLink<CR>";
-            normal."<leader>lr" = "<CMD>ZkInsertLink { matchStrategy = 're', match = { vim.fn.input('Search: ')} }<CR>";
-
-        # INSERTLINKATSELECTION
-            visual."<leader>zl" = ":ZkInsertLinkAtSelection";
-
-        # LINKS
-            normal."<leader>zl" = "<CMD>ZkLinks<CR>";
-
-        # MATCH
-
-        # NEW
-            # ZkNew -- set the fish path to ~/DIR/, no ~/DIR/.zk as it will be included in dir = below
-            # this works when you are in fish shell
-                normal."<leader>ia" = "<CMD>ZkNew { dir = '/home/deeengan/PITH/', group = 'IR7I32C9', template = 'EM5EQUG8.md', title = vim.fn.input('Title: '), content = vim.fn.input('Tags: ') }<CR>";
-                normal."<leader>dy" = "<CMD>ZkNew { dir = '/home/deeengan/PITH/WB3LHT7H/', group = '3DRLMKUS', template = '3DRLMKUS.md' }<CR>";
-
-        # NEWFROMCONTENTSELECTION
-            visual."<leader>lc" = ":ZkNewFromContentSelection";
-
-        # NEWFROMTITLESELECTION
-            visual."<leader>lt" = ":ZkNewFromTitleSelection";
-
-        # NOTES
-            normal."<leader>zn" = "<CMD>ZkNotes<CR>";
-            normal."<leader>zo" = "<CMD>ZkNotes { sort = { 'modified' }, orphan = true }<CR>";
-            normal."<leader>zw" = "<CMD>ZkNotes { sort = { 'word-count' } }<CR>";
-            normal."<leader>zf" = "<CMD>ZkNotes { matchStrategy = 'fts', match = { vim.fn.input('fts: ') } }<CR>";
-            normal."<leader>ze" = "<CMD>ZkNotes { matchStrategy = 'exact', match = { vim.fn.input('exact: ') } }<CR>";
-            normal."<leader>zr" = "<CMD>ZkNotes { matchStrategy = 're', match = { vim.fn.input('re: ') } }<CR>";
-
-        # TAGS
-            normal."<leader>zt" = "<CMD>ZkTags<CR>";
-
-  };
 }
