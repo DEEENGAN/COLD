@@ -62,7 +62,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       clock-format = "12h";
-      color-scheme = "prefer-light";
+      color-scheme = "prefer-dark";
       cursor-theme = "Numix-Cursor";
       enable-hot-corners = true;
       gtk-theme = "WhiteSur-Light";
@@ -149,7 +149,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/power" = {
       power-button-action = "interactive";
-      sleep-inactive-ac-timeout = "1800";
+      sleep-inactive-ac-timeout = "400";
       sleep-inactive-ac-type = "suspend";
     };
 
