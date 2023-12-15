@@ -31,9 +31,9 @@
   '';
 
       dots = '' function dots
-        cp -r ~/.local/share/sioyek/ ~/DATA/
+        cp -r ~/.local/share/sioyek/ ~/PITH/MAT86EB3/
         cp -r ~/.config/nvim/syntax/ ~/PITH/MAT86EB3/
-        cp -r ~/.config/nvim/spell/ ~/DATA/
+        cp -r ~/.config/nvim/spell/ ~/PITH/MAT86EB3/
       end
   '';
 
