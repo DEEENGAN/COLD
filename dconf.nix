@@ -149,7 +149,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/power" = {
       power-button-action = "interactive";
-      sleep-inactive-ac-timeout = "400";
+      sleep-inactive-ac-timeout = "250";
       sleep-inactive-ac-type = "suspend";
     };
 
