@@ -108,7 +108,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/session" = {
-      idle-delay = "uint32 1200";
+      idle-delay = "uint32 120";
     };
 
     "org/gnome/desktop/sound" = {
@@ -149,7 +149,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/power" = {
       power-button-action = "interactive";
-      sleep-inactive-ac-timeout = "250";
+      sleep-inactive-ac-timeout = "175";
       sleep-inactive-ac-type = "suspend";
     };
 
