@@ -7,7 +7,7 @@
     programs.alacritty.settings.window.dynamic_padding = true;
     programs.alacritty.settings.font.normal.family = "FantasqueSansM Nerd Font";
     programs.alacritty.settings.cursor = { style = "Beam"; };
-    programs.alacritty.settings.key_bindings = [  { key = "N"; mods = "Control|Shift"; action = "SpawnNewInstance"; }
+    programs.alacritty.settings.keyboard.bindings = [  { key = "N"; mods = "Control|Shift"; action = "SpawnNewInstance"; }
                                                   { key = "W"; mods = "Control|Shift"; action = "Quit"; } ];
 
 }

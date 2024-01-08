@@ -63,7 +63,7 @@
                         ffmpeg
 
                     # learning
-                        anki-bin
+                        anki
 
                     # visual
                         tree
