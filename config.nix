@@ -5,9 +5,9 @@
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
 
-    services.xserver = {
+    services.xserver.xkb = {
       layout = "us";
-      xkbVariant = "";
+      variant = "";
   };
 
     nixpkgs.config.allowUnfree = true;

@@ -25,11 +25,6 @@
       }
         {
           mode = "n";
-          key = "<leader>wc";
-          action = "g<C-g>";
-      }
-        {
-          mode = "n";
           key = "<leader>nh";
           action = "<CMD>:noh<CR>"; }
         {
@@ -589,7 +584,7 @@
        {
           mode = "v";
           key = "<leader>lt";
-          action = "<CMD>'<,'>ZkNewFromTitleSelection<CR>";
+          action = ":ZkNewFromTitleSelection";
       }
 
     # Notes

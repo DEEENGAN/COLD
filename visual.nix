@@ -1,6 +1,6 @@
 { ... }: {
 
-  programs.nixvim.colorscheme = "default";
+  #programs.nixvim.colorscheme = "default";
   programs.nixvim.options = {
 
     # 'THETICS 

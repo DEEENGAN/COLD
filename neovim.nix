@@ -12,10 +12,11 @@
 
     # general
           ./files.nix
+        # visuals for the layout
           ./visual.nix
           ./writing.nix
 
-    # visuals
+    # visuals -- hues
           ./hi
 
     # plugins
