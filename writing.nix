@@ -140,6 +140,11 @@
           key = "<leader>gl";
           action = "<CMD>:Git log<CR>";
       }
+        {
+          mode = "n";
+          key = "<leader>gi";
+          action = "<CMD>:Git diff --staged<CR>";
+      }
 
   # SEARCHES
     {
