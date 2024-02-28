@@ -20,6 +20,7 @@
                           ./config.nix
                           ./hardware-configuration.nix
                           ./users.nix
+                          ./ssh.nix
                           #./service-timer-borg.nix
 
                             home-manager.nixosModules.home-manager
