@@ -2,7 +2,7 @@
 
   programs.nixvim.plugins.undotree = {
     enable = true;
-    windowLayout = 2;
+      settings.WindowLayout = 2;
 
   };
 }

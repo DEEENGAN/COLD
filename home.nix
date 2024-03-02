@@ -47,9 +47,13 @@
                     # ink
                       inklecate
 
-                # Telescope
+                # Telescope & fzf(-lua)
                     ripgrep
                     fd
+                      # fzf-lua
+                        bat
+                        delta
+                        chafa
 
                 # utilities
                     borgbackup
@@ -66,8 +70,7 @@
                         anki
 
                     # visual
-                        tree
-                        feh
+                        #feh
 
   ];
 }

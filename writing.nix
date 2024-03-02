@@ -103,6 +103,11 @@
           key = "<leader>oo";
           action = "<CMD>:only<CR>";
       }
+        {
+          mode = "n";
+          key = "<leader>cl";
+          action = "<CMD>:close<CR>";
+      }
 
   # REPOS
         {
@@ -143,7 +148,7 @@
         {
           mode = "n";
           key = "<leader>gi";
-          action = "<CMD>:Git diff --staged<CR>";
+          action = "<CMD>:Git diff HEAD<CR>";
       }
 
   # SEARCHES

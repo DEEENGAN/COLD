@@ -31,15 +31,17 @@
           ./nvim-colorizer.nix
           ./quickmath.nix
           ./starter.nix
-          ./surround.nix
           ./telescope.nix
           ./todo-comments.nix
           ./treesitter.nix
           ./undotree.nix
           ./zk.nix
-        #./noice.nix gpg?
+        #./fzf-lua.nix
+        #./fzf-lua.nix
+        #./noice.nix
         #./notify.nix
         #./sessions.nix
+        #./surround.nix
         #./wilder.nix
 ];
 
