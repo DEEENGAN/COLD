@@ -448,11 +448,6 @@
     }
       {
         mode = "n";
-        key = "<leader>ss";
-        action = "<CMD>Telescope spell_suggest<CR>";
-    }
-      {
-        mode = "n";
         key = "<leader>tf";
         action = "<CMD>Telescope find_files disable_devicons=true search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
     }
@@ -460,11 +455,6 @@
         mode = "n";
         key = "<leader>tg";
         action = "<CMD>Telescope grep_string search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
-    }
-      {
-        mode = "n";
-        key = "<leader>tp";
-        action = "<CMD>Telescope grep_string type_filter=\"*#SPEECH*\" search_dirs=~/PITH/<CR>";
     }
       {
         mode = "n";
@@ -483,8 +473,23 @@
     }
       {
         mode = "n";
-        key = "<leader>tz";
+        key= "<leader>tz";
         action = "<CMD>Telescope current_buffer_fuzzy_find<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>tm";
+        action = "<CMD>Telescope marks<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>tq";
+        action = "<CMD>Telescope quickfix<CR>";
+    }
+      {
+        mode = "n";
+        key = "<leader>tb";
+        action = "<CMD>Telescope buffers<CR>";
     }
 
   # EXTENSIONS

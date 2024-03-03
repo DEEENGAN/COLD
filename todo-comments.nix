@@ -18,14 +18,13 @@
         maxLineLen = 400;
 };
 
-      keywords.FIX = { icon = " "; alt = [ "MIDDLE" "JCD" ]; };
-      keywords.TODO = { icon = " "; alt = [ "STITCH" "CONT" "HPS" ]; };
-      keywords.HACK = { icon = " "; alt = [ "HERE" "BER" ]; };
-      keywords.WARN = { icon = " ";  alt = [ "MARK" "LTT" ]; };
-      keywords.PERF = { icon = " ";  alt = [ "END" "RSP" ]; };
-      keywords.NOTE = { icon = " "; alt = [ "TALE" "ME" ]; };
-      keywords.TEST = { icon = " "; alt = [ "NEW" "OBV" ]; };
-
+      keywords.FIX = { icon = "㊃"; alt = [ "SICK" "HPS" ]; };
+      keywords.TODO = { icon = "㊒"; alt = [ "TODO" "JCD" ]; };
+      keywords.HACK = { icon = "㊍"; alt = [ "HACK" "BER" ]; };
+      keywords.WARN = { icon = "㊋";  alt = [ "MARK" "LTT" ]; };
+      keywords.PERF = { icon = "㊊";  alt = [ "END" "RSP" ]; };
+      keywords.NOTE = { icon = "㉄"; alt = [ "MIND" "ME" ]; };
+      keywords.TEST = { icon = "㊏"; alt = [ "YARDSTICK" "OBV" ]; };
 
   };
 }

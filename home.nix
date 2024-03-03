@@ -57,6 +57,7 @@
 
                 # utilities
                     borgbackup
+                    rclone
                     git-lfs
                     pinentry
                     unzip

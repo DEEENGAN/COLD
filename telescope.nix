@@ -19,7 +19,6 @@
         addDirs = true;
         hijackNetrw = true;
         useFd = true;
-
-   };
+    };
   };
 }
