@@ -90,11 +90,9 @@
             MiniCursorwordCurrent = { fg = "#C94234"; bg = "NONE";  };
 
         # indent-blankline
-            #IndentBlanklineChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
-            #IndentBlanklineSpaceChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
-            #IndentBlanklineSpaceCharBlankline = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
-            #IndentBanklineContextChar = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
-            #IndentBanklineContextStart = { underline = true; fg = "#675F54"; bg = "NONE"; };
+            IblScope = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
+            IblIndent = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
+            IblWhitespace = { nocombine = true; fg = "#675F54"; bg = "NONE"; };
 
         # noice
             NoicePopupmenuSelected = { fg = "NONE"; bg = "NONE"; };
@@ -142,6 +140,27 @@
     # unknown
         FloatShadow = { fg = "NONE"; bg = "NONE"; };
         FloatShadowThrough = { fg = "NONE"; bg = "NONE"; };
+
+    # fzf-lua
+        #FzfLuaBufNr = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaTitle = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaCursor = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaNormal = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaSearch = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaBufName = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaDirIcon = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaTabTitle = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaBufLineNr = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaTabMarker = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaBufFlagAlt = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaBufFlagCur = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaCursorLine = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaHelpBorder = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaHelpNormal = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaCursorLineNr = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaPreviewTitle = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaPreviewBorder = { fg = "#675F54"; bg = "#675F54"; };
+        #FzfLuaPreviewNormal = { fg = "#675F54"; bg = "#675F54"; };
 
   };
 }

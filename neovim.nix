@@ -27,19 +27,18 @@
           ./indent-blankline.nix
           ./lsp.nix
           ./mini.nix
-          ./no-options.nix
           ./nvim-colorizer.nix
-          ./quickmath.nix
           ./starter.nix
           ./telescope.nix
           ./todo-comments.nix
           ./treesitter.nix
           ./undotree.nix
           ./zk.nix
-        #./fzf-lua.nix
+        # ./no-options.nix
         #./fzf-lua.nix
         #./noice.nix
         #./notify.nix
+        #./quickmath.nix
         #./sessions.nix
         #./surround.nix
         #./wilder.nix

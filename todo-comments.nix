@@ -21,7 +21,7 @@
       keywords.FIX = { icon = "㊃"; alt = [ "SICK" "HPS" ]; };
       keywords.TODO = { icon = "㊒"; alt = [ "TODO" "JCD" ]; };
       keywords.HACK = { icon = "㊍"; alt = [ "HACK" "BER" ]; };
-      keywords.WARN = { icon = "㊋";  alt = [ "MARK" "LTT" ]; };
+      keywords.WARN = { icon = "㊋";  alt = [ "LOOK" "LTT" ]; };
       keywords.PERF = { icon = "㊊";  alt = [ "END" "RSP" ]; };
       keywords.NOTE = { icon = "㉄"; alt = [ "MIND" "ME" ]; };
       keywords.TEST = { icon = "㊏"; alt = [ "YARDSTICK" "OBV" ]; };
