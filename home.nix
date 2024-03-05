@@ -23,7 +23,8 @@
                   ./starship.nix
 
                 # utilities
-                  ./brave.nix
+                  #./brave.nix
+                  ./firefox.nix
                   ./gpg.nix
                   ./pandoc.nix
                   ./pass.nix
@@ -51,9 +52,9 @@
                     ripgrep
                     fd
                       # fzf-lua
-                        bat
-                        delta
-                        chafa
+                        #bat
+                        #delta
+                        #chafa
 
                 # utilities
                     borgbackup

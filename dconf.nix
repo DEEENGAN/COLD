@@ -155,7 +155,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       app-picker-layout = "[{'org.gnome.Settings.desktop': <{'position': <0>}>, 'org.gnome.Extensions.desktop': <{'position': <1>}>, 'mplayer.desktop': <{'position': <2>}>, 'fish.desktop': <{'position': <3>}>, 'anki.desktop': <{'position': <4>}>, 'nvim.desktop': <{'position': <5>}>, 'sioyek.desktop': <{'position': <6>}>, 'com.usebottles.bottles.desktop': <{'position': <7>}>, 'com.github.tchx84.Flatseal.desktop': <{'position': <8>}>, 'net.lutris.Lutris.desktop': <{'position': <9>}>, 'com.valvesoftware.Steam.desktop': <{'position': <10>}>}]";
-      favorite-apps = [ "brave-browser.desktop" "Alacritty.desktop" ];
+      favorite-apps = [ "firefox.desktop" "Alacritty.desktop" ];
       welcome-dialog-last-shown-version = "44.1";
     };
 
