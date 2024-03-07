@@ -35,6 +35,7 @@
           ./undotree.nix
           ./zk.nix
         # ./no-options.nix
+        #./neorg.nix
         #./fzf-lua.nix
         #./noice.nix
         #./notify.nix

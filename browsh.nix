@@ -1,0 +1,5 @@
+{ ... }: {
+
+  programs.browsh.enable = true;
+
+}

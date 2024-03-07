@@ -28,6 +28,7 @@
                   ./gpg.nix
                   ./pandoc.nix
                   ./pass.nix
+                  #./browsh.nix
               ];
 
     home.packages = with pkgs; [
