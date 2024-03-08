@@ -508,18 +508,15 @@
         key = "<leader>td";
         action = "<CMD>TodoTelescope<CR>";
     }
+
+    
+    #Undotree
       {
         mode = "n";
         key = "<leader>dt";
         action = "<CMD>:UndotreeToggle<CR>";
     }
-    
-    #Undotree
-      {
-        mode = "n";
-        key = "<leader>fb";
-        action = "<CMD>Telescope file_browser path=%:p:h<CR>";
-    }
+
 
     #ZK
       #Backlinks
@@ -560,7 +557,7 @@
       {
         mode = "v";
         key = "<leader>zl";
-        action = "<CMD>'<,'>ZkInsertLinkAtSelection<CR>";
+        action = ":ZkInsertLinkAtSelection<CR>";
     }
 
     #Links
@@ -592,14 +589,14 @@
       {
         mode = "v";
         key = "<leader>lc";
-        action = "<CMD>'<,'>ZkNewFromContentSelection<CR>";
+        action = ":ZkNewFromContentSelection<CR>";
     }
     #New From Title Selection
 
        {
           mode = "v";
           key = "<leader>lt";
-          action = ":ZkNewFromTitleSelection";
+          action = ":ZkNewFromTitleSelection<CR>";
       }
 
     # Notes
