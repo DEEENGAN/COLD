@@ -14,12 +14,12 @@
 
     };
 
-      extensions.file_browser = {
-        enable = true;
-        addDirs = true;
-        hijackNetrw = true;
-        useFd = true;
-    };
+      #extensions.file_browser = {
+      #  enable = true;
+      #  addDirs = true;
+      #  hijackNetrw = true;
+      #  useFd = true;
+    #};
 
       extensions.fzf-native = {
         enable = true;

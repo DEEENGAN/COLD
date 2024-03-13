@@ -495,11 +495,18 @@
   # EXTENSIONS
     #FILE BROWSER
       
+      #{
+      #  mode = "n";
+      #  key = "<leader>fb";
+      #  action = "<CMD>Telescope file_browser path=%:p:h<CR>";
+    #}
+
       {
         mode = "n";
-        key = "<leader>fb";
-        action = "<CMD>Telescope file_browser path=%:p:h<CR>";
+        key = "<leader>oi";
+        action = "<CMD>Oil<CR>";
     }
+
 
     #TODO
       
