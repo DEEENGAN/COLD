@@ -431,13 +431,18 @@
   # SESSIONS
       {
         mode = "n";
-        key = "<leader>sc";
+        key = "<leader>n6";
         action = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
     }
       {
         mode = "n";
+        key = "<leader>bg";
+        action = "<CMD>:source ~/PITH/7AJHBGAA.vim<CR>";
+    }
+      {
+        mode = "n";
         key = "<leader>mk";
-        action = "<CMD>:mksession! ~/PITH/N6949URA.vim<CR>";
+        action = "<CMD>:mksession! ~/PITH/7AJHBGAA.vim<CR>";
     }
 
   # TELESCOPE
