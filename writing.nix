@@ -143,7 +143,7 @@
         {
           mode = "n";
           key = "<leader>gl";
-          action = "<CMD>:Git log<CR>";
+          action = "<CMD>:Git log -p<CR>";
       }
         {
           mode = "n";
