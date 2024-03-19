@@ -100,7 +100,7 @@
       }
         {
           mode = "n";
-          key = "<leader>oo";
+          key = "<leader>ol";
           action = "<CMD>:only<CR>";
       }
         {
@@ -431,12 +431,12 @@
   # SESSIONS
       {
         mode = "n";
-        key = "<leader>n6";
+        key = "<leader>s1";
         action = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
     }
       {
         mode = "n";
-        key = "<leader>bg";
+        key = "<leader>s2";
         action = "<CMD>:source ~/PITH/7AJHBGAA.vim<CR>";
     }
       {

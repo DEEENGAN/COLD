@@ -34,8 +34,8 @@
           ./treesitter.nix
           ./undotree.nix
           ./zk.nix
-          ./oil.nix
-        # ./no-options.nix
+        #./oil.nix
+        #./no-options.nix
         #./neorg.nix
         #./fzf-lua.nix
         #./noice.nix

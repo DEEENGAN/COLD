@@ -28,6 +28,7 @@
                   ./gpg.nix
                   ./pandoc.nix
                   ./pass.nix
+                  #./steam.nix
                   #./browsh.nix
               ];
 
@@ -47,7 +48,7 @@
                         nodejs
 
                     # ink
-                      inklecate
+                        inklecate
 
                 # Telescope & fzf(-lua)
                     ripgrep
@@ -58,22 +59,24 @@
                         #chafa
 
                 # utilities
-                    borgbackup
-                    rclone
-                    git-lfs
-                    pinentry
                     unzip
                     wl-clipboard
+                    calibre
+                    git-lfs
+                    #epy
+
+                    # GPG
+                        pinentry
 
                     # audio
                         mplayer
-                        ffmpeg
+                        ffmpeg-full
 
                     # learning
                         anki
 
                     # visual
-                        #feh
+                        feh
 
   ];
 }
