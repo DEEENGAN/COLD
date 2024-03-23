@@ -11,31 +11,31 @@
         {
           mode = "n";
           key = "<leader><leader>";
-          action = "<CMD>:bn<CR>";
+          action = ":bn<CR>";
       }
         {
           mode = "n";
           key = "<leader>bd";
-          action = "<CMD>:bd<CR>";
+          action = ":bd<CR>";
       }
         {
           mode = "n";
           key = "<leader>bp";
-          action = "<CMD>:bp<CR>";
+          action = ":bp<CR>";
       }
         {
           mode = "n";
           key = "<leader>nh";
-          action = "<CMD>:noh<CR>"; }
+          action = ":noh<CR>"; }
         {
           mode = "n";
           key = "<leader>wa";
-          action = "<CMD>:wa<CR>";
+          action = ":wa<CR>";
       }
         {
           mode = "n";
           key = "<leader>wq";
-          action = "<CMD>:wq<CR>";
+          action = ":wq<CR>";
       }
         {
           mode = "v";
@@ -96,91 +96,91 @@
         {
           mode = "n";
           key = "<leader>vs";
-          action = "<CMD>:vsplit<CR>";
+          action = ":vsplit<CR>";
       }
         {
           mode = "n";
           key = "<leader>ol";
-          action = "<CMD>:only<CR>";
+          action = ":only<CR>";
       }
         {
           mode = "n";
           key = "<leader>cl";
-          action = "<CMD>:close<CR>";
+          action = ":close<CR>";
       }
 
   # REPOS
         {
           mode = "n";
           key = "<leader>gp";
-          action = "<CMD>:Git pull origin main<CR>";
+          action = ":Git pull origin main<CR>";
       }
         {
           mode = "n";
           key = "<leader>ga";
-          action = "<CMD>:Git add --all<CR>";
+          action = ":Git add --all<CR>";
       }
         {
           mode = "n";
           key = "<leader>gc";
-          action = "<CMD>:Git commit<CR>";
+          action = ":Git commit<CR>";
       }
         {
           mode = "n";
           key = "<leader>gh";
-          action = "<CMD>:Git push origin main<CR>";
+          action = ":Git push origin main<CR>";
       }
         {
           mode = "n";
           key = "<leader>g2";
-          action = "<CMD>:Git push clone main<CR>";
+          action = ":Git push clone main<CR>";
       }
         {
           mode = "n";
           key = "<leader>gs";
-          action = "<CMD>:Git<CR>";
+          action = ":Git<CR>";
       }
         {
           mode = "n";
           key = "<leader>gl";
-          action = "<CMD>:Git log -p<CR>";
+          action = ":Git log -p<CR>";
       }
         {
           mode = "n";
           key = "<leader>gi";
-          action = "<CMD>:Git diff HEAD<CR>";
+          action = ":Git diff HEAD<CR>";
       }
 
   # SEARCHES
     {
       mode = "n";
       key = "<leader>a1";
-      action = "<CMD>/ä<CR>";
+      action = ":/ä<CR>";
   }
     {
       mode = "n";
       key = "<leader>a2";
-      action = "<CMD>/Ä<CR>";
+      action = ":/Ä<CR>";
   }
     {
       mode = "n";
       key = "<leader>o1";
-      action = "<CMD>/ö<CR>";
+      action = ":/ö<CR>";
   }
     {
       mode = "n";
       key = "<leader>o2";
-      action = "<CMD>/Ö<CR>";
+      action = ":/Ö<CR>";
   }
     {
       mode = "n";
       key = "<leader>u1";
-      action = "<CMD>/ü<CR>";
+      action = ":/ü<CR>";
   }
     {
       mode = "n";
       key = "<leader>u2";
-      action = "<CMD>/Ü<CR>";
+      action = ":/Ü<CR>";
   }
 
   # REPLACEMENTS
@@ -432,69 +432,69 @@
       {
         mode = "n";
         key = "<leader>s1";
-        action = "<CMD>:source ~/PITH/N6949URA.vim<CR>";
+        action = ":source ~/PITH/N6949URA.vim<CR>";
     }
       {
         mode = "n";
         key = "<leader>s2";
-        action = "<CMD>:source ~/PITH/7AJHBGAA.vim<CR>";
+        action = ":source ~/PITH/7AJHBGAA.vim<CR>";
     }
       {
         mode = "n";
         key = "<leader>mk";
-        action = "<CMD>:mksession! ~/PITH/7AJHBGAA.vim<CR>";
+        action = ":mksession! ~/PITH/7AJHBGAA.vim<CR>";
     }
 
   # TELESCOPE
       {
         mode = "n";
         key = "<leader>km";
-        action = "<CMD>Telescope keymaps<CR>";
+        action = ":Telescope keymaps<CR>";
     }
       {
         mode = "n";
         key = "<leader>tf";
-        action = "<CMD>Telescope find_files disable_devicons=true search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
+        action = ":Telescope find_files disable_devicons=true search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
     }
       {
         mode = "n";
         key = "<leader>tg";
-        action = "<CMD>Telescope grep_string search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
+        action = ":Telescope grep_string search_dirs=~/PITH/,~/PITH/.zk/,~/COLD/,~/SITE/,~/.config/nvim/syntax<CR>";
     }
       {
         mode = "n";
         key = "<leader>th";
-        action = "<CMD>Telescope highlights<CR>";
+        action = ":Telescope highlights<CR>";
     }
       {
         mode = "n";
         key = "<leader>to";
-        action = "<CMD>Telescope oldfiles<CR>";
+        action = ":Telescope oldfiles<CR>";
     }
       {
         mode = "n";
         key = "<leader>tr";
-        action = "<CMD>Telescope registers<CR>";
+        action = ":Telescope registers<CR>";
     }
       {
         mode = "n";
         key= "<leader>tz";
-        action = "<CMD>Telescope current_buffer_fuzzy_find<CR>";
+        action = ":Telescope current_buffer_fuzzy_find<CR>";
     }
       {
         mode = "n";
         key = "<leader>tm";
-        action = "<CMD>Telescope marks<CR>";
+        action = ":Telescope marks<CR>";
     }
       {
         mode = "n";
         key = "<leader>tq";
-        action = "<CMD>Telescope quickfix<CR>";
+        action = ":Telescope quickfix<CR>";
     }
       {
         mode = "n";
         key = "<leader>tb";
-        action = "<CMD>Telescope buffers<CR>";
+        action = ":Telescope buffers<CR>";
     }
 
   # EXTENSIONS
@@ -503,13 +503,13 @@
       #{
       #  mode = "n";
       #  key = "<leader>fb";
-      #  action = "<CMD>Telescope file_browser path=%:p:h<CR>";
+      #  action = ":Telescope file_browser path=%:p:h<CR>";
     #}
 
       {
         mode = "n";
         key = "<leader>oi";
-        action = "<CMD>Oil<CR>";
+        action = ":Oil<CR>";
     }
 
 
@@ -518,7 +518,7 @@
       {
         mode = "n";
         key = "<leader>td";
-        action = "<CMD>TodoTelescope<CR>";
+        action = ":TodoTelescope<CR>";
     }
 
     
@@ -526,7 +526,7 @@
       {
         mode = "n";
         key = "<leader>dt";
-        action = "<CMD>:UndotreeToggle<CR>";
+        action = ":UndotreeToggle<CR>";
     }
 
 
@@ -536,7 +536,7 @@
       {
         mode = "n";
         key = "<leader>zb";
-        action = "<CMD>:ZkBacklinks<CR>";
+        action = ":ZkBacklinks<CR>";
     }
 
     #CD
@@ -546,22 +546,22 @@
       {
         mode = "n";
         key = "<leader>le";
-        action = "<CMD>ZkInsertLink { matchStrategy = 'exact', match = { vim.fn.input('Search: ')} }<CR>";
+        action = ":ZkInsertLink { matchStrategy = 'exact', match = { vim.fn.input('Search: ')} }<CR>";
     }
       {
         mode = "n";
         key = "<leader>lf";
-        action = "<CMD>ZkInsertLink { matchStrategy = 'fts', match = { vim.fn.input('Search: ')} }<CR>";
+        action = ":ZkInsertLink { matchStrategy = 'fts', match = { vim.fn.input('Search: ')} }<CR>";
     }
       {
         mode = "n";
         key = "<leader>ll";
-        action = "<CMD>ZkInsertLink<CR>";
+        action = ":ZkInsertLink<CR>";
     }
       {
         mode = "n";
         key = "<leader>lr";
-        action = "<CMD>ZkInsertLink { matchStrategy = 're', match = { vim.fn.input('Search: ')} }<CR>";
+        action = ":ZkInsertLink { matchStrategy = 're', match = { vim.fn.input('Search: ')} }<CR>";
     }
 
     #InsertLinkatSelection
@@ -577,7 +577,7 @@
       {
         mode = "n";
         key = "<leader>zl";
-        action = "<CMD>ZkLinks<CR>";
+        action = ":ZkLinks<CR>";
     }
 
     #Match
@@ -588,12 +588,12 @@
       {
         mode = "n";
         key = "<leader>ia";
-        action = "<CMD>ZkNew { dir = '/home/deeengan/PITH/', group = 'IR7I32C9', template = 'EM5EQUG8.md', title = vim.fn.input('Title: '), content = vim.fn.input('Tags: ') }<CR>";
+        action = ":ZkNew { dir = '/home/deeengan/PITH/', group = 'IR7I32C9', template = 'EM5EQUG8.md', title = vim.fn.input('Title: '), content = vim.fn.input('Tags: ') }<CR>";
     }
       {
         mode = "n";
         key = "<leader>dy";
-        action = "<CMD>ZkNew { dir = '/home/deeengan/PITH/WB3LHT7H/', group = '3DRLMKUS', template = '3DRLMKUS.md' }<CR>";
+        action = ":ZkNew { dir = '/home/deeengan/PITH/WB3LHT7H/', group = '3DRLMKUS', template = '3DRLMKUS.md' }<CR>";
     }
 
     #New From Content Selection
@@ -601,7 +601,7 @@
       {
         mode = "v";
         key = "<leader>lc";
-        action = ":ZkNewFromContentSelection<CR>";
+        action = ":'<,'><CR>ZkNewFromContentSelection<CR>";
     }
     #New From Title Selection
 
@@ -616,32 +616,32 @@
       {
         mode = "n";
         key = "<leader>zn";
-        action = "<CMD>ZkNotes<CR>";
+        action = ":ZkNotes<CR>";
     }
       {
         mode = "n";
         key = "<leader>zo";
-        action = "<CMD>ZkNotes { sort = { 'modified' }, orphan = true }<CR>";
+        action = ":ZkNotes { sort = { 'modified' }, orphan = true }<CR>";
     }
       {
         mode = "n";
         key = "<leader>zw";
-        action = "<CMD>ZkNotes { sort = { 'word-count' } }<CR>";
+        action = ":ZkNotes { sort = { 'word-count' } }<CR>";
     }
       {
         mode = "n";
         key = "<leader>zf";
-        action = "<CMD>ZkNotes { matchStrategy = 'fts', match = { vim.fn.input('fts: ') } }<CR>";
+        action = ":ZkNotes { matchStrategy = 'fts', match = { vim.fn.input('fts: ') } }<CR>";
     }
       {
         mode = "n";
         key = "<leader>ze";
-        action = "<CMD>ZkNotes { matchStrategy = 'exact', match = { vim.fn.input('exact: ') } }<CR>";
+        action = ":ZkNotes { matchStrategy = 'exact', match = { vim.fn.input('exact: ') } }<CR>";
     }
       {
         mode = "n";
         key = "<leader>zr";
-        action = "<CMD>ZkNotes { matchStrategy = 're', match = { vim.fn.input('re: ') } }<CR>";
+        action = ":ZkNotes { matchStrategy = 're', match = { vim.fn.input('re: ') } }<CR>";
     }
 
     # Tags
@@ -649,7 +649,7 @@
       {
         mode = "n";
         key = "<leader>zt";
-        action = "<CMD>ZkTags<CR>";
+        action = ":ZkTags<CR>";
     }
 
     ];
